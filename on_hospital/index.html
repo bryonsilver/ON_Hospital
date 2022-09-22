@@ -12,15 +12,116 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/comon.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/swiper-pagination.css">
 
     
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script defer src="./js/index.js"></script>
+    <script defer src="./js/common.js"></script>
     <script defer src="./js/swiper-bundle.js"></script>
+    <script defer src="./js/swiper-pagination.js"></script>
 
 </head>
 <body>
     <div class="wrap">
+        <div class="black_pan"></div>
+        <div class="all_s_tab_box">
+            <div class="as_tab_title">
+                <span>전체보기<span class="as_t_small">(닫기)</span></span>
+            </div>
+            <div class="as_tab_menu_box">
+                <ul class="as_tab_ul">
+                    <li class="as_tab_li">
+                        <a href="#">병원안내</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">미션/비전</a></li>
+                            <li><a href="#">층별안내</a></li>
+                            <li><a href="#">오시는길</a></li>
+                            <li><a href="#">전화번호</a></li>
+                            <li><a href="#">고객지원센터</a></li>
+                            <li><a href="#">응급의료센터</a></li>
+                            <li><a href="#">편의시설안내</a></li>
+                            <li><a href="#">장례식장</a></li>
+                        </ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="#">진료안내</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="#">진료안내</a></li>
+                            <li><a href="#">병문안안내</a></li>
+                            <li><a href="#">입/퇴원 안내</a></li>
+                            <li><a href="#">제증명서발급</a></li>
+                        </ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="#">진료과ㆍ의료인</a>
+                        <ul class="as_tu_ul"></ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="#">전문센터</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="#">소화기암수술센터</a></li>
+                            <li><a href="#">호스피스완화의료병동</a></li>
+                            <li><a href="#">심뇌혈관센터</a></li>
+                            <li><a href="#">인공신장센터</a></li>
+                            <li><a href="#">척추관절센터</a></li>
+                            <li><a href="#">재활치료센터</a></li>
+                            <li><a href="#">신경센터</a></li>
+                            <li><a href="#">소아청소년 정신건강센터</a></li>
+                            <li><a href="#">턱얼굴수술센터(양악센터)</a></li>
+                            <li><a href="#">유방ㆍ갑상선암 센터</a></li>
+                            <li><a href="#">대장항문센터</a></li>
+                            <li><a href="#">전립선ㆍ배뇨장애 센터</a></li>
+                            <li><a href="#">간센터</a></li>
+                            <li><a href="#">췌장담도센터</a></li>
+                            <li><a href="#">인터벤션센터(중재시술)</a></li>
+                            <li><a href="#">항암방사선치료센터</a></li>
+                            <li><a href="#">페암수술센터</a></li>
+                            <li><a href="#">알레르기 센터</a></li>
+                            <li><a href="#">암재활프로그램</a></li>
+                            <li><a href="#">여성암센터</a></li>
+                            <li><a href="#">유방암센터</a></li>
+                            <li><a href="#">응급의료센터</a></li>
+                            <li><a href="#">장례식장</a></li>
+                            <li><a href="#">전립선암센터</a></li>
+                            <li><a href="#">호흡기센터</a></li>
+                            <li><a href="#">초음파진단센터</a></li>
+                            <li><a href="#">간담췌센터 위ㆍ대장암</a></li>
+                            <li><a href="#">감염센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="#">암병원</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="#">소화기암수술센터</a></li>
+                            <li><a href="#">유방ㆍ갑상선암 센터</a></li>
+                            <li><a href="#">간센터</a></li>
+                            <li><a href="#">페암수술센터</a></li>
+                            <li><a href="#">여성암센터</a></li>
+                            <li><a href="#">전립선암센터</a></li>
+                            <li><a href="#">인터벤션센터(중재시술)</a></li>
+                            <li><a href="#">항암방사선치료센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="#">병원소식</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">기타소식</a></li>
+                            <li><a href="#">언론보도</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">오늘의 식단</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                        </ul>
+                        <div class="as_tab_ul_div">
+                            <a href="#">비급여</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="header">
             <div class="h_fixed">
                 <div class="container h_flex">
@@ -35,7 +136,7 @@
                         </div>
                     </div>
                     <div class="burger_menu_box">
-                        <span>
+                        <span class="burger_span">
                             <div class="line_menu first_line"></div>
                             <div class="line_menu"></div>
                             <div class="line_menu last_line"></div>
@@ -45,10 +146,12 @@
                 <div class="nav_box">
                     <div class="container nav_height">
                         <div class="all_see">
-                            <a href="#">
-                                <span></span>
-                                <span>전체메뉴</span>
-                            </a>
+                            <span>
+                                <div class="line_menu"></div>
+                                <div class="line_menu"></div>
+                                <div class="line_menu"></div>
+                            </span>
+                            <span>전체메뉴</span>
                         </div>
                         <ul class="nav_ul">
                             <li class="nav_li">
@@ -190,7 +293,7 @@
                   </div>
             </div>
             <div class="center_box">
-                <div class="short_cut_box container">
+                <div class="short_cut_box container f_margin">
                     <div class="short_box">
                         <div class="clinic_box">
                             <div class="clinic"><a href="#" class="box_btn">진료과/진료예약</a></div>
@@ -235,7 +338,7 @@
                     </div>
                 </div>
                 <div class="news_box">
-                    <div class="container n_flex_box">
+                    <div class="container n_flex_box f_margin">
                         <div class="notice_box">
                             <div class="title_box">
                                 <h4 class="n_title">공지사항</h4>
@@ -316,7 +419,7 @@
                     </div>
                 </div>
                 <div class="swiper_box2 on_news_s">
-                    <div class="container">
+                    <div class="container f_margin">
                         <h3>온병원 그룹</h3>
                         <div class="swiper_box2">
                             <div class="swiper mySwiper3">
@@ -349,7 +452,7 @@
                     </div>
                 </div>
                 <div class="swiper_box3">
-                    <div class="container">
+                    <div class="container f_margin">
                         <div class="tv_title">병원장 TV</div>
                     </div>
                     <div class="container_fluid">
@@ -451,21 +554,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="semi_black_box container">
+                <div class="semi_black_box">
+                    <div class="semi_box"></div>
+                    <div class="semi_black_overlay"></div>
                     <div class="semi_black">
+                        
                         <div class="container">
                             <div class="row">
                                 <div class="semi_text_box">
-                                    <span class="semi"></span>
-                                    <h1 class="semi_black_title">
-                                        <span></span>
-                                    </h1>
+                                    <h1 class="semi_black_title"><img src="./img/semi.png" alt="semi"><span class="semi">생명불 켜는 <span>온종합병원이 함께 합니다</span></span></h1>
                                     <h3 class="semi_black_content">
-                                        여전히 우리 주변에는 질병과 가난으로 고통 받는 사람들이 많이 있습니다. <br>
-                                        특히, IMF 외환위기 때는 가난 때문에 병마의 고통을 온몸으로 참아내던 <br>
-                                        할머니, 할아버지들에게 충분한 도움을 주지 못해 안타까웠습니다 <br>
-                                        그때로부터 10여년 만에 온 종합병원을 설립하게 되었습니다. <br>
-                                        부산의 중심에서 아픈 이들의 고통을 나누려고 합니다. <br>
+                                        <span class="semi_row">여전히 우리 주변에는 질병과 가난으로 <span>고통 받는 사람들이 많이 있습니다.</span></span>
+                                        <span class="semi_row">특히, IMF 외환위기 때는 가난 때문에 <span>병마의 고통을 온몸으로 참아내던</span></span>
+                                        <span class="semi_row">할머니, 할아버지들에게 충분한 <span>도움을 주지 못해 안타까웠습니다</span></span>
+                                        <span class="semi_row">그때로부터 10여년 만에 <span>온 종합병원을 설립하게 되었습니다.</span></span>
+                                        <span class="semi_row">부산의 중심에서 아픈 이들의<span> 고통을 나누려고 합니다.</span></span>
                                     </h3>
                                     <a href="#" class="btn_semi">자세히 보기</a>
                                 </div>
@@ -476,14 +579,136 @@
                 <div class="swiper_box4 cooperaiton container">
                     <div class="container">
                         <div class="row">
-                            <div class="col"></div>
+                            <div class="col">
+                                <div class="swiper mySwiper4">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide">
+                                        <a href="https://www.kuh.ac.kr/main.do" class="coope">
+                                            <img src="./img/coope_1.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="https://www.paik.ac.kr/paik/user/main/view.do" class="coope">
+                                            <img src="./img/coope_2.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="https://www.kosinmed.or.kr/" class="coope">
+                                            <img src="./img/coope_3.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="https://www.damc.or.kr/main/main_2017.php" class="coope">
+                                            <img src="./img/coope_4.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="https://www.cmcseoul.or.kr/page/main" class="coope">
+                                            <img src="./img/coope_5.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="http://www.snuh.org/intro.do" class="coope">
+                                            <img src="./img/coope_6.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="#" class="coope"> <!--부산대학교 병원 사이트 안됨.. -->
+                                            <img src="./img/coope_7.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="https://sev.severance.healthcare/sev/intro.do" class="coope">
+                                            <img src="./img/coope_8.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                      <div class="swiper-slide">
+                                        <a href="https://www.hyumc.com/" class="coope">
+                                            <img src="./img/coope_9.png" alt="cooperation_img">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <div class="container"></div>
+            <div class="f_top_box  f_top ">
+                <ul class="f_nav_ul container f_margin">
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">개인정보처리방침</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">병원안내</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">비급여</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">진료과ㆍ의료진</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">암병원</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">전문센터</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">병원소식</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">진료예약</a>
+                    </li>
+                    <li class="f_nav_li">
+                        <a href="#" class="f_nav_link">비급여</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container f_margin">
+                <div class="f_text_box">
+                    <div class="ft_logo_box">온종합병원</div>
+                    <div class="f_top_box">
+                        <ul class="f_nav_ul">
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">개인정보처리방침</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">병원안내</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">비급여</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">진료과ㆍ의료진</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">암병원</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">전문센터</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">병원소식</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">진료예약</a>
+                            </li>
+                            <li class="f_nav_li">
+                                <a href="#" class="f_nav_link">비급여</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ft_detail_box">
+                        <div class="ft_d_box">47261 부산광역시 부산진구 가야대로 721 (당감동 966번지) | 의료기관명칭 : 의료법인 온그룹의료재단 온종합병원</div>
+                        <div class="ft_d_box">사업자등록번호 : 605-82-11399 | TEL : 051-607-0114, 응급실: 051-607-0129 | FAX : 051-607-0220</div>
+                        <div class="ft_d_box">E-Mail : onhospital@hanmail.net | 대표자명 : 윤선희</div>
+                        <div class="ft_d_box">© 온종합병원. ALL RIGHTS RESERVED.</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
