@@ -45,12 +45,10 @@ $(document).ready(function(){
 		   // odd clicks
 		   	$('.first_line').css({transform: 'rotate(-90deg)'})
 			$('.last_line').css({transform: 'rotate(-90deg)'})
-			$('.burger_span').css(50,function(){transform: 'rotate(45deg)'})
 		} else {
 		   // even clicks
 		   	$('.first_line').css({transform: 'rotate(0deg)'})
 			$('.last_line').css({transform: 'rotate(0deg)'})
-			$('.burger_span').css(50,function(){transform: 'rotate(0)'})
 		}
 		$(this).data("clicks", !clicks);
 	  });
