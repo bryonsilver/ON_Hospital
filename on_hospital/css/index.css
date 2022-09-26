@@ -544,7 +544,7 @@
 
     .span::after,.span::before {display: none;}
     .hos_mb, .on_affi_mb, .can_mb, .on_mb, .p_mb, .cli_mb {
-        line-height: 90px;
+        line-height: 20px;
         font-size: 17px;
     }
     .btn_play {
@@ -612,6 +612,8 @@
     .hos_mb, .on_affi_mb, .can_mb, .on_mb, .p_mb, .cli_mb {
         font-size: 12px;
         word-break: break-all;
+        padding: 35px 0;
+        box-sizing: border-box;
     }
     .n_title {font-size: 16px;}
     .btn_play {
