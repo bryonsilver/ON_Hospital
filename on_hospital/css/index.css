@@ -437,69 +437,6 @@
     box-sizing: border-box;
 }
 
-/* footer */
-.footer {
-    width: 100%;
-    padding-bottom: 60px;
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,0.8);
-}
-.f_top_box {
-    width: 100%;
-    box-sizing: border-box;
-}
-.f_top {
-    padding: 20px 0;
-    background-color: rgba(0,0,0,0.4);
-}
-.f_nav_ul {
-    display: flex;
-    align-items: center;
-    color: rgba(255,255,255,.7);
-}
-.f_nav_li {
-    position: relative;
-}
-.f_nav_li > a {
-    padding: 0 14px;
-    box-sizing: border-box;
-}
-.f_nav_li::before {
-    content: "";
-    width: 1px;
-    height: 12px;
-    position: absolute;
-    top: 27%;
-    left: 0;
-    border-left: 1px solid rgba(255,255,255,.2);
-}
-.f_nav_li:nth-of-type(1)::before  {
-    display: none;
-}
-.f_nav_li:nth-of-type(1) >a {
-    padding-left: 0 !important;
-}
-.f_nav_li > a:hover {
-    color: #fff;
-}
-
-.ft_logo_box {
-    font-size: 22px;
-    font-weight: 500;
-    padding: 20px 0;
-    color: #fff;
-    box-sizing: border-box;
-}
-.ft_detail_box {
-    padding-top: 20px;
-    box-sizing: border-box;
-    color: rgba(255,255,255,.5);
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-}
-
-
 @media (max-width: 1400px) {
     .nav_height {justify-content: center !important;}
     .f_margin {
@@ -585,9 +522,6 @@
     }
 }
 @media (max-width: 768px) {
-    .short_mb {
-        border: 1px solid #ddd;
-    }
     .hosptial_mb,
     .on_affiliated_h_mb,
     .cancer_h_mb,
@@ -700,4 +634,6 @@
     .semi_black_title {font-size: 22px;}
     .semi_black_content {font-size: 14px;}
     .semi_text_box {gap: 10px;}
+    .swiper_box3 {padding: 30px 10px;}
+    .swiper_box2  {padding: 0 10px;}
 }
