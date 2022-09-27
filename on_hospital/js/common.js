@@ -42,25 +42,30 @@ $(document).ready(function(){
 		   // odd clicks
 		   	$('.first_line').css({transform: 'rotate(0deg)'})
 			$('.last_line').css({transform: 'rotate(0deg)'})
-			$('.burger_span').css({transform: 'rotate(0deg)'})
+			$('.mid_bur').css({opacity: '1'})
 		} else {
 		   // even clicks
-			$('.first_line').css({transform: 'rotate(-90deg)'})
-			$('.last_line').css({transform: 'rotate(-90deg)'})
-			$('.burger_span').css({transform: 'rotate(45deg)'})
+			$('.first_line').css({transform: 'rotate(-45deg)'})
+			$('.last_line').css({transform: 'rotate(45deg)'})
+			$('.mid_bur').css({opacity: '0'})
 		}
 		$(this).data("clicks", !clicks);
 	});
 	
 	$('.all_see').click(function(){
-		$('.first_line2').css({transform: 'rotate(-90deg)'})
-		$('.last_line2').css({transform: 'rotate(-90deg)'})
-		$('.line_box_as').css({transform: 'rotate(45deg)'})
+		$('.first_line2').css({transform: 'rotate(-45deg)'})
+		$('.last_line2').css({transform: 'rotate(45deg)'})
+		$('.mid_bur').css({opacity: '0'})
 	})
 	$('.as_tab_title').click(function(){
 		$('.first_line2').css({transform: 'rotate(0deg)'})
 		$('.last_line2').css({transform: 'rotate(0deg)'})
-		$('.line_box_as').css({transform: 'rotate(0deg)'})
+		$('.mid_bur').css({opacity: '1'})
+	})
+	$('.black_pan').click(function(){
+		$('.first_line2').css({transform: 'rotate(0deg)'})
+		$('.last_line2').css({transform: 'rotate(0deg)'})
+		$('.mid_bur').css({opacity: '1'})
 	})
 
 	$(window).scroll(function(){
@@ -84,7 +89,7 @@ $(document).ready(function(){
 		$(this).toggleClass('bn_active')
 	})
 	$(".bn_li ul.bn_n_ul").hide();
-	$('.bn_plus_btn').click(function(){
+	$('.btn_p').click(function(){
 		$('.bn_li').removeClass('bn_active')
 		$(this).parents('.bn_li').toggleClass('bn_active')
 		$(".bn_li").off('click').click(function(){
@@ -93,10 +98,10 @@ $(document).ready(function(){
 		var clicks = $(this).data('clicks');
 		if (clicks) {
 		   // odd clicks
-		   $('.bn_p_after').removeClass('bn_p_after_d')
+		   $(this).find('.bn_p_after').removeClass('bn_p_after_d')
 		} else {
 		   // even clicks
-		   $('.bn_p_after').addClass('bn_p_after_d')
+		   $(this).find('.bn_p_after').addClass('bn_p_after_d')
 		}
 		$(this).data("clicks", !clicks);
 	})

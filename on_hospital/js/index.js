@@ -43,6 +43,7 @@ $(document).ready(function(){
         autoplay: {
             delay: 3000, // 몇 밀리초마다 새로 들어올지
         },
+        centeredSlides: true, 
         speed: 500, // duration
         // direction: 'vertical',
     
@@ -57,7 +58,32 @@ $(document).ready(function(){
         },
         speed: 500, // duration
         // direction: 'vertical',
-        
+
+        // 분기점
+        breakpoints: {
+            2000: {
+                slidesPerView: 5,
+                spaceBetween: 0
+            },
+            // when window width is >= 768px
+            1025: {
+            slidesPerView: 5,
+            spaceBetween: 0
+            },
+            // when window width is >= 1024px
+            767: {
+            slidesPerView: 4,
+            spaceBetween: 0
+            },
+            400: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            100: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            }
+        }  
     });
     $(window).resize(function(){
 		var width = window.innerWidth;
@@ -83,6 +109,6 @@ $(document).ready(function(){
                 //위의 if문에 대한 조건 만족시 fix라는 class를 부여함  
             } 
         }  
-    );  
+    ); 
 
 })
