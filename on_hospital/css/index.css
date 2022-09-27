@@ -677,7 +677,7 @@
         width: 100%;
     }
     .box_btn {margin-top: 47% !important;}
-    .news_title{width: calc((60% - 4px) / 1);}
+    .news_title{width: calc((60% - 10px) / 1);}
     .news_thumb {width: calc((40% ) / 1);}
     .news_title {line-height: 20px !important;}
 }
