@@ -157,7 +157,6 @@
 .clinic {
     height: 100%;
     text-align: center;
-    line-height: 290px;
     font-size: 30px;
     color: #fff;
 }
@@ -167,7 +166,13 @@
 .on_tv a,
 .prof a,
 .clinic a {
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 .clinic_box {background-color: #0AA2E5;}
 .prof_box {background-color: #F596B4;}
@@ -215,7 +220,7 @@
     height: 35px;
     background-color: #ddd;
     position: absolute;
-    top: 30px;
+    top: 40px;
     left: 50%;
 }
 .next_s::before {
@@ -224,7 +229,16 @@
     height: 35px;
     background-color: #ddd;
     position: absolute;
-    bottom: 30px;
+    bottom: 100px;
+    left: 50%;
+}
+.before::before {
+    content: "";
+    width: 1px;
+    height: 35px;
+    background-color: #ddd;
+    position: absolute;
+    bottom: 80px;
     left: 50%;
 }
 .box_btn {
@@ -233,10 +247,24 @@
     align-items: center;
     margin-top: 40%;
     transform: translateY(-40%);
+    flex-direction: column;
 }
 .shorts_img {
-    width: 25%;
+    width: 11%;
 }
+.rotate {
+    transform: rotate(-90deg);
+}
+.mb_tv_img {
+    display: none;
+}
+.desk_shorts_img {
+    width: 11%;
+}
+.width2{
+    width: 9% !important;
+}
+.width3 {width: 16% !important;}
 
 
 /* news_box */
@@ -338,7 +366,7 @@
 /* on_news_s */
 .on_news_s h3 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
 }
 .swiper_box2 {padding: 0 10px; box-sizing: border-box;}
@@ -350,7 +378,7 @@
 }
 .tv_title {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     padding: 30px 0;
     box-sizing: border-box;
     text-align: center;
@@ -461,9 +489,6 @@
 
 @media (max-width: 1400px) {
     .nav_height {justify-content: center !important;}
-    .f_margin {
-        width: 90% !important;
-    }
 }
 @media (max-width: 1300px) {
     .s_h1 {font-size: 40px;}
@@ -490,7 +515,7 @@
         padding: 6px 30px 8px;
         font-size: 16px;
     }
-    .f_margin {width: 100% !important; padding: 0 20px; box-sizing: border-box;}
+
 }
 @media (max-width: 1000px) {
     .semi_black_title {font-size: 35px;}
@@ -528,9 +553,6 @@
     }
 }
 @media (max-width: 850px) {
-    .f_nav_ul {flex-wrap: wrap; gap: 10px;}
-    .footer {text-align: center;}
-    .f_nav_ul {justify-content: center;}
     .semi_row {
         display: flex;
         flex-direction: column;
@@ -604,6 +626,9 @@
     .cancer_h_mb {border: 1px solid #ddd;}
     .next_s::after,.next_s::before {display: none;}
     .box_btn {margin-top: 25% !important;}
+
+    .mb_tv_img {display: inline-block; width: 12%;}
+    .shorts_img {display: none;}
 }
 @media (max-width: 500px) {
     .btn_play {
@@ -626,7 +651,6 @@
     .semi_text_box {gap: 20px;}
     .semi_black_title {font-size: 30px;}
     .semi_black_content {font-size: 20px;}
-    .f_margin {padding: 0;}
     .f_text_box,.f_nav_ul {padding: 0 10px ;}
     .box_btn {margin-top: 30% !important;}
 
@@ -680,4 +704,8 @@
     .news_title{width: calc((60% - 10px) / 1);}
     .news_thumb {width: calc((40% ) / 1);}
     .news_title {line-height: 20px !important;}
+    
+    .mb_tv_img {display: inline-block; width: 20%;}
+    .width3 {width: 27% !important;}
+    .width2 {width: 17% !important;}
 }

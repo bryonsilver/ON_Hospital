@@ -105,5 +105,56 @@ $(document).ready(function(){
 		}
 		$(this).data("clicks", !clicks);
 	})
+
+
+	var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 3000, // 몇 밀리초마다 새로 들어올지
+        },
+        speed: 500, // duration
+        // direction: 'vertical',
+
+        // 분기점
+        breakpoints: {
+            2000: {
+                slidesPerView: 5,
+                spaceBetween: 0
+            },
+            // when window width is >= 768px
+            1025: {
+            slidesPerView: 5,
+            spaceBetween: 0
+            },
+            // when window width is >= 1024px
+            767: {
+            slidesPerView: 4,
+            spaceBetween: 0
+            },
+            400: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            100: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            }
+        }  
+    });
+    $(window).resize(function(){
+		var width = window.innerWidth;
+		if(width < 1000){
+			$('.mySwiper4')
+			$('.black_pan').css({display: 'none'})
+		}
+	}).resize();
+    
+    $('.swiper').hover(function(){
+        swiper.autoplay.stop()
+    }, function(){
+        swiper.autoplay.start()
+    })
 	
 })
