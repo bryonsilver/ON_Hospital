@@ -141,6 +141,8 @@
     height: 300px;
     background-color: cornflowerblue;
     display: inline-block;
+
+    position: relative;
 }
 .on_affiliated_h_box,
 .cancer_h_box,
@@ -180,6 +182,14 @@
 .cancer_h_box {background-color: #55C7C8;}
 .on_affiliated_h_box {background-color: #B485D5;}
 .hosptial_box {background-color: #F8BD83;}
+
+.shorts_back_img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: .15;
+}
 
 /* short_cut mb */
 .short_cut_mb {
