@@ -156,5 +156,6 @@ $(document).ready(function(){
     }, function(){
         swiper.autoplay.start()
     })
+
 	
 })

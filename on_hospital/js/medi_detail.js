@@ -1,28 +1,15 @@
 $(document).ready(function(){
-    console.log(DOCTOR[0][1].value.length)
-    for(let i=0; i<DOCTOR[0][1].length; i++) {
+console.log(1)
+    for(let i=0; i<DOCTOR[0].length; i++) {
+console.log(DOCTOR[0].length)
         let list = `
-                    <div class="top_box">
-                        <div class="top_title_box">`
-                        for(let j=0; j<QUESTION[0][i].length; j++) {
-                list +=`    <h2 class="top_title">${QUESTION[0][i].item_no}</h2>
-                            <div class="top_content">${QUESTION[0][i].item_no}</div>`
-                        }
-                list +=`</div>
-                        <div class="center_banner">
-                            <a href="https://www.youtube.com/channel/UCb92XBkMxNZodTCg-DnmMPw">
-                                <img src="./img/medi_details/medi_in_banner.png" alt="medi_d_banner" class="medi_banner">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="one_doctor_box">
                         <div>
                             <div class="content_box">
                                 <div class="c_left_box">
                                     <div class="l_img_box">
-                                        <img src="./img/medi_details/${QUESTION[0][i].item_no}.jpg" alt="d_${QUESTION[0][i].item_no}_img" class="l_img">
+                                        <img src="./img/medi_details/${DOCTOR[0][i].img_src}.jpg" alt="d_${DOCTOR[0][i].img_src}_img" class="l_img">
                                         <div class="doctor_name_box">
-                                            <div class="doctor_name">${QUESTION[0][i].item_no}</div>
+                                            <div class="doctor_name">${DOCTOR[0][i].name}</div>
                                         </div>
                                     </div>
                                     <div class="l_more_btn">
@@ -33,18 +20,16 @@ $(document).ready(function(){
                                     <div class="cr_top_box">
                                         <dl class="top_dl">
                                             <dt class="top_first"><b>진료과</b></dt>
-                                            <dd class="top_con">${QUESTION[0][i].item_no}</dd>
+                                            <dd class="top_con">${DOCTOR[0][i].medi_con}</dd>
 
                                             <dt class="top_first"><b>대표약력</b></dt>
-                                            <dd class="top_con text_danger">${QUESTION[0][i].item_no}</dd>
+                                            <dd class="top_con text_danger">${DOCTOR[0][i].medi_his_con}</dd>
 
                                             <dt class="top_first"><b>전문분야</b></dt>
-                                            <dd class="top_con width">${QUESTION[0][i].item_no}</dd>
+                                            <dd class="top_con width">${DOCTOR[0][i].one_speci_con}</dd>
                                         </dl>
                                     </div>
-                                    <div class="cr_center_box">
-                                        <iframe src="${QUESTION[0][i].item_no}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                    </div>
+                                    <div class="cr_center_box"></div>
                                     <div class="cr_bottom_box">
                                         <table class="bottom_table">
                                             <thead class="t_bg_light">
@@ -60,20 +45,20 @@ $(document).ready(function(){
                                                 <tr>
                                                     <th class="t_bg_light">오전</th>
                                                     <td>
-                                                        <div><span class="text_circle ${QUESTION[0][i].item_no}"></span></div>
-                                                        <div>${QUESTION[0][i].item_no}</div>
+                                                        <div><span class="text_circle ${DOCTOR[0][i].morn_color}"></span></div>
+                                                        <div>${DOCTOR[0][i].morn_schedule}</div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="t_bg_light">오후</th>
                                                     <td>
-                                                        <div><span class="text_circle ${QUESTION[0][i].item_no}"></span></div>
-                                                        <div>${QUESTION[0][i].item_no}</div>
+                                                        <div><span class="text_circle ${DOCTOR[0][i].afte_color}"></span></div>
+                                                        <div>${DOCTOR[0][i].afte_schedule}</div>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th class="t_bg_light">비고</th>
-                                                    <td class="text_left" colspan="6"></td>
+                                                    <td class="text_left" colspan="6">${DOCTOR[0][i].note}</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -94,7 +79,11 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div> `
+                        </div> `
+
+        $('.one_doctor_box').append(list);
+        console.log(10)
     }
+
+    //<iframe src="${DOCTOR[0][i].ifram_src}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 })

@@ -245,6 +245,11 @@ iframe.goog-te-banner-frame { display: none !important; }
         object-fit: cover;
       }
 
+      .rt_abc_box  input ,
+      .rt_basic_box  input {
+        display: none;
+      }
+
 
 /* nav */
 .nav_box {
