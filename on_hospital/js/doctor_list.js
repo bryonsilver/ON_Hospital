@@ -59,8 +59,8 @@ const DOCTOR = [
     ],
     [
         // 9번 묵음 : 성형센터
-        {cate_no:9, item_no:1, img_src:'plastic_surgery', name:'김석권 원장', medi_con:'성형센터', medi_his_con:'동아대학교 의과대학 성형외과 주임교수', one_speci_con:'안면 윤곽 성형 / 유방 성형 / 코·눈커풀 안면 주름성형 / 구순구개열 / 모발이식 무질증 재건 / 소이증 수술 . 트렌스젠드 수술', morn_schedule:['진료','수술/검사','진료','수술/검사','진료','문의'], afte_schedule:['진료','수술/검사','진료','','수술/검사',''], morn_color:['cir_primary','cir_danger','cir_primary','cir_danger','cir_primary','cir_success',], afte_color: ['cir_primary','cir_danger','cir_primary','','cir_danger','']},
-        {cate_no:9, item_no:2, img_src:'fam_medi2', name:'한봉주 원장', medi_con:'성형센터', medi_his_con:'인제대 의과대학 성형외과 외래교수', one_speci_con:'눈·코 지방이식수술 / 욕창치료', morn_schedule:['수술/검사','진료','수술/검사','진료','수술/검사','문의'], afte_schedule:['수술/검사','진료','문의','진료','진료',''], morn_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','cir_success',], afte_color: ['cir_danger','cir_primary','cir_success','cir_primary','cir_primary','']},
+        {cate_no:9, item_no:1, img_src:'plastic_surgery1', name:'김석권 원장', medi_con:'성형센터', medi_his_con:'동아대학교 의과대학 성형외과 주임교수', one_speci_con:'안면 윤곽 성형 / 유방 성형 / 코·눈커풀 안면 주름성형 / 구순구개열 / 모발이식 무질증 재건 / 소이증 수술 . 트렌스젠드 수술', morn_schedule:['진료','수술/검사','진료','수술/검사','진료','문의'], afte_schedule:['진료','수술/검사','진료','','수술/검사',''], morn_color:['cir_primary','cir_danger','cir_primary','cir_danger','cir_primary','cir_success',], afte_color: ['cir_primary','cir_danger','cir_primary','','cir_danger','']},
+        {cate_no:9, item_no:2, img_src:'plastic_surgery2', name:'한봉주 원장', medi_con:'성형센터', medi_his_con:'인제대 의과대학 성형외과 외래교수', one_speci_con:'눈·코 지방이식수술 / 욕창치료', morn_schedule:['수술/검사','진료','수술/검사','진료','수술/검사','문의'], afte_schedule:['수술/검사','진료','문의','진료','진료',''], morn_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','cir_success',], afte_color: ['cir_danger','cir_primary','cir_success','cir_primary','cir_primary','']},
     ],
     [
         // 10번 묵음 : 소아청소년과
@@ -113,11 +113,11 @@ const DOCTOR = [
     ],
     [
         // 19번 묵음 : 외과
-        {cate_no:19, item_no:1, img_src:'', name:'문기명 교수', medi_con:'간담췌외과', medi_his_con:'서울아산병원 간담췌 및 이식·혈관 외과 전임의', one_speci_con:'간담췌 외과 / 혈관 이식 외과 / 중환자 및 외상 외과 / 유방 및 갑상선 외과', morn_schedule:['진료','진료','진료','진료','수술/검사','문의'], afte_schedule:['수술/검사','수술/검사','수술/검사','수술/검사','',''], morn_color:['cir_primary','cir_primary','cir_primary','cir_primary','cir_danger','cir_success',], afte_color: ['cir_primary','cir_primary','cir_primary','cir_primary','','']},
-        {cate_no:19, item_no:2, img_src:'', name:'박광민 의무원장', medi_con:'간담췌외과', medi_his_con:'서울아산병원 간·담·췌외과 주임교수', one_speci_con:'간담도췌장암수술 / 담낭질환 / 복강경수술(단일통로 복강경 담낭절제술) / 간이식', ifram_src: 'https://www.youtube.com/embed/FxGwggzensQ', morn_schedule:['수술/검사','진료','수술/검사','진료','수술/검사','문의'], afte_schedule:['수술/검사','진료','수술/검사','진료','수술/검사',''], morn_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','cir_success',], afte_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','']},
+        {cate_no:19, item_no:1, img_src:'surgrey1', name:'문기명 교수', medi_con:'간담췌외과', medi_his_con:'서울아산병원 간담췌 및 이식·혈관 외과 전임의', one_speci_con:'간담췌 외과 / 혈관 이식 외과 / 중환자 및 외상 외과 / 유방 및 갑상선 외과', morn_schedule:['진료','진료','진료','진료','수술/검사','문의'], afte_schedule:['수술/검사','수술/검사','수술/검사','수술/검사','',''], morn_color:['cir_primary','cir_primary','cir_primary','cir_primary','cir_danger','cir_success',], afte_color: ['cir_primary','cir_primary','cir_primary','cir_primary','','']},
+        {cate_no:19, item_no:2, img_src:'surgrey2', name:'박광민 의무원장', medi_con:'간담췌외과', medi_his_con:'서울아산병원 간·담·췌외과 주임교수', one_speci_con:'간담도췌장암수술 / 담낭질환 / 복강경수술(단일통로 복강경 담낭절제술) / 간이식', ifram_src: 'https://www.youtube.com/embed/FxGwggzensQ', morn_schedule:['수술/검사','진료','수술/검사','진료','수술/검사','문의'], afte_schedule:['수술/검사','진료','수술/검사','진료','수술/검사',''], morn_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','cir_success',], afte_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','']},
         {cate_no:19, item_no:3, img_src:'surgical1', name:'고상화 과장', medi_con:'외과', medi_his_con:'부산대학교병원 외과 조교수', one_speci_con:'대장암 / 직장암 / 치핵 / 치루 / 항문질환 / 복강경수술', ifram_src: 'https://www.youtube.com/embed/CYCalfW_7mE', morn_schedule:['진료','진료','진료','진료','진료','문의'], afte_schedule:['진료','진료','진료','','진료',''], morn_color: ['cir_primary','cir_primary','cir_primary','cir_primary','cir_primary','cir_success'], afte_color: ['cir_primary','cir_primary','cir_primary','','cir_primary','']},
-        {cate_no:19, item_no:4, img_src:'', name:'박요한 교수', medi_con:'간담췌외과', medi_his_con:'서울아산병원 전임의', one_speci_con:'감암, 담도암, 담낭암, 췌장암, 담석증, 담낭용종, 복강경, 담낭수술, 간이식', morn_schedule:['수술/검사','수술/검사','수술/검사','진료','수술/검사','문의'], afte_schedule:['진료','진료','진료','','수술/검사',''], morn_color: ['cir_danger','cir_danger','cir_danger','cir_primary','cir_danger','cir_success'], afte_color: ['cir_primary','cir_primary','cir_primary','','cir_danger','']},
-        {cate_no:19, item_no:5, img_src:'', name:'이상엽 과장', medi_con:'간담췌외과', medi_his_con:'서울아산병원 간·담·췌외과 전문의', one_speci_con:'간담도췌외과 / 복강격수술 / 담도결석 치료 ERCP(내시경적 역행성 취담도관조영술) / 담도 결석 치료 복강경 담관 결석 제거', morn_schedule:['진료','수술/검사','진료','수술/검사','진료','문의'], afte_schedule:['수술/검사','수술/검사','','수술/검사','진료',''], morn_color: ['cir_primary','cir_danger','cir_primary','cir_danger','cir_primary','cir_success'], afte_color: ['cir_danger','cir_danger','','cir_danger','cir_primary','']},
+        {cate_no:19, item_no:4, img_src:'hep_pan2', name:'박요한 교수', medi_con:'간담췌외과', medi_his_con:'서울아산병원 전임의', one_speci_con:'감암, 담도암, 담낭암, 췌장암, 담석증, 담낭용종, 복강경, 담낭수술, 간이식', morn_schedule:['수술/검사','수술/검사','수술/검사','진료','수술/검사','문의'], afte_schedule:['진료','진료','진료','','수술/검사',''], morn_color: ['cir_danger','cir_danger','cir_danger','cir_primary','cir_danger','cir_success'], afte_color: ['cir_primary','cir_primary','cir_primary','','cir_danger','']},
+        {cate_no:19, item_no:5, img_src:'hep_pan1', name:'이상엽 과장', medi_con:'간담췌외과', medi_his_con:'서울아산병원 간·담·췌외과 전문의', one_speci_con:'간담도췌외과 / 복강격수술 / 담도결석 치료 ERCP(내시경적 역행성 취담도관조영술) / 담도 결석 치료 복강경 담관 결석 제거', morn_schedule:['진료','수술/검사','진료','수술/검사','진료','문의'], afte_schedule:['수술/검사','수술/검사','','수술/검사','진료',''], morn_color: ['cir_primary','cir_danger','cir_primary','cir_danger','cir_primary','cir_success'], afte_color: ['cir_danger','cir_danger','','cir_danger','cir_primary','']},
         {cate_no:19, item_no:6, img_src:'surgical2', name:'김동헌 병원장', medi_con:'외과', medi_his_con:'제22대 부산대학교병원장 / 제14대 부산광역시 의료원장 / 제12대 부산보훈병원장', one_speci_con:'외과종양학 / 위장관외과 / 위암 / 위양성종양', morn_schedule:['','','','','',''], afte_schedule:['','','','진료','',''], morn_color: ['','','','','',''], afte_color: ['','','','cir_primary','','']},
         {cate_no:19, item_no:7, img_src:'surgical3', name:'최필조 센터장', medi_con:'흉부외과', medi_his_con:'동아대학교 의과대학 흉부외과 주임교수', one_speci_con:'폐암수술/폐, 흉부종양의 흉강 내시경 수술/다한증 수술 및 비수술적 치료/기흉/하지 정맥류 누두흉(오목가슴) 등의 흉벽기형', morn_schedule:['진료','수술/검사','진료','수술/검사','수술/검사','문의'], afte_schedule:['진료','수술/검사','','수술/검사','진료',''], morn_color: ['cir_primary','cir_danger','cir_primary','cir_danger','cir_danger','cir_success'], afte_color: ['cir_primary','cir_danger','','cir_danger','cir_primary','']},
         {cate_no:19, item_no:8, img_src:'surgical4', name:'주재우 과장', medi_con:'외과', medi_his_con:'부산삼육병원 외과 과장', one_speci_con:'위암 / 대장암 / 복강경 내시경 수술 / 화상', morn_schedule:['진료','진료','진료','진료','진료','문의'], afte_schedule:['진료','진료','','진료','진료',''], morn_color: ['cir_primary','cir_primary','cir_primary','cir_primary','cir_primary','cir_success'], afte_color: ['cir_primary','cir_primary','','cir_primary','cir_primary','']}
@@ -170,7 +170,11 @@ const DOCTOR = [
     ],
     [
         // 29번 묵음 : 의료진소개 (욕창클리닉)
-        {cate_no:29, item_no:1, img_src:'fam_medi2', name:'한봉주 원장', medi_con:'성형센터', medi_his_con:'인제대 의과대학 성형외과 외래교수', one_speci_con:'눈·코 지방이식수술 / 욕창치료', morn_schedule:['수술/검사','진료','수술/검사','진료','수술/검사','문의'], afte_schedule:['수술/검사','진료','문의','진료','진료',''], morn_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','cir_success',], afte_color: ['cir_danger','cir_primary','cir_success','cir_primary','cir_primary','']},
+        {cate_no:29, item_no:1, img_src:'plastic_surgery2', name:'한봉주 원장', medi_con:'성형센터', medi_his_con:'인제대 의과대학 성형외과 외래교수', one_speci_con:'눈·코 지방이식수술 / 욕창치료', morn_schedule:['수술/검사','진료','수술/검사','진료','수술/검사','문의'], afte_schedule:['수술/검사','진료','문의','진료','진료',''], morn_color: ['cir_danger','cir_primary','cir_danger','cir_primary','cir_danger','cir_success',], afte_color: ['cir_danger','cir_primary','cir_success','cir_primary','cir_primary','']},
+    ],
+    [
+        // 30번 묵음 : 재활의학과
+        {cate_no:30, item_no:1, img_src:'rehabilitation_medicine', name:'조정미 과장', medi_con:'재활의학과', medi_his_con:'삼성서울병원 재활의학과 전공의', one_speci_con:'뇌졸중 및 외상성 뇌손상 재활 / 척수손상 재활 근골격계질환 / 근전도검사 / 연하검사', morn_schedule:['진료','진료','진료','진료','진료','문의'], afte_schedule:['진료','수술/검사','진료','수술/검사','진료',''], note: '▶ 토요일: 2, 4주 진료 (5주째 토요일 격월 정기휴진,☎문의) ', morn_color: ['cir_primary','cir_primary','cir_primary','cir_primary','cir_primary','cir_success',], afte_color: ['cir_primary','cir_danger','cir_primary','cir_danger','cir_primary','']},
     ],
 
 ]
@@ -184,10 +188,10 @@ const DOC_TITLE = [
         {cate_no:0, item_no:3, title: '간담췌외과', content: '간, 담도 및 췌장에 생기는 양성 질환(간내결석, 담낭결석 등등) 및 악성 질환에 대한 수술적 치료 및 보존적 치료를 담당하는 분야입니다. 간담췌암에 대한 치료로 지역 선도의 다학제적 접근에 의한 치료를 시행하고 있으며 복강경 간절제 및 췌담도 수술을 시행하고 있습니다. 또한 말기 간질환환자에 대한 간이식수술을 시행하고 있습니다.' },
         // {cate_no:0, item_no:101, title: '간센터', content: '' },
         // {cate_no:0, item_no:102, title: '관절·척추 센터', content: '' },
-        // {cate_no:0, item_no:103, title: '기억력개선 치매 클리닉', content: '뇌와 척수(중추신경), 말초신경 및 근육에 발생하는 질환을 진단하고 치료하며 치매클리닉, 간질 클리닉, 뇌졸중 클리닉, 말초신경 및 근육질환 클리닉 등 전문 클리닉과 신경심리검사실, 뇌파검사실, 근전도검사실 등 특수검사실을 운영하여 보다 전문적인 진료와 치료에 최선을 다하고 있습니다.' },
+        // {cate_no:0, item_no:103, title: '기억력개선 치매 클리닉', - },  신경과
         {cate_no:0, item_no:4, title: '내과', content: '주로 감염증 ·순환기질환 ·신경계질환 ·소화기계질환 ·혈액질환 ·호흡기질환 ·내분비선질환 ·비뇨기질환 ·알레르기성질환 ·신진대사질환 ·중독 등을 진료하며, 온종합병원 내과는 일반내과, 내분비내과, 소화기내과, 신장내과, 심장내과, 혈액종양내과 . 호흡기내과 등 각 영역별 진료를 시행합니다.' },
         {cate_no:0, item_no:5, title: '내분비 내과', content: '당뇨병, 갑상선질환, 고지혈증, 골다공증 및 골대사질환, 비만, 뇌하수체 및 부신 질환,성장장애 등 우리 몸의 내분비기관 및 이들이 만들어내는 주요호르몬과 관련된 각종 대사질환 및 내분비기관의 양성종양 등의 조기발견 및 진단과 치료를 위해 최고의 내분비대사내과 전문의에 의한 전문진료서비스를 실시하고 있습니다.' },
-        // {cate_no:0, item_no:104, title: '두통클리닉', content: '' },
+        // {cate_no:0, item_no:104, title: '두통클리닉', content: '' },  신경과
         {cate_no:0, item_no:6, title: '마취통증의학과', content: '환자를 먼저 생각하는 세심하고 안전한 마취를 통해 수술환자 마취와 중환자 관리, 응급처치, 호흡관리, 통증관리 등을 전문적으로 하고 있습니다.' },
         {cate_no:0, item_no:7, title: '방사선종양학과', content: '방사선을 이용하여 암을 치료하는 임상의학의 한 분야로서 수술, 항암화학요법과 함께 종양치료에서 핵심적인 역할을 하는 방사선치료를 담당하고 있습니다.' },
         {cate_no:0, item_no:8, title: '비뇨의학과', content: '남성의 비뇨기관 및 생식기질환, 성기능장애 및 불임, 여성과 소아의 비뇨기계에 대한 진료, 요로결석에 대한 체외충격파쇄석술을 시행하고 있습니다. 비뇨의학과는 비뇨기 종양, 신장이식, 남성의학(성기능 장애, 남성불임), 소아비뇨기학, 여성비뇨기학, 배뇨장애, 내비뇨기학 등을 다룹니다.' },
@@ -205,13 +209,13 @@ const DOC_TITLE = [
         {cate_no:0, item_no:16, title: '심장내과', content: '심장 및 혈관질환에 대한 질병을 진단하고 치료하는 내과로 관상동맥질환(협심증, 심근경색, 급사 등), 고혈압, 판막질환, 부정맥 등의 질병을 진료하고 있으며 양질의 전문적인 진료, 환자 중심의 진료, 신속하고 효과적인 진료가 체계적으로 전달되도록 노력하고 있습니다.' },
         {cate_no:0, item_no:17, title: '안과', content: '협력병원인 정말 근사한 정근안과병원과 연계하여 안과질환의 적극적인 치료를 제공하고 있습니다. 최신 최첨단 장비와 전문의료진으로 구성된 정말 근사한 정근안과에서는 각종 안과질환에 대한 검사 및 진단에 필요한 장비를 갖추고 전문적인 진료로 최선의 의료서비스를 제공하고 있습니다. 특히, 꿈의 시력교정술인 5초 라식(옵티에피라식)을 비롯해 , 눈물관 수술(눈물흘림), 백내장(초음파,레이저) 수술, 색맹클리닉(이노말로스코프), 안성형(쌍꺼풀, 안검내반)수술클리닉, 콘텍트렌즈 클리닉 등 안질환의 전문적인 치료를 시행합니다.' },
         {cate_no:0, item_no:18, title: '이비인후과', content: '이비인후과는 크게 귀 질환과 코 질환, 두경부 질환을 다루며 외이도염, 중이염, 내이염 등과 같은 다양한 염증성 질환에서부터 이명, 난청, 어지럼, 안면신경마비나 종양성 질환, 축농증(부비동염), 알레르기성 비염, 비중격만곡증, 코골이 및 수면무호흡 등을 다룹니다.' },
-        // {cate_no:0, item_no:109, title: '여성암센터', content: '' },
+        // {cate_no:0, item_no:109, title: '여성암센터', content: '' },  산부인과
         {cate_no:0, item_no:19, title: '영상의학과', content: '영상의학과는 방사선 및 자기, 초음파를 이용하여 진단과 치료를 담당하며 본원의 영상의학과는 새로운 의료영상기기를 이용한 다양한 진단과정과 중재적 시술을 통해, 환자의 진단과 치료에 중대한 역할을 수행하고 있습니다. 본원에서는 특수촬영(위장관조영, 경정맥 신우조영술, 배뇨성요도 방광조영술, 자궁난관조영술, 유방촬영, 관절조영, 혈관촬영 등), 초음파촬영, 전신전산화 단층촬영(CT), 자기공명영상 촬영(MRI), 치과용 X-선 촬영, 골다공증 검사 등과 최신 진단 장비를 가동하고 있습니다.' },
         {cate_no:0, item_no:20, title: '외과', content: '주로 수술로 기형 ·외상 ·염증 ·종양(腫瘍) 등을 진료하며, 상부위장관, 간담도계, 대장항문학, 갑상선 및 기타두경부외과, 유방외과, 소아외과 등 각 영역별 진료를 시행합니다. 온 종합병원 외과는 최신 의료 장비를 갖추고 가장 안전하고 확실한 외과 질환의 치료를 시행하고 있습니다.' },
         // {cate_no:0, item_no:110, title: '유방암·갑상선암센터', content: '' },
         {cate_no:0, item_no:21, title: '응급의학과', content: '응급의학과는 즉각적인 의학적 주의가 필요한 급성 질환이나 손상의 치료를 시행하고 있습니다. 온 종합병원 응급의학과는 지역응급의료기관으로서 보건복지부 평가 1등을 차지한 바 있으며 지역에서 응급환자 발생시 무엇보다 신속하고 전문적인 처치와 치료를 시행하고 있습니다.' },
         // {cate_no:0, item_no:111, title: '인공 신장센터', content: '' },
-        // {cate_no:0, item_no:112, title: '인지발달 증진센터', content: '' },
+        // {cate_no:0, item_no:112, title: '인지발달 증진센터', content: '' },  정신건강의학과
         // {cate_no:0, item_no:113, title: '재활 치료센터', content: '' },
         // {cate_no:0, item_no:114, title: '전립선 암셈터', content: '' },
         {cate_no:0, item_no:22, title: '정신건강의학과', content: '정신건강 전문클리닉을 운영하여 스트레스, 불안장애, 우울증을 비롯하여 정신장애, 수면장애, 노인성 정신질환, 정신분열증 등의 주요 정신병 및 기질적 정신 장애를 포함해 소아청소년정신건강의학과를 전문으로 화병센터 등 특화된 진료를 시행하고 있습니다.' },
@@ -226,6 +230,7 @@ const DOC_TITLE = [
         // {cate_no:0, item_no:117, title: '화상클리닉', content: '' },
          // {cate_no:0, item_no:118, title: '항암방사선치료센터', content: '' },
         {cate_no:0, item_no:29, title: '흉부외과', content: '인체 중 흉부, 즉 가슴에 위치하는 심장, 폐, 기관, 식도, 대동맥 등 생명 유지에 기본이 되는 중요 장기의 질환과 흉벽, 종격동, 횡격막, 늑막 등에서 발생된 질환을 진단하고 치료하는 전문 진료 분과로 다양한 혈관 질환에 대한 진료도 담당하고 있으며 양질의 전문적인 진료, 환자 중심의 진료, 신속하고 효과적인 진료가 체계적으로 전달되도록 노력하고 있습니다.' },
-        {cate_no:0, item_no:30, title: '의료진소개', content: '' }
+        {cate_no:0, item_no:30, title: '의료진소개', content: '' },
+        {cate_no:0, item_no:31, title: '재활의학과', content: '장애나 질환을 가진 사람을 가능한 정상에 가깝게 기능을 회복시키고 사회에 복귀 하도록 하여 살 가치가 있는 생명으로 만들어 줍니다. 온 종합병원 재활의학과는 척수손상재활, 뇌졸중 및 외상성 뇌손상재활, 절단재활, 통증 및 스포츠 재활, 노인재활 등의 진료분야로 심신이 불편한 환자분들을 진료하는데 최선을 다하고 있습니다.' }
     ]
 ]

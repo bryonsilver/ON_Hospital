@@ -89,6 +89,7 @@
 
 .c_right_box {
     padding-left: 15px;
+    width: 75%;
 }
 .cr_top_box {
     padding: 10px;
@@ -103,20 +104,35 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
     color: #666;
 }
 .top_first {
     display: inline-block;
-    width: 21%;
+    width: calc(100% / 6);
     padding-bottom: 6px;
 }
 .top_con {
     display: inline-block;
-    width: 24%;
+    width: calc(100% / 4);
     padding-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 30px;
 }
 .width {
     width: 73%;
+}
+.cr_dd2,
+.cr_dd {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.one_doctor_box > div {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f3f3f3;
 }
 
 /* cr_center_box */
@@ -201,19 +217,33 @@
 
 @media (max-width: 1200px) {
     #mid {max-width: 960px;}
-    .c_left_box {width: 35%;}
-    .c_right_box {width: 75%;}
+    .content_box {
+        display: flex;
+        justify-content: center;
+    }
+    .c_left_box {width: 25%;}
+    .c_right_box {width: 55%;}
     .top_first  {width: 17%;}
     .bottom_table > tbody th {width: 70px;}
     .text_ex_box {padding: 10px 10px;}
+    .center_banner a {display: flex; justify-content: center;}
+    .medi_banner {width: 80%;}
+    .bottom_table > tbody th, .bottom_table > thead th, .bottom_table > tbody td {padding: 12px 5px;}
+    .top_title_box {width: 80%; margin: auto;}
 }
 @media (max-width: 991px) {
     #mid {max-width: 720px;}
     .c_left_box {width: 25%;}
     .bottom_table > tbody th {width: 40px;}
+    
+}
+@media (max-width: 800px) {
+    .c_right_box {width: 65%;}
+    .top_title_box, .medi_banner {width: 90%;}
 }
 @media (max-width: 767px) {
     #mid {max-width: 540px;}
+    .one_doctor_box {width: 80%; margin: auto;}
     .content_box {flex-direction: column;}
     .c_left_box {width: 100%;}
     .c_right_box {width: 100%; padding-left: 0;}
@@ -221,6 +251,8 @@
     .top_con {width: 66.66666667%; margin: 0;}
     .top_first {width: 33.33333333%;}
     .top_dl {margin: 0;}
+    .cr_dd2, .cr_dd {flex-wrap: wrap;}
+    .top_title_box, .medi_banner {width: 80%;}
 }
 @media (max-width: 575px) {
     #mid {
@@ -240,6 +272,7 @@
         padding: 0 20px;
         box-sizing: border-box;
     }
+    .bottom_table > tbody th, .bottom_table > thead th, .bottom_table > tbody td {padding: 12px 10px;}
 }
 @media (max-width: 530px) {
     .cr_bot {width: 100%; overflow: auto;}
@@ -258,4 +291,6 @@
         background: rgba(244, 68, 33, 0.1); /*  rgba(33, 122, 244, .1)*/
     }
     .text_ex_box {font-size: 14px; gap: 10px;}
+    .circle {width: 14px; height: 14px;}
+    .text_ex_box span {font-size: 13px;}
 }
