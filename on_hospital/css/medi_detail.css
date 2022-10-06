@@ -1,6 +1,4 @@
-.border  {
-    border-top: 1px solid #ddd;
-}
+
 .swiper_box4 {
     padding: 15px 0;
 }
@@ -273,6 +271,9 @@
         box-sizing: border-box;
     }
     .bottom_table > tbody th, .bottom_table > thead th, .bottom_table > tbody td {padding: 12px 10px;}
+    .cr_center_box > iframe {
+        height: 350px;
+    }
 }
 @media (max-width: 530px) {
     .cr_bot {width: 100%; overflow: auto;}
@@ -293,4 +294,10 @@
     .text_ex_box {font-size: 14px; gap: 10px;}
     .circle {width: 14px; height: 14px;}
     .text_ex_box span {font-size: 13px;}
+}
+
+@media (max-width: 300px) {
+    .cr_center_box > iframe {
+        height: 200px;
+    }
 }

@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>온종합병원 그룹 - 진료과ㆍ의료진</title>
+    <title>온종합병원 그릅 - 전문센터</title>
 
     <link rel="stylesheet" href="./css/comon.css">
-    <link rel="stylesheet" href="./css/medi_depart.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/medi_center.css">
 
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script defer src="./js/common.js"></script>
-    <script defer src="./js/medi_depart.js"></script>
+    <script defer src="./js/doctor_list.js"></script>
+    <script src="./js/medi_center.js"></script>
+    <!-- <script defer src="./js/medi_detail.js"></script> -->
     <script defer src="./js/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./js/google.js"></script>
-
+    
 </head>
 <body>
     <div class="wrap">
@@ -127,6 +129,7 @@
                 <img src="./img/common/top.png" alt="top_btn_img" class="top_btn">
             </div>
         </div>
+
         <div class="header">
             <div class="h_fixed">
                 <div class="container h_flex">
@@ -360,507 +363,254 @@
         </div>
 
         <div class="main">
-            <div class="container rad_container">
-                <div class="title_box">
-                    <div class="img_box"></div>
-                    <h1 class="title">진료과/의료진</h1>
-                </div>
-                <div class="radio_tab">
-                    <div class="input_box">
-                        <div class="rt1_box">
-                            <input type="radio" name="ra_tab" id="rt1" value="basic" checked>
-                            <label for="rt1">
-                                <div class="rt_circle"><div class="rt_c_cir"></div></div>
-                                <span>기본</span>
-                            </label>
+            <div class="main_center">
+                <div class="container">
+                    <div class="main_flex">
+                        <div class="m_left">
+                            <div class="m_l_aside">
+                                <h4 class="ml_pic">
+                                    <span>전문센터</span>
+                                </h4>
+                                <ul class="ml_ul">
+                                    <li class="ml_li active" id="m_li">
+                                        <a href="./medi_center.html">소화기암수술센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">호스피스완화의료병동</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">심뇌혈관센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">소화기내시경센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">인공신장센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">척추관절센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">재활치료센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">신경센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">소아청소년 정신건강센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">턱얼굴수술센터(양악센터)</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">유방ㆍ갑상선암 센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">대장항문센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">전립선ㆍ배뇨장애 센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">간센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">췌장담도센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">인터벤션센터(중재시술)</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">항암방사선치료센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">폐암수술센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">알레르기 센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">암재활프로그램</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">여성암센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">유방암센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">응급의료센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">장례식장</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">전립선암센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">호흡기센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">초음파진단센터</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">간담췌센터 위·대장암</a>
+                                    </li>
+                                    <li class="ml_li" id="m_li">
+                                        <a href="./medi_center.html">감염센터</a>
+                                    </li>
+                                </ul>
+                                <form id="frm" method="get" action="">
+                                    <input type="hidden" name="pageName" id="pageName">
+                                </form>
+                            </div>
                         </div>
-                        <div class="rt2_box">
-                            <input type="radio" name="ra_tab" id="rt2" value="abc">
-                            <label for="rt2">
-                                <div class="rt_circle"><div class="rt_c_cir"></div></div>
-                                <span>가나다순</span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="radio_tab_box1" id="rt_1_box">
-                        <div class="rt_box">
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=19"><h5>외과</h5></a>
+                        <div class="m_right">
+                            <div class="m_select_nav_box">
+                                <div class="submenu_box">
+                                    <select name="select_s" id="select_id" class="select_class">
+                                        <option value="./medi_center">전문센터</option>
+                                        <option value="./medi_center">- 소화기암수술센터</option>
+                                        <option value="./medi_center">- 호스피스완화의료병동</option>
+                                        <option value="./medi_center">- 심뇌혈관센터</option>
+                                        <option value="./medi_center">- 소화기내신경센터</option>
+                                        <option value="./medi_center">- 인공신장센터</option>
+                                        <option value="./medi_center">- 척추관절센터</option>
+                                        <option value="./medi_center">- 재활치료센터</option>
+                                        <option value="./medi_center">- 신경센터</option>
+                                        <option value="./medi_center">- 소아청소년 정신건강센터</option>
+                                        <option value="./medi_center">- 턱얼굴수술센터(양악센터)</option>
+                                        <option value="./medi_center">- 유방ㆍ갑상선암</option>
+                                        <option value="./medi_center">- 대장항문센터</option>
+                                        <option value="./medi_center">- 전립선ㆍ배뇨장애</option>
+                                        <option value="./medi_center">- 간센터</option>
+                                        <option value="./medi_center">- 췌장담도센터</option>
+                                        <option value="./medi_center">- 인터벤션센터(중재시술)</option>
+                                        <option value="./medi_center">- 항암방사선치료센터</option>
+                                        <option value="./medi_center">- 폐암수술센터</option>
+                                        <option value="./medi_center">- 알레르기 센터</option>
+                                        <option value="./medi_center">- 암재활프로그램</option>
+                                        <option value="./medi_center">- 여성암센터</option>
+                                        <option value="./medi_center">- 유방암센터</option>
+                                        <option value="./medi_center">- 응급의료센터</option>
+                                        <option value="./medi_center">- 장례식장</option>
+                                        <option value="./medi_center">- 전립선암센터</option>
+                                        <option value="./medi_center">- 호흡기센터</option>
+                                        <option value="./medi_center">- 초음파진단센터</option>
+                                        <option value="./medi_center">- 간담췌센터 위·대장암</option>
+                                        <option value="./medi_center">- 감염센터</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=2"><h5>간담췌외과</h5></a>
+                            <div class="m_r_content_box">
+                                <div class="mr_title">
+                                    <h1 class="mr_page_title">
+                                        <span class="title_icon"></span> 소화기암수술센터
+                                    </h1>
                                 </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=23"><h5>췌장담도내과</h5></a>
+                                <div class="mr_img">
+                                    <div class="box_img"></div>
                                 </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=13"><h5>신경외과</h5></a>
+                                <div class="mr_content">
+                                    <div class="mr_c_box">
+                                        <div class="mr_c_title">간·담·췌외과</div>
+                                        <div class="mr_c_content">
+                                            <span>외과영역중 가장 어려운 분야인 간, 담도계, 쓸개, 췌장 및 비장등의 장기에 발생하는 질환을 치료</span>
+                                            <span>박광민 교수 간·담·췌 수술 "1만례 성공"</span>
+                                        </div>
+                                        <div class="mr_c_ect">
+                                            <span class="ect_icon"></span> 051) 607-0707
+                                        </div>
+                                    </div>
+                                    <div class="mr_c_box">
+                                        <div class="mr_c_title">외과</div>
+                                        <div class="mr_c_content">
+                                            <span>위암, 대장암, 직장, 항문 대장질환 전문 진료</span>
+                                        </div>
+                                        <div class="mr_c_ect">
+                                            <span class="ect_icon"></span> 051) 607-0230
+                                        </div>
+                                    </div>
+                                    <div class="mr_c_box">
+                                        <div class="mr_c_title">소화기내과 내시경센터</div>
+                                        <div class="mr_c_content mr_special">
+                                            <span>■ 위·대장내시경클리닉</span>
+                                            <span>■ 간·췌담도클리닉</span>
+                                            <span>가장 높은 사양 선명한 화질을 자랑하는 올림푸츠 CV290장비 사용</span>
+                                        </div>
+                                        <div class="mr_c_ect">
+                                            <span class="ect_icon"></span> 051) 607-0244,0257
+                                        </div>
+                                    </div>
+                                    <div class="mr_c_box">
+                                        <div class="mr_c_content">
+                                            <span>
+                                                <span class="list_icon"></span>
+                                                <span>대학병원급 최고 의료·첨단시설</span>
+                                            </span>
+                                            <span>
+                                                <span class="list_icon"></span>
+                                                <span>용종발견 즉시, 수술·입원 원스톱서비스</span>
+                                            </span>
+                                            <span>
+                                                <span class="list_icon"></span>
+                                                <span>위·대장내시경 원하는 날짜에 예약가능</span>
+                                            </span>
+                                            <span>
+                                                <span class="list_icon"></span>
+                                                <span>검사 즉시 결과 설명</span>
+                                            </span>
+                                            <span>
+                                                <span class="list_icon"></span>
+                                                <span>간·췌담도(ERCP) 전문시술</span>
+                                            </span>
+                                            <span>
+                                                <span class="list_icon"></span>
+                                                <span>내시경장비 초음파 미세소독</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="mr_c_box">
+                                        <div class="mr_title">센터 의료진 소개</div>
+                                        <div class="mr_cb_content">
+                                            <div class="mr_doc_n">
+                                                <a href="#">김동헌 병원장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">박광민 의무원장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">이상엽 과장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">김연우 과장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">박철우 과장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">은명 과장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">주재우 과장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">고상화 과장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">박은택 센터장</a>
+                                            </div>
+                                            <div class="mr_doc_n">
+                                                <a href="#">한상영 센터장</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=22"><h5>정형외과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=27"><h5>흉부외과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=3"><h5>내과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=4"><h5>내분비내과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=11"><h5>소화기내과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=14"><h5>신장내과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=15"><h5>심장내과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=26"><h5>혈액종양내과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=27"><h5>호흡기내과</h5></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="rt_box">
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=0"><h5>가정의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=5"><h5>마취통증의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=6"><h5>방사선종양학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=7"><h5>비뇨의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=8"><h5>산부인과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=9"><h5>성형외과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=10"><h5>소아청소년과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=12"><h5>신경과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=18"><h5>영상의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=20"><h5>응급의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=17"><h5>이비인후과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=30"><h5>재활의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=21"><h5>정신건강의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=23"><h5>진담검사의학과</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=25"><h5>치과</h5></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row_line"></div>
-                        <div class="rt_box">
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=100"><h5>간센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=1"><h5>검진센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=101"><h5>관절ㆍ척추센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=9"><h5>성형센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=105"><h5>소화기 암수술센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=106"><h5>소화기내과 내신경센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=107"><h5>심ㆍ뇌혈관센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=108"><h5>여성암센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=109"><h5>유방암ㆍ갑상선암센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=110"><h5>인공신장센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=21"><h5>인지발달 증진센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=112"><h5>재활치료센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=113"><h5>전립선암센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=114"><h5>턱얼굴수술센터</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?cen_v=117"><h5>항암방사선치료센터</h5></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row_line"></div>
-                        <div class="rt_box">
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=12"><h5>기억력개선 치매클리닉</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=12"><h5>두통클리닉</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html?value=29"><h5>욕창클리닉</h5></a>
-                                </div>
-                            </div>
-                            <div class="rt_basic_box">
-                                <div class="rt_b_box">
-                                    <a href="./medi_detail.html"><h5>화상클리닉</h5></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="radio_tab_box2" id="rt_2_box">
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=0"><h5>가정의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=1"><h5>가정의학과 검진센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=2"><h5>간담췌외과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=100"><h5>간센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=101"><h5>관절ㆍ척추센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=102"><h5>기억력개선 치매 클리닉</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=4"><h5>내분비 내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=103"><h5>두통클리닉</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=5"><h5>마취통증의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=6"><h5>방사선종양학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=7"><h5>비뇨의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=104"><h5>비만클리닉</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=8"><h5>산부인과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=9"><h5>성형센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=10"><h5>소아청소년과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=11"><h5>소화기 내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=105"><h5>소화기 암수술센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=106"><h5>소화기내과 내신경센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=12"><h5>신경과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=13"><h5>신경외과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=14"><h5>신장내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=107"><h5>심ㆍ뇌혈관센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=15"><h5>심장내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=16"><h5>안과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=17"><h5>이비인후과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=8"><h5>여성암센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=18"><h5>영상의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=19"><h5>외과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=109"><h5>유방암ㆍ갑상선암센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=20"><h5>응급의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=110"><h5>인공 신장내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=111"><h5>인지발달 증진센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=112"><h5>재활 치료센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=113"><h5>전립선 암센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=21"><h5>정신건강의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=22"><h5>정형외과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=23"><h5>진단검사의학과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=24"><h5>췌장담도내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=25"><h5>치과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=114"><h5>턱얼굴수술 센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=115"><h5>페암 수술센터</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=26"><h5>혈액종양내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=27"><h5>호흡기 내과</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?cen_v=116"><h5>화상클리닉</h5></a>
-                            </div>
-                        </div>
-                        <div class="rt_abc_box">
-                            <div class="rt_a_box">
-                                <a href="./medi_detail.html?value=28"><h5>흉부외과</h5></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
 
             <div class="border"></div>
             <div class="swiper_box4 cooperaiton container">
