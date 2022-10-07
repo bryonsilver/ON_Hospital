@@ -1,0 +1,113 @@
+body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;}
+.one_doctor_box {border-bottom: none;}
+.mv_ul {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+}
+.mv_li {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #fff;
+    box-sizing: border-box; 
+    color: #0d6efd;
+}
+.mv_li >a {
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    display: block;
+   
+    line-height: 52px;
+    padding: 0 55px;
+}
+.active {
+    border: 1px solid #dee2e6 !important;
+    font-weight: bold;
+    color: rgb(29,90,40);
+}
+
+
+.tab_pan {
+    padding: 24px 0 48px 0;
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    font-size: 15px;
+    font-weight: 300;
+}
+.pan3,
+.pan2 {
+    display: none;
+}
+.none {display: none;}
+.block {
+    display: flex;
+}
+
+
+.back_btn {
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.rounded {
+    padding: 10px 35px;
+    height: auto !important;
+    background-color: #f15f31;
+    color: #fff !important;
+    text-shadow: 0 0 0;
+    border-radius: 5px !important;
+}
+
+
+@media (max-width: 1200px) {
+    .more_view_box > .container {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .more_view_box > .container {
+        max-width: 800px;
+    }
+}
+@media (max-width: 900px) {
+    .more_view_box > .container {
+        max-width: 700px;
+    }
+}
+@media (max-width: 767px) {
+    .more_view_box > .container {
+        max-width: 600px;
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 600px) {
+    .mv_li >a {
+        padding: 0 40px;
+    }
+}
+@media (max-width: 500px) {
+    .mv_li >a {
+        padding: 0 30px;
+    }
+    .more_view_box > .container {
+        padding: 0 30px;
+    }
+}
+@media (max-width: 400px) {
+    .mv_ul {gap: 10px; border: none;}
+    .mv_li {width: 100%;
+        }
+    .mv_li >a {
+        width: 100%; 
+        box-sizing: border-box; 
+        text-align: center;  
+        background-color: #f8f8f8;
+    }
+}
