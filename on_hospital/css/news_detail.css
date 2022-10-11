@@ -1,5 +1,8 @@
 body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif ;}
 
+.m_left {
+    height: auto!important;
+}
 .mr_title_box {
     display: flex;
     flex-direction: column;
