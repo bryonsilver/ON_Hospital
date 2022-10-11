@@ -1,0 +1,111 @@
+.main_center {
+    width: 100%;
+}
+.main_flex {
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    padding-top: 50px;
+}
+.m_left {
+    width: 22%;
+    height: 2128px;
+}
+.m_right {
+    width: 80%;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+}
+
+
+
+.ml_pic {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    background: url(../img/medi_center/side-img.jpg) center/cover;
+    text-align: start;
+    position: relative;
+}
+.ml_pic > span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 150px;
+    margin-left: 20px;
+    position: relative;
+    z-index: 99;
+}
+.ml_pic::after {
+    content: "";
+    width: 100%;
+    height: 150px;
+    background-color: #0002;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+}
+
+
+.m_l_aside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ml_ul {
+    height: 100%;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom: none;
+    background-color: #fff;
+}
+.ml_li > a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+.ml_li:nth-of-type(29) > a {
+    border-bottom: none;
+}
+.ml_li:hover {color: #eb5f22;}
+.active {
+    background: #eb5f22;
+    color: #fff;
+    pointer-events: none;
+}
+
+@media (max-width: 1300px) {
+    .main_center > .container {
+        max-width: 1100px;
+    }
+}
+@media (max-width: 1200px) {
+    .main_center > .container {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1150px) {
+    .m_right {width: 100% !important;}
+    .main_flex {gap: 0; justify-content: center;}
+    .main_center > .container {
+        max-width: 720px;
+    }
+    .m_left {display: none;}
+}
+@media (max-width: 767px) {
+    .main_center > .container {
+        max-width: 540px;
+    }
+}
+@media (max-width: 576px) {
+    .main_center > .container {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+}
