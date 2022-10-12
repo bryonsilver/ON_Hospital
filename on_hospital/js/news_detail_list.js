@@ -1,26 +1,26 @@
 const NEWS_DETAIL = [
     // 공지사항
     [
-        {cate_no:0, item_no:1, title:'[진료 안내] 10월 진료 일정 안내(2022년 개천절, 한글날)', date:['2022,09,16','(11:17:32)'], writer:'온그룹의료재단온종합병원', const:['10월 3일(월) 개천절은',', 10월 10일(월) 한글날은 ', '만 진행하니 진료에 착오 없으시길 바랍니다.', '단, ', '[※ 응급의료센터: 051) 607-0119]'], danger:['휴진'], danger2:'오전 진료' , danger3:'온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.' ,img_src:'notice_19.jpg'}
+        {cate_no:0, item_no:1, title:'test5', date:['2022,09,16','(11:17:32)'], writer:'온그룹의료재단온종합병원', const:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',img_src:'notice_19.jpg'}
     ],
     // 기타소식
     [
-        {cate_no:1, item_no:1, title:'호스피스 자원봉사자 교육 및 실습과정 수장 신청', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:[''], img_src:'news_ext_19.jpg'}
+        {cate_no:1, item_no:1, title:'test5', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:'', img_src:'news_ext_19.jpg'}
     ],
     // 언론보도
     [
-        {cate_no:2, item_no:1, title:'호스피스 자원봉사자 교육 및 실습과정 수장 신청', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const_title:'결혼, 취업 등 질문 가급적 안하는 것이 좋아' ,const_media:['곧 있으면 추석이다. 누군가는 명절을 떠올리면 친지 가족이 모여 안부도 전하고 조상님들께 제사도 지내는 훈훈한 모습을 생각하기도 한다. 그러나 명절이 마냥 반갑지 않은 이들도 있다. 이처럼 명절을 전후로 과도한 스트레스로 인해 다양한 정신적 또는 육체적 증상을 겪는 데 이것을 ‘명절증후군’이라고 한다.', '초기 코로나19가 창궐했을 때는 정부 차원에서 거리두기 정책 시행 등으로 전파를 막기 위해 귀향, 귀성을 자제했지만, 지금은 코로나와 공존하고 있어 올 추석은 전년보다 고향을 찾는 이들이 늘어날 전망이다. 따라서 그만큼 스트레스 상황을 겪을 가능성도 커졌다.', '결혼과 취업 관련해 질문 세례를 받기도 하고, 형제·자매간의 갈등, 고부갈등, 장서갈등이 불거진다. 귀성을 위한 장시간의 운전과 가사노동으로 인한 육체적 피로 역시 스트레스에 한몫 한다. 성 차별은 예전에 비해 많이 나아졌다. 하지만 여성의 경우 시댁에서의 차별대우 역시 스트레스 요인이다.', '스트레스 정도가 참을 수 있는 단계를 벗어나 더욱 심해져 ‘화병’으로 진화되면 명절 연휴가 시작되기 전부터 앓기 시작한다. 명절 전 어지러움증, 두통, 현기증, 소화불량, 복통, 심장 두근거림, 피로감, 무기력감 등의 증상이 나타나는데, 우울증과 비슷한 정신적 고통과 허리디스크, 관절염 등의 신체적 고통이 함께 나타난다.', '온종합병원 정신건강의학과 이수진 과장(정신건강전문의)은 “명절증후군을 예방하기 위해서는 내가 참고 견디면 괜찮아질 것이라는 생각에서 벗어나야 한다. 서로 진솔한 대화를 통해 문제를 해결하도록 노력해야 한다”며 대화의 중요성에 대해 설명했다.', '명절이 끝난 후 이혼 신청률이 높다는 연구 결과가 있다. 주부의 경우 명절 연휴 내내 음식을 만들고 상 차리고, 치우고를 계속 반복하게 되는데, 여기에 대해 감사한 마음을 표현하지 않거나 이를 당연하다고 여긴다면 불만이 쌓이게 되고 어느 순간에 폭발하게 되는 것이다.', '이수진 과장은 건강한 명절을 보내기 위한 몇 가지 방법을 권유했다. 우선 가사일의 분배다. 이 과장은 “가족 구성원끼리 적당히 일을 나눠 하는 것이 좋다. 미리 역할을 정하고 분담하는 것이 좋고 가능하면 명절 행사를 간소화하는 것이 필요하다”고 강조했다.', '스트레스를 유발하는 상황 및 대화도 피해야 한다고 당부했다. 이 과장은 “서로 갈등을 일으킬 수 있는 대화를 피해야 한다. 진로, 취업, 결혼 등의 주제는 상대를 배려하여 꺼내지 않는 것이 좋다”고 설명했다.', '명절 연휴 때 ‘술’로 인해 사건사고가 많이 일어났던 만큼, 가급적 명절 연휴에는 음주를 하지 않는 것도 좋다. 추석 연휴가 끝나고 일상으로 다시 회복해야 하는 만큼, 추석 연휴 마지막 날은 자신만의 시간을 갖는 것이 필요하다. '], img_text:'정신건강의학과 이수진 과장. 사진=온종합병원 제공' , sources:['이혜림 부산/경남 기자 ilyo33@ilyo.co.kr', '출처: 일요신문(https://ilyo.co.kr/?ac=article_view&entry_id=436154)'] ,img_src:'news_ext_19.jpg'}
+        {cate_no:2, item_no:1, title:'test5', date:['2022.05.27','(18:52:37)'], writer:'온종합병원',context:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,img_src:'media_19.jpg'}
     ],
     // 채용정보
     [
-        {cate_no:3, item_no:1, title:'호스피스 자원봉사자 교육 및 실습과정 수장 신청', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:[''], img_src:'news_ext_1.jpg'}
+        {cate_no:3, item_no:1, title:'test5', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'], img_src:'re_1.png'}
     ],
     // 오늘의 식단
     [
-        {cate_no:4, item_no:1, title:'호스피스 자원봉사자 교육 및 실습과정 수장 신청', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:[''], img_src:'news_ext_1.jpg'}
+        {cate_no:4, item_no:1, title:'test5', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'], img_src:'diet_1.jpg'}
     ],
     // 자주묻는질문
     [
-        {cate_no:5, item_no:1, title:'호스피스 자원봉사자 교육 및 실습과정 수장 신청', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:[''], img_src:'news_ext_1.jpg'}
+        {cate_no:5, item_no:1, title:'test5', date:['2022.05.27','(18:52:37)'], writer:'온종합병원', const:['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'], img_src:''}
     ],
 ]
