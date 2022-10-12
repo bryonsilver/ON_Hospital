@@ -5,22 +5,16 @@ $(document).ready(function(){
     console.log(num)
 
     if (num == 0) {
-        console.log('공지사항')
         $('.notice').addClass('active')
     } else if (num == 1) {
-        console.log('기타소식')
         $('.ect').addClass('active')
     } else if (num == 2) {
-        console.log('언론보도')
         $('.media').addClass('active')
     } else if (num == 3) {
-        console.log('채용정보')
         $('.recruitment').addClass('active')
     } else if (num == 4) {
-        console.log('오늘의식단')
         $('.diet').addClass('active')
     } else if (num == 5) {
-        console.log('자주묻는 질문')
         $('.question').addClass('active')
     }
 
