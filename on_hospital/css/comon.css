@@ -488,6 +488,7 @@ iframe.goog-te-banner-frame { display: none !important; }
     left: 50%;
     transform: translateX(-50%);
     border-top: 3px solid #ED5929;
+    text-align: center;
 
     box-shadow: 0 12px 30px -2px rgb(0 0 0 / 10%);
 }
@@ -649,6 +650,7 @@ iframe.goog-te-banner-frame { display: none !important; }
 .bn_n_li {
     padding: 4px 0 ;
     box-sizing: border-box;
+    display: flex;
 }
 .bn_n_li::before {
     content: "/";

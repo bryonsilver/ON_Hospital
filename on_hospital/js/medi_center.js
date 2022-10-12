@@ -15,61 +15,61 @@ $(document).ready(function(){
     console.log(cen_v)
 
     if (cen_v == 0) {
-        $('.m1').addClass('active')
+        $('.m1').addClass('active');
     } else if (cen_v == 1) {
-        $('.m2').addClass('active')
+        $('.m2').addClass('active');
     } else if (cen_v == 2) {
-        $('.m3').addClass('active')
+        $('.m3').addClass('active');
     } else if (cen_v == 3) {
-        $('.m4').addClass('active')
+        $('.m4').addClass('active');
     } else if (cen_v == 4) {
-        $('.m5').addClass('active')
+        $('.m5').addClass('active');
     } else if (cen_v == 5) {
-        $('.m6').addClass('active')
+        $('.m6').addClass('active');
     } else if (cen_v == 6) {
-        $('.m7').addClass('active')
+        $('.m7').addClass('active');
     } else if (cen_v == 7) {
-        $('.m8').addClass('active')
+        $('.m8').addClass('active');
     } else if (cen_v == 8) {
-        $('.m9').addClass('active')
+        $('.m9').addClass('active');
     } else if (cen_v == 9) {
-        $('.m10').addClass('active')
+        $('.m10').addClass('active');
     } else if (cen_v == 10) {
-        $('.m11').addClass('active')
+        $('.m11').addClass('active');
     } else if (cen_v == 11) {
-        $('.m12').addClass('active')
+        $('.m12').addClass('active');
     } else if (cen_v == 12) {
-        $('.m13').addClass('active')
+        $('.m13').addClass('active');
     } else if (cen_v == 13) {
-        $('.m14').addClass('active')
+        $('.m14').addClass('active');
     } else if (cen_v == 14) {
-        $('.m15').addClass('active')
+        $('.m15').addClass('active');
     } else if (cen_v == 15) {
-        $('.m16').addClass('active')
+        $('.m16').addClass('active');
     } else if (cen_v == 16) {
-        $('.m17').addClass('active')
+        $('.m17').addClass('active');
     } else if (cen_v == 17) {
-        $('.m18').addClass('active')
+        $('.m18').addClass('active');
     } else if (cen_v == 18) {
-        $('.m19').addClass('active')
+        $('.m19').addClass('active');
     } else if (cen_v == 19) {
-        $('.m20').addClass('active')
+        $('.m20').addClass('active');
     } else if (cen_v == 20) {
-        $('.m21').addClass('active')
+        $('.m21').addClass('active');
     } else if (cen_v == 21) {
-        $('.m22').addClass('active')
+        $('.m22').addClass('active');
     } else if (cen_v == 22) {
-        $('.m23').addClass('active')
+        $('.m23').addClass('active');
     } else if (cen_v == 23) {
-        $('.m24').addClass('active')
+        $('.m24').addClass('active');
     } else if (cen_v == 24) {
-        $('.m25').addClass('active')
+        $('.m25').addClass('active');
     } else if (cen_v == 25) {
-        $('.m26').addClass('active')
+        $('.m26').addClass('active');
     } else if (cen_v == 26) {
-        $('.m27').addClass('active')
+        $('.m27').addClass('active');
     } else if (cen_v == 27) {
-        $('.m28').addClass('active')
+        $('.m28').addClass('active');
     } 
 
     for(let i=0; i<1; i++) {
@@ -78,15 +78,15 @@ $(document).ready(function(){
             <div class="mr_title">
                 <h1 class="mr_page_title">`
                 for(let j=0; j<1; j++) {
-                    `<span class="title_icon"></span> ${CENT_TITLE[0][cen_v].title}`
+         cent_list += `<span class="title_icon"></span> ${CENT_TITLE[0][cen_v].title}`
                 }  
      cent_list += `</h1>
             </div>
-            <div class="mr_img">
-                <div class="box_img">
-                    <img src="./img/medi_center/${CENT_LIST[0][cen_v].img_src}" alt="mr_b_img" class="mr_b_img">
-                </div>
-            </div>
+            <div class="mr_img">`
+            for(let j=0; j<1; j++) {
+      cent_list += `<div class="box_img cen2_${LIST_N[0][cen_v].name}"></div>`
+            }
+cent_list += `</div>
             <div class="mr_content">
                 <div class="mr_c_box">
                     <div class="mr_c_title">${CENT_LIST[0][cen_v].sub_title}</div>

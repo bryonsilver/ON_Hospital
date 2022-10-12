@@ -76,3 +76,36 @@ const HOSPI_TITLE = [
         {cate_no:0, item_no:25, title:'항암방사선치료센터'},
     ]
 ]
+const LIST_N = [
+    [
+        {cate_no:0, item_no:1, name:'1'},
+        {cate_no:0, item_no:1, name:'1'},
+        {cate_no:0, item_no:2, name:'1'},
+        {cate_no:0, item_no:3, name:'1'},
+        {cate_no:0, item_no:4, name:'5'},
+        {cate_no:0, item_no:5, name:'5'},
+        {cate_no:0, item_no:6, name:'5'},
+        {cate_no:0, item_no:7, name:'5'},
+        {cate_no:0, item_no:8, name:'5'},
+        {cate_no:0, item_no:9, name:'5'},
+        {cate_no:0, item_no:10, name:'10'},
+        {cate_no:0, item_no:11, name:'10'},
+        {cate_no:0, item_no:12, name:'10'},
+        {cate_no:0, item_no:13, name:'10'},
+        {cate_no:0, item_no:14, name:'10'},
+        {cate_no:0, item_no:15, name:'10'},
+        {cate_no:0, item_no:16, name:'10'},
+        {cate_no:0, item_no:17, name:'10'},
+        {cate_no:0, item_no:18, name:'10'},
+        {cate_no:0, item_no:19, name:'5'},
+        {cate_no:0, item_no:20, name:'5'},
+        {cate_no:0, item_no:21, name:'5'},
+        {cate_no:0, item_no:22, name:'5'},
+        {cate_no:0, item_no:23, name:'1'},
+        {cate_no:0, item_no:24, name:'1'},
+        {cate_no:0, item_no:25, name:'1'},
+        {cate_no:0, item_no:26, name:'1'},
+        {cate_no:0, item_no:27, name:'1'},
+        {cate_no:0, item_no:28, name:'1'},
+    ]
+]

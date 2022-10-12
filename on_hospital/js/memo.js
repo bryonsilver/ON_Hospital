@@ -8,3 +8,14 @@
                     }
         cent_list += `</div>
                 </div>
+
+
+
+<img src="./img/medi_center/${CENT_LIST[0][cen_v].img_src}" alt="mr_b_img" class="mr_b_img">
+
+`
+            for(let j=0; j<1; j++) {
+                `<div class="box_img ${LIST_N[0][cen_v].name}"></div>`
+            }
+cent_list += `
+                

@@ -30,27 +30,51 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
 }
 .cen2_1 {
     background: url(../img/medi_center/page-img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_5 {
     background: url(../img/medi_center/page-img4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_10 {
     background: url(../img/medi_center/page-img10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_11 {
     background: url(../img/medi_center/page-img10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_15 {
     background: url(../img/medi_center/page-img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_18 {
     background: url(../img/medi_center/page-img4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_24 {
     background: url(../img/medi_center/page-img10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .cen2_25 {
     background: url(../img/medi_center/page-img4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mr_content{
