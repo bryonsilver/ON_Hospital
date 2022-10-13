@@ -1,0 +1,62 @@
+body {
+    font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.title h1 {
+    font-weight: 500;
+}
+.page_section {
+    width: 100%;
+    margin-bottom: 64px;
+}
+.row {
+    text-align: justify !important;
+}
+
+@media (max-width: 1260px) {
+    .main .container {
+        max-width: 1100px;
+    }
+
+/*     
+    .wrap_page {
+        max-width: 600px;
+        overflow-x: scroll;
+    }
+    .wrap_cont {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .Info_wrap {
+        max-width: 600px;
+    } */
+}
+@media (max-width: 1160px) {
+    .main .container {
+        max-width: 800px;
+    }
+    .main {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 860px) {
+    .main .container {
+        max-width: 600px;
+    }
+}
+@media (max-width: 700px) {
+    .main .container {
+        max-width: 400px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .title h1 {
+        font-size: 25px;
+    }
+}

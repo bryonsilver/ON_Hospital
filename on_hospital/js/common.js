@@ -1,14 +1,20 @@
 $(document).ready(function(){
    
 	// nav
-	$('.nav_ul .n_nav_ul').hide();
+
+	$('.n_nav_ul').addClass('visi_h')
     $('.nav_li').mouseover(function(){
         var submenu = $(this).children('.n_nav_ul')
-        submenu.slideDown();
+
+		$('.n_nav_ul').addClass('visi_h')
+		$(submenu).addClass('visi')
     });
     $('.nav_li').mouseleave(function(){
-        $('.n_nav_ul').hide();
+		$('.n_nav_ul').removeClass('visi')
     })
+
+	
+	
 
 	// nav 전체보기
 	$('.all_see').click(function(){
