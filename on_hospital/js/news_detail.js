@@ -1,24 +1,42 @@
 $(document).ready(function(){
     const urlParams = new URL(location.href).searchParams;
     const num = urlParams.get('num');
+    const de_num = urlParams.get('de_num');
     console.log(num)
+    console.log(de_num)
 
+    if (num == 0) {
+        $('.nav_1').addClass('active')
+    } else if (num == 1) {
+        $('.nav_2').addClass('active')
+    } else if (num == 2) {
+        $('.nav_3').addClass('active')
+    } else if (num == 3) {
+        $('.nav_4').addClass('active')
+    } else if (num == 4) {
+        $('.nav_5').addClass('active')
+    } else if (num == 5) {
+        $('.nav_6').addClass('active')
+    }
+
+    let d_num = de_num -1
+    let data = NEWS_DETAIL[num];
     for(let i=0; i<1; i++) {
          let list = `
                         <div class="mr_title_box">
                             <div class="mr_t_title">
-                                ${NEWS_DETAIL[num][0].title}
+                                ${data[d_num].title}
                             </div>
                             <div class="mr_t_date">
                                 <div class="date_box">
                                     <div class="date">
-                                        <span>${NEWS_DETAIL[num][0].date[0]}</span>
-                                        <span>${NEWS_DETAIL[num][0].date[1]}</span>
+                                        <span>${data[d_num].date[0]}</span>
+                                        <span>${data[d_num].date[1]}</span>
                                     </div>
                                     <div class="read_num">506</div>
                                 </div>
                                 <div class="writer">
-                                    <a href="./news_detail.html" class="member_1">${NEWS_DETAIL[num][0].writer}</a>
+                                    <a href="./news_detail.html" class="member_1">${data[d_num].writer}</a>
                                 </div>
                             </div>
                         </div>`
@@ -26,50 +44,14 @@ $(document).ready(function(){
                         if(num == 0 ) {
                     list += `<div class="mr_coment_box">
                                 <div class="mr_main_comment">
-                                    <p><img src="./img/news/${NEWS_DETAIL[num][0].img_src}" alt="${NEWS_DETAIL[num][0].img_src}" class="news_de_img"></p>
-                                    <p><span class="border_left"></span>${NEWS_DETAIL[num][0].const[0]}<span class="danger bottom_line">${NEWS_DETAIL[num][0].danger}</span>, 10월 10일(월) 한글날은 <span class="danger bottom_line">오전 진료</span>만 진행하니 진료에 착오 없으시길 바랍니다.</p>
-                                    <p><span class="border_left"></span>  단, <span class="danger">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
+                                    <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
+                                    <p>공지사항 test</p>
                                     <p>[※ 응급실: 051) 607-0119]</p>
                                 </div>`
-                        } else if (num == 1 ) {
+                        } else {
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">
-                                            <p><img src="./img/news/22_09_16.jpg" alt="22_09_16.jpg" class="news_de_img"></p>
-                                            <p><span class="border_left"></span> 10월 3일(월) 개천절은 <span class="danger bottom_line">휴진</span>, 10월 10일(월) 한글날은 <span class="danger bottom_line">오전 진료</span>만 진행하니 진료에 착오 없으시길 바랍니다.</p>
-                                            <p><span class="border_left"></span>  단, <span class="danger">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
-                                            <p>[※ 응급실: 051) 607-0119]</p>
-                                        </div>`
-                        } else if (num == 2 ) {
-                            list += `<div class="mr_coment_box">
-                                        <div class="mr_main_comment">
-                                            <p><img src="./img/news/22_09_16.jpg" alt="22_09_16.jpg" class="news_de_img"></p>
-                                            <p><span class="border_left"></span> 10월 3일(월) 개천절은 <span class="danger bottom_line">휴진</span>, 10월 10일(월) 한글날은 <span class="danger bottom_line">오전 진료</span>만 진행하니 진료에 착오 없으시길 바랍니다.</p>
-                                            <p><span class="border_left"></span>  단, <span class="danger">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
-                                            <p>[※ 응급실: 051) 607-0119]</p>
-                                        </div>`
-                        } else if (num == 3 ) {
-                            list += `<div class="mr_coment_box">
-                                        <div class="mr_main_comment">
-                                            <p><img src="./img/news/22_09_16.jpg" alt="22_09_16.jpg" class="news_de_img"></p>
-                                            <p><span class="border_left"></span> 10월 3일(월) 개천절은 <span class="danger bottom_line">휴진</span>, 10월 10일(월) 한글날은 <span class="danger bottom_line">오전 진료</span>만 진행하니 진료에 착오 없으시길 바랍니다.</p>
-                                            <p><span class="border_left"></span>  단, <span class="danger">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
-                                            <p>[※ 응급실: 051) 607-0119]</p>
-                                        </div>`
-                        } else if (num == 4 ) {
-                            list += `<div class="mr_coment_box">
-                                        <div class="mr_main_comment">
-                                            <p><img src="./img/news/22_09_16.jpg" alt="22_09_16.jpg" class="news_de_img"></p>
-                                            <p><span class="border_left"></span> 10월 3일(월) 개천절은 <span class="danger bottom_line">휴진</span>, 10월 10일(월) 한글날은 <span class="danger bottom_line">오전 진료</span>만 진행하니 진료에 착오 없으시길 바랍니다.</p>
-                                            <p><span class="border_left"></span>  단, <span class="danger">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
-                                            <p>[※ 응급실: 051) 607-0119]</p>
-                                        </div>`
-                        } else if (num == 5 ) {
-                            list += `<div class="mr_coment_box">
-                                        <div class="mr_main_comment">
-                                            <p><img src="./img/news/22_09_16.jpg" alt="22_09_16.jpg" class="news_de_img"></p>
-                                            <p><span class="border_left"></span> 10월 3일(월) 개천절은 <span class="danger bottom_line">휴진</span>, 10월 10일(월) 한글날은 <span class="danger bottom_line">오전 진료</span>만 진행하니 진료에 착오 없으시길 바랍니다.</p>
-                                            <p><span class="border_left"></span>  단, <span class="danger">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
-                                            <p>[※ 응급실: 051) 607-0119]</p>
+                                            <p>${data[d_num].title} test</p>
                                         </div>`
                         }
             list += `   <div class="turn_table_box">
@@ -86,6 +68,6 @@ $(document).ready(function(){
                                 </div>
                             </div>
                         </div>`
-        // $('.table').append(list);
+         $('.m_right').append(list);
     }
 })

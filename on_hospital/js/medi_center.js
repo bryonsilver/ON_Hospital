@@ -16,60 +16,88 @@ $(document).ready(function(){
 
     if (cen_v == 0) {
         $('.m1').addClass('active');
+        $('.spe_cen_1').addClass('nav_active')
     } else if (cen_v == 1) {
         $('.m2').addClass('active');
+        $('.spe_cen_2').addClass('nav_active')
     } else if (cen_v == 2) {
         $('.m3').addClass('active');
+        $('.spe_cen_3').addClass('nav_active')
     } else if (cen_v == 3) {
         $('.m4').addClass('active');
+        $('.spe_cen_4').addClass('nav_active')
     } else if (cen_v == 4) {
         $('.m5').addClass('active');
+        $('.spe_cen_5').addClass('nav_active')
     } else if (cen_v == 5) {
         $('.m6').addClass('active');
+        $('.spe_cen_6').addClass('nav_active')
     } else if (cen_v == 6) {
         $('.m7').addClass('active');
+        $('.spe_cen_7').addClass('nav_active')
     } else if (cen_v == 7) {
         $('.m8').addClass('active');
+        $('.spe_cen_8').addClass('nav_active')
     } else if (cen_v == 8) {
         $('.m9').addClass('active');
+        $('.spe_cen_9').addClass('nav_active')
     } else if (cen_v == 9) {
         $('.m10').addClass('active');
+        $('.spe_cen_10').addClass('nav_active')
     } else if (cen_v == 10) {
         $('.m11').addClass('active');
+        $('.spe_cen_11').addClass('nav_active')
     } else if (cen_v == 11) {
         $('.m12').addClass('active');
+        $('.spe_cen_12').addClass('nav_active')
     } else if (cen_v == 12) {
         $('.m13').addClass('active');
+        $('.spe_cen_13').addClass('nav_active')
     } else if (cen_v == 13) {
         $('.m14').addClass('active');
+        $('.spe_cen_14').addClass('nav_active')
     } else if (cen_v == 14) {
         $('.m15').addClass('active');
+        $('.spe_cen_15').addClass('nav_active')
     } else if (cen_v == 15) {
         $('.m16').addClass('active');
+        $('.spe_cen_16').addClass('nav_active')
     } else if (cen_v == 16) {
         $('.m17').addClass('active');
+        $('.spe_cen_17').addClass('nav_active')
     } else if (cen_v == 17) {
         $('.m18').addClass('active');
+        $('.spe_cen_18').addClass('nav_active')
     } else if (cen_v == 18) {
         $('.m19').addClass('active');
+        $('.spe_cen_19').addClass('nav_active')
     } else if (cen_v == 19) {
         $('.m20').addClass('active');
+        $('.spe_cen_20').addClass('nav_active')
     } else if (cen_v == 20) {
         $('.m21').addClass('active');
+        $('.spe_cen_21').addClass('nav_active')
     } else if (cen_v == 21) {
         $('.m22').addClass('active');
+        $('.spe_cen_22').addClass('nav_active')
     } else if (cen_v == 22) {
         $('.m23').addClass('active');
+        $('.spe_cen_23').addClass('nav_active')
     } else if (cen_v == 23) {
         $('.m24').addClass('active');
+        $('.spe_cen_24').addClass('nav_active')
     } else if (cen_v == 24) {
         $('.m25').addClass('active');
+        $('.spe_cen_25').addClass('nav_active')
     } else if (cen_v == 25) {
         $('.m26').addClass('active');
+        $('.spe_cen_26').addClass('nav_active')
     } else if (cen_v == 26) {
         $('.m27').addClass('active');
+        $('.spe_cen_27').addClass('nav_active')
     } else if (cen_v == 27) {
         $('.m28').addClass('active');
+        $('.spe_cen_28').addClass('nav_active')
     } 
 
     for(let i=0; i<1; i++) {

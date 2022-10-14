@@ -5,11 +5,19 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .main {
     color: #222;
 }
+
 .title {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin-bottom: 30px;
 }
+.guide_sp {
+    display: none;
+}
+
+
+
 .title_icon {margin-bottom: 10px;}
 .title h1 {font-weight: 500; font-size: 30px; margin-bottom: 10px;}
 .m_flex_box {

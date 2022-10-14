@@ -10,7 +10,6 @@ const NEWS_LIST = [
     ],
     //기타소식
     [
-        {cate_no:1, item_no:1, num:6, title:'기타소식 test6', writer: '온종합병원', date:'2022.05.27',},
         {cate_no:1, item_no:2, num:5, title:'기타소식 test5', writer: '온종합병원', date:'2022.05.27',},
         {cate_no:1, item_no:3, num:4, title:'기타소식 test4', writer: '온종합병원', date:'2022.05.27',},
         {cate_no:1, item_no:4, num:3, title:'기타소식 test3', writer: '온종합병원', date:'2022.05.27',},

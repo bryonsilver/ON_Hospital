@@ -13,6 +13,9 @@ $(document).ready(function(){
 		$('.n_nav_ul').removeClass('visi')
     })
 
+	let n_li_h = $('.nav_li').height();
+	console.log(n_li_h)
+
 	
 	
 

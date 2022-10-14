@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>온종합병원 그룹 - 진료과/의료진</title>
+    <title>온종합병원 그룹 - 진료안내</title>
 
     <link rel="stylesheet" href="./css/comon.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/medi_detail.css">
+    <link rel="stylesheet" href="./css/medi_infor.css">
+    <link rel="stylesheet" href="./css/m_left_common.css">
 
     <script src="./js/jquery-2.1.4.min.js"></script>
     <script defer src="./js/common.js"></script>
     <script defer src="./js/doctor_list.js"></script>
-    <script defer src="./js/medi_detail.js"></script>
-    <!-- <script defer src="./js/medi_detail.js"></script> -->
+
+    <script defer src="./js/medi_infor.js"></script>
+    <script src="./js/infor_list.js"></script>
+
     <script defer src="./js/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./js/google.js"></script>
-
 </head>
 <body>
     <div class="wrap">
@@ -362,139 +365,77 @@
         </div>
 
         <div class="main">
-            <input type="hidden" name="medi" id="medi" value="">
-            <div class="container mid" >
-                <div id="mid"></div>
-                <div class="top_box">
-                    <div class="top_title_box">
-                        <!-- <h2 class="top_title">외과</h2>
-                        <div class="top_content">주로 수술로 기형 ·외상 ·염증 ·종양(腫瘍) 등을 진료하며, 상부위장관, 간담도계, 대장항문학, 갑상선 및 기타두경부외과, 유방외과, 소아외과 등 각 영역별 진료를 시행합니다. 온 종합병원 외과는 최신 의료 장비를 갖추고 가장 안전하고 확실한 외과 질환의 치료를 시행하고 있습니다.</div> -->
+            <div class="container">
+                <div class="main_flex">
+                    <div class="m_left">
+                        <div class="m_l_aside">
+                            <h4 class="ml_pic">
+                                <span>진료안내</span>
+                            </h4>
+                            <ul class="ml_ul">
+                                <li class="ml_li pm_1" id="m_li">
+                                    <a href="./medi_infor.html?num=0">진료안내</a>
+                                </li>
+                                <li class="ml_li pm_2" id="m_li">
+                                    <a href="./medi_infor.html?num=1">병문안안내</a>
+                                </li>
+                                <li class="ml_li pm_3" id="m_li">
+                                    <a href="./medi_infor.html?num=2">입/퇴원 안내</a>
+                                </li>
+                                <li class="ml_li pm_4" id="m_li">
+                                    <a href="./medi_infor.html?num=3">제증명서발급</a>
+                                </li>
+                            </ul>
+                            <form id="frm" method="get" action="">
+                                <input type="hidden" name="pageName" id="pageName">
+                            </form>
+                        </div>
                     </div>
-                    <div class="center_banner">
-                        <a href="https://www.youtube.com/channel/UCb92XBkMxNZodTCg-DnmMPw">
-                            <img src="./img/medi_details/medi_in_banner.png" alt="medi_d_banner" class="medi_banner">
-                        </a>
-                    </div>
-                </div>
-                <div class="one_doctor_box">
-                    <!-- <div>
-                        <div class="content_box">
-                            <div class="c_left_box">
-                                <div class="l_img_box">
-                                    <img src="./img/medi_details/surgrey2.jpg" alt="d_surgrey2_img" class="l_img">
-                                    <div class="doctor_name_box">
-                                        <div class="doctor_name">박광진 의무원장</div>
-                                    </div>
-                                </div>
-                                <div class="l_more_btn">
-                                    <a href="#" class="more_btn">자세히보기</a>
-                                </div>
-                            </div>
-                            <div class="c_right_box">
-                                <div class="cr_top_box">
-                                    <dl class="top_dl">
-                                        <dt class="top_first"><b>진료과</b></dt>
-                                        <dd class="top_con">간담췌외과</dd>
-    
-                                        <dt class="top_first"><b>대표약력</b></dt>
-                                        <dd class="top_con text_danger">서울아산병원 간·담·췌외과 주임교수</dd>
-    
-                                        <dt class="top_first"><b>전문분야</b></dt>
-                                        <dd class="top_con width">간담도췌장암수술/담낭질환/복강경수술(단일통로 복강경 담낭절제술)/간이식</dd>
-                                    </dl>
-                                </div>
-                                <div class="cr_center_box">
-                                    <iframe src="https://www.youtube.com/embed/FxGwggzensQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="cr_bottom_box">
-                                    <div class="cr_bot">
-                                        <table class="bottom_table">
-                                            <thead class="t_bg_light">
-                                                <th></th>
-                                                <th>월</th>
-                                                <th>화</th>
-                                                <th>수</th>
-                                                <th>목</th>
-                                                <th>금</th>
-                                                <th>토</th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th class="t_bg_light">오전</th>
-                                                    <td>
-                                                        <div><span class="text_circle cir_danger"></span></div>
-                                                        <div>수술/검사</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_primary"></span></div>
-                                                        <div>진료</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_danger"></span></div>
-                                                        <div>수술/검사</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_primary"></span></div>
-                                                        <div>진료</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_danger"></span></div>
-                                                        <div>수술/검사</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_success"></span></div>
-                                                        <div>문의</div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="t_bg_light">오후</th>
-                                                    <td>
-                                                        <div><span class="text_circle cir_danger"></span></div>
-                                                        <div>수술/검사</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_primary"></span></div>
-                                                        <div>진료</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_danger"></span></div>
-                                                        <div>수술/검사</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_primary"></span></div>
-                                                        <div>진료</div>
-                                                    </td>
-                                                    <td>
-                                                        <div><span class="text_circle cir_danger"></span></div>
-                                                        <div>수술/검사</div>
-                                                    </td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <th class="t_bg_light">비고</th>
-                                                    <td class="text_left" colspan="6"></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="text_ex_box">
-                                        <span>
-                                            <div class="circle cir_primary"></div>
-                                            <span class="text_primary">진료</span>
-                                        </span>
-                                        <span>
-                                            <div class="circle cir_danger"></div>
-                                            <span class="text_danger">수술/검사</span>
-                                        </span>
-                                        <span>
-                                            <div class="circle cir_success"></div>
-                                            <span class="text_success">문의</span>
-                                        </span>
-                                    </div>
-                                </div>
+
+                    <div class="m_right">
+                        <div class="m_select_nav_box">
+                            <div class="submenu_box">
+                                <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
+                                    <option value="./news.html?num=0">진료안내</option>
+                                    <option value="./news.html?num=0">- 진료안내</option>
+                                    <option value="./news.html?num=1">- 병문안안내</option>
+                                    <option value="./news.html?num=2">- 입/퇴원 안내</option>
+                                    <option value="./news.html?num=3">- 제증명서발급</option>
+                                </select>
                             </div>
                         </div>
-                    </div> -->
+
+                        <div class="m_content_box">
+                            <!-- <div class="mr_title">
+                                <h1 class="mr_page_title">
+                                    <span class="title_icon"></span> 
+                                    <span>진료안내</span>
+                                </h1>
+                            </div>
+
+                            <div class="mr_content">
+                                <div class="mr_c_title">진료절차</div>
+
+                                <div class="mr_c_img"></div>
+                                <div class="mr_c_first_content">
+                                    <p>진료안내 test1</p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae error aliquid alias minima quas natus assumenda inventore, similique repellat quia soluta delectus doloremque tempora eum esse laboriosam. Voluptas, quae. Reprehenderit.
+                                    </p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
 

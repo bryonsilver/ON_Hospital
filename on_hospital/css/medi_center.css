@@ -179,6 +179,6 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
     }
 }
 @media (max-width: 300px)  {
-    .mr_page_title {justify-content: center;}
     .mr_c_content > span {line-height: 27px;}
+    .m_r_content_box {gap: 0;}
 }

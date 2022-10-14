@@ -7,20 +7,28 @@ $(document).ready(function(){
 
     if (item == 0) {
         $('.pm_1').addClass('active')
+        $('.canc_1').addClass('nav_active')
     } else if (item == 1) {
         $('.pm_2').addClass('active')
+        $('.canc_2').addClass('nav_active')
     } else if (item == 2) {
         $('.pm_3').addClass('active')
+        $('.canc_3').addClass('nav_active')
     } else if (item == 3) {
         $('.pm_4').addClass('active')
+        $('.canc_4').addClass('nav_active')
     } else if (item == 4) {
         $('.pm_5').addClass('active')
+        $('.canc_5').addClass('nav_active')
     } else if (item == 5) {
         $('.pm_6').addClass('active')
+        $('.canc_6').addClass('nav_active')
     } else if (item == 6) {
         $('.pm_7').addClass('active')
+        $('.canc_7').addClass('nav_active')
     } else if (item == 7) {
         $('.pm_8').addClass('active')
+        $('.canc_8').addClass('nav_active')
     } 
 
     for(let i=0; i<1; i++) {
@@ -29,7 +37,7 @@ $(document).ready(function(){
             <div class="mr_title">
                 <h1 class="mr_page_title">`
                 for(let j=0; j<1; j++) {
-                    `<span class="title_icon"></span> ${HOSPI_TITLE[0][item].title}`
+        cent2_list += `<span class="title_icon"></span> ${HOSPI_TITLE[0][item].title}`
                 }  
      cent2_list += `</h1>
             </div>

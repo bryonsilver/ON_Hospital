@@ -1,0 +1,35 @@
+body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;}
+.m_right {height: 600px;}
+
+.mr_page_title > span:nth-of-type(2) {
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.mr_page_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mr_c_title {
+    color: #007dd6;
+    font-size: 24px;
+    font-weight: 500;
+}
+.mr_c_first_content > p:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.mr_c_first_content > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+
+.ml_pic {
+    height: 160px !important;
+}
+
+
