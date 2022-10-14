@@ -29,6 +29,7 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
     vertical-align: middle;
     box-sizing: border-box;
     color: #777;
+    text-align: left;
 }
 .table > tbody td {
     padding: 15px 10px;

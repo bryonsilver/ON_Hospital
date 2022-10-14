@@ -36,7 +36,7 @@ $(document).ready(function(){
                                     <div class="read_num">506</div>
                                 </div>
                                 <div class="writer">
-                                    <a href="./news_detail.html" class="member_1">${data[d_num].writer}</a>
+                                    <a href="#" class="member_1">${data[d_num].writer}</a>
                                 </div>
                             </div>
                         </div>`
@@ -64,7 +64,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                                 <div class="list_return">
-                                    <a href="./news.html" class="news_de_list news_btn">목록</a>
+                                    <a href="./news.html?num=${num}" class="news_de_list news_btn">목록</a>
                                 </div>
                             </div>
                         </div>`
