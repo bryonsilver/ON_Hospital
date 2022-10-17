@@ -70,7 +70,12 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
     display: flex;
     gap: 5px;
 }
-.list_return,
+.news_de_list  {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    cursor: pointer;
+}
 .next,
 .prev {
     padding: 5px 15px;

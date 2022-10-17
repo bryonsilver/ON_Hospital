@@ -36,10 +36,6 @@ $(document).ready(function(){
         $('.hos_infor_10').addClass('nav_active')
     } 
 
-    if (num < 3) {
-        $('.m_right').css({width: '100%', margin:'0'})
-        $('.m_left').css({display:'none'})
-    }
 
     let data = GUIDE_LIST[0];
     for(let i=0; i<1; i++) {

@@ -6,7 +6,6 @@ body {
     align-items: center;
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 80px;
 }
 .title h1 {
     font-weight: 500;
@@ -17,6 +16,12 @@ body {
 }
 .row {
     text-align: justify !important;
+}
+.danger {
+    color: #e74c3c;
+    font-size: 16px;
+    opacity: 0;
+    margin-bottom: 80px;
 }
 
 @media (max-width: 1260px) {
@@ -55,6 +60,9 @@ body {
         max-width: 400px;
         padding: 0 15px;
         box-sizing: border-box;
+    }
+    .danger {
+        font-size: 14px;
     }
     .title h1 {
         font-size: 25px;

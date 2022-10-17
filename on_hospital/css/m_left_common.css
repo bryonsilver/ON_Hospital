@@ -84,6 +84,14 @@
     pointer-events: none;
 }
 
+
+.submenu_box::after {
+    content: ">";
+    width: 10px;
+    height: 10px;
+    transform: rotate(180deg);
+}
+
 @media (max-width:1350px) {
     .main .container {
         max-width:1000px;
