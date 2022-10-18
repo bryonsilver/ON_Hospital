@@ -4,6 +4,7 @@
     max-width: 2000px;
     background-color: #fff;
 }
+p,h1,h2,h3 {margin: 0;}
 
 
 .item_caption {
@@ -518,6 +519,10 @@
         height: 50px;
     }
     
+    
+    .semi_black_title {font-size: 28px;}
+    .semi_black_content {font-size: 21px;}
+    
 }
 @media (max-width: 850px) {
     .semi_row {
@@ -550,6 +555,12 @@
     .none {
         display: none !important;
     }
+
+    .semi_black_title {font-size: 22px;}
+    .semi_text_box {gap: 10px;}
+    .semi_black_content {font-size: 17px !important;}
+    .semi_row {flex-direction: row;}
+    .btn_semi {padding: 10px 20px; font-size: 13px;}
 }
 @media (max-width: 670px) {
     .semi {
@@ -569,6 +580,15 @@
     }
     .s_text_box {padding: 0 30px;}
     
+    .semi_text_box {padding: 0 10px; box-sizing: border-box;}
+    .semi_black_title {font-size: 25px;}
+    .semi_black_content {font-size: 16px;}
+    .btn_semi {padding: 10px 20px; font-size: 15px;}
+    
+    .semi_row {
+        flex-direction: column;
+    }
+        
 }
 @media (max-width:575px ) {
     .hosptial_mb,
@@ -613,10 +633,12 @@
         font-size: 12px;
     }
     .semi_text_box {gap: 20px;}
-    .semi_black_title {font-size: 30px;}
-    .semi_black_content {font-size: 20px;}
     .f_text_box,.f_nav_ul {padding: 0 10px ;}
     .box_btn {margin-top: 30% !important;}
+
+    .semi_black_title {font-size: 22px;}
+    .semi_black_content {font-size: 14px !important;}
+    .btn_semi {padding: 10px 20px; font-size: 13px;}
 
 
     
@@ -655,8 +677,6 @@
         font-size: 5px;
     }
     .s_text_box {padding: 0 5px; gap: 6px;}
-    .semi_black_title {font-size: 22px;}
-    .semi_black_content {font-size: 14px;}
     .semi_text_box {gap: 10px;}
     .box_btn {
         flex-direction: column;}
@@ -669,7 +689,7 @@
     .news_thumb {width: calc((40% ) / 1);}
     .news_title {line-height: 20px !important;}
     
-    .mb_tv_img {display: inline-block; width: 20%;}
-    .width3 {width: 27% !important;}
-    .width2 {width: 17% !important;}
+    .mb_tv_img {display: inline-block; width: 15%;}
+    .width3 {width: 21% !important;}
+    .width2 {width: 13% !important;}
 }
