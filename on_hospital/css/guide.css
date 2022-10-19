@@ -5,6 +5,7 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .main {
     color: #222;
 }
+.m_right {margin-top: 0 !important;}
 
 .title {
     display: flex;
@@ -18,12 +19,16 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 
 
 
-.title_icon {margin-bottom: 10px;}
+/* .title_icon {margin-bottom: 10px;} */
 .title h1 {font-weight: 500; font-size: 30px; margin-bottom: 10px;}
 .m_flex_box {
+    margin-top: 30px;
     margin-bottom: 120px;
 }
 
+.title_box {
+    margin-bottom: 20px !important;
+}
 .mf_f_title_box > h4 {
     font-size: 25px;
     font-weight: 500;

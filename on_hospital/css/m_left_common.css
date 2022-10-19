@@ -84,12 +84,18 @@
     pointer-events: none;
 }
 
-
-.submenu_box::after {
-    content: ">";
-    width: 10px;
-    height: 10px;
-    transform: rotate(180deg);
+.submenu_box {position: relative;}
+.arrow {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-75%);
+    pointer-events: none;
+}
+.sub_arrow {
+    width: 100%;
 }
 
 @media (max-width:1350px) {

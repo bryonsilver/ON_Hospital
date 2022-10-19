@@ -12,15 +12,15 @@
     <link rel="stylesheet" href="./css/guide.css">
     <link rel="stylesheet" href="./css/m_left_common.css">
 
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/doctor_list.js"></script>
-    <script defer src="./js/guide.js"></script>
-    <script src="./js/guide_list.js"></script>
+    <script src="./js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="./js/common/common.js"></script>
+    <script defer src="./js/medi_depart/doctor_list.js"></script>
+    <script defer src="./js/guide/guide.js"></script>
+    <script src="./js/guide/guide_list.js"></script>
 
-    <script defer src="./js/swiper-bundle.js"></script>
+    <script defer src="./js/common/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="./js/google.js"></script>
+    <script src="./js/common/google.js"></script>
 
 </head>
 <body>
@@ -393,18 +393,19 @@
                         <div class="m_select_nav_box">
                             <div class="submenu_box">
                                 <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
-                                    <option value="./guide.html?num=0">병원안내</option>
-                                    <option value="./guide.html?num=0">- 인사말</option>
-                                    <option value="./guide.html?num=1">- 연혁</option>
-                                    <option value="./guide.html?num=2">- 미션/비전</option>
-                                    <option value="./guide.html?num=3">- 층별안내</option>
-                                    <option value="./guide.html?num=4">- 오시는길</option>
-                                    <option value="./guide.html?num=5">- 전화번호</option>
-                                    <option value="./guide.html?num=6">- 고객지원센터</option>
-                                    <option value="./medi_center.html?cen_v=13">- 응급의료센터</option>
-                                    <option value="./guide.html?num=8">- 편의시설안내</option>
-                                    <option value="./guide.html?num=9">- 장례식장</option>
+                                    <option value="./guide.html?num=0&selec=0">병원안내</option>
+                                    <option value="./guide.html?num=0&selec=0" id="selec0">- 인사말</option>
+                                    <option value="./guide.html?num=1&selec=1" id="selec1">- 연혁</option>
+                                    <option value="./guide.html?num=2&selec=2" id="selec2">- 미션/비전</option>
+                                    <option value="./guide.html?num=3&selec=3" id="selec3">- 층별안내</option>
+                                    <option value="./guide.html?num=4&selec=4" id="selec4">- 오시는길</option>
+                                    <option value="./guide.html?num=5&selec=5" id="selec5">- 전화번호</option>
+                                    <option value="./guide.html?num=6&selec=6" id="selec6">- 고객지원센터</option>
+                                    <option value="./medi_center.html?cen_v=13&selec=7" id="selec7">- 응급의료센터</option>
+                                    <option value="./guide.html?num=8&selec=8" id="selec8">- 편의시설안내</option>
+                                    <option value="./guide.html?num=9&selec=9" id="selec9">- 장례식장</option>
                                 </select>
+                                <div class="arrow"><img src="./img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
                             </div>
                         </div>
                         <div class="m_flex_box">

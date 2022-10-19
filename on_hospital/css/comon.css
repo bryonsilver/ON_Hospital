@@ -17,7 +17,7 @@ span {display: inline-block;}
     border-top: 1px solid #ddd;
 }
 .swiper_box4 {
-    padding: 15px 0;
+    padding: 15px 0 !important;
 }
 
 .nav_active {
@@ -43,12 +43,22 @@ span {display: inline-block;}
 
 
 
-
+.title_box {
+    font-size: 30px;
+    font-weight: 500;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.img_box {
+    display: inline-block;
+    margin-top: 10px;
+}
 .title_icon {
     width: 25px;
     height: 25px;
-    background-color: #dc2429;
-    border: 1px solid #c30000;
     border-radius: 5px;
 }
 
@@ -868,11 +878,17 @@ iframe.goog-te-banner-frame { display: none !important; }
 }
 @media (max-width: 768px) {
     .container {max-width: 720px;}
+    .title_box {
+        font-size: 25px;
+    }
 }
 @media (max-width: 550px) {
     .burger_nav_box {width: 70%;}
     
     .col {padding: 0 20px;}
+    .title_box {
+        font-size: 22px;
+    }
 }
 @media (max-width: 500px) {
     .f_margin {padding: 0;}

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./css/comon.css">
     <link rel="stylesheet" href="./css/medi_depart.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/m_left_common.css">
 
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/medi_depart.js"></script>
-    <script defer src="./js/swiper-bundle.js"></script>
+    <script src="./js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="./js/common/common.js"></script>
+    <script defer src="./js/medi_depart/medi_depart.js"></script>
+    <script defer src="./js/common/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="./js/google.js"></script>
+    <script src="./js/common/google.js"></script>
 
 </head>
 <body>
@@ -360,11 +361,19 @@
         </div>
 
         <div class="main">
-            <div class="container rad_container">
-                <div class="title_box">
-                    <div class="img_box"></div>
-                    <h1 class="title">진료과/의료진</h1>
+            <div class="m_select_nav_box">
+                <div class="submenu_box">
+                    <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
+                        <option value="./medi_depart.html&selec=0" id="selec0">진료과/의료진</option>
+                    </select>
+                    <div class="arrow"><img src="./img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
                 </div>
+            </div>
+            <div class="container rad_container">
+                <h1 class="title_box">
+                    <div class="img_box"><img src="./img/common/title_icon2.png" alt="title_icon" class="title_icon"></div>
+                    <span>진료과/의료진</span>
+                </h1>
                 <div class="radio_tab">
                     <div class="input_box">
                         <div class="rt1_box">

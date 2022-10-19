@@ -83,3 +83,8 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
     border-radius: 2px;
     cursor: pointer;
 }
+
+
+@media (max-width:600px) {
+    .mr_t_date {flex-direction: column;}
+}

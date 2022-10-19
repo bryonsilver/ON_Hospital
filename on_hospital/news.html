@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/m_left_common.css">
 
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/doctor_list.js"></script>
-    <script src="./js/news.js"></script>
-    <script src="./js/medi_news_list.js"></script>
+    <script src="./js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="./js/common/common.js"></script>
+    <script defer src="./js/medi_depart/doctor_list.js"></script>
+    <script src="./js/news/news.js"></script>
+    <script src="./js/news/medi_news_list.js"></script>
     <!-- <script defer src="./js/medi_detail.js"></script> -->
-    <script defer src="./js/swiper-bundle.js"></script>
+    <script defer src="./js/common/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="./js/google.js"></script>
+    <script src="./js/common/google.js"></script>
 
 </head>
 <body>
@@ -401,14 +401,15 @@
                             <div class="m_select_nav_box">
                                 <div class="submenu_box">
                                     <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="./news.html?num=0">병원소식</option>
-                                        <option value="./news.html?num=0">- 공지사항</option>
-                                        <option value="./news.html?num=1">- 기타소식</option>
-                                        <option value="./news.html?num=2">- 언론보도</option>
-                                        <option value="./news.html?num=3">- 채용정보</option>
-                                        <option value="./news.html?num=4">- 오늘의 식단</option>
-                                        <option value="./news.html?num=5">- 자주묻는질문</option>
+                                        <option value="./news.html?num=0&selec=0">병원소식</option>
+                                        <option value="./news.html?num=0&selec=0" id="selec0">- 공지사항</option>
+                                        <option value="./news.html?num=1&selec=1" id="selec1">- 기타소식</option>
+                                        <option value="./news.html?num=2&selec=2" id="selec2">- 언론보도</option>
+                                        <option value="./news.html?num=3&selec=3" id="selec3">- 채용정보</option>
+                                        <option value="./news.html?num=4&selec=4" id="selec4">- 오늘의 식단</option>
+                                        <option value="./news.html?num=5&selec=5" id="selec5">- 자주묻는질문</option>
                                     </select>
+                                    <div class="arrow"><img src="./img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
                                 </div>
                             </div>
                             <div class="title_box">

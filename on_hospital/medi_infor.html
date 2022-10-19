@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="./css/medi_infor.css">
     <link rel="stylesheet" href="./css/m_left_common.css">
 
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/doctor_list.js"></script>
+    <script src="./js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="./js/common/common.js"></script>
+    <script defer src="./js/medi_depart/doctor_list.js"></script>
 
-    <script defer src="./js/medi_infor.js"></script>
-    <script src="./js/infor_list.js"></script>
+    <script defer src="./js/medi_infor/medi_infor.js"></script>
+    <script src="./js/medi_infor/infor_list.js"></script>
 
-    <script defer src="./js/swiper-bundle.js"></script>
+    <script defer src="./js/common/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="./js/google.js"></script>
+    <script src="./js/common/google.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -395,12 +395,13 @@
                         <div class="m_select_nav_box">
                             <div class="submenu_box">
                                 <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
-                                    <option value="./medi_infor.html?num=0">진료안내</option>
-                                    <option value="./medi_infor.html?num=0">- 진료안내</option>
-                                    <option value="./medi_infor.html?num=1">- 병문안안내</option>
-                                    <option value="./medi_infor.html?num=2">- 입/퇴원 안내</option>
-                                    <option value="./medi_infor.html?num=3">- 제증명서발급</option>
+                                    <option value="./medi_infor.html?num=0&selec=0">진료안내</option>
+                                    <option value="./medi_infor.html?num=0&selec=1" id="selec0">- 진료안내</option>
+                                    <option value="./medi_infor.html?num=1&selec=2" id="selec1">- 병문안안내</option>
+                                    <option value="./medi_infor.html?num=2&selec=3" id="selec2">- 입/퇴원 안내</option>
+                                    <option value="./medi_infor.html?num=3&selec=4" id="selec3">- 제증명서발급</option>
                                 </select>
+                                <div class="arrow"><img src="./img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
                             </div>
                         </div>
 

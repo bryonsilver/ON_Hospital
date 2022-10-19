@@ -274,6 +274,7 @@
     .cr_center_box > iframe {
         height: 350px;
     }
+    .top_title {font-size: 25px; font-weight: 600; margin-bottom: 20px; margin-top: 40px;}
 }
 @media (max-width: 530px) {
     .cr_bot {width: 100%; overflow: auto;}

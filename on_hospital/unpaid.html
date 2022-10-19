@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="./css/comon.css">
     <link rel="stylesheet" href="./css/swiper-bundle.css">
     <link rel="stylesheet" href="./css/unpaid.css">
+    <link rel="stylesheet" href="./css/m_left_common.css">
 
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/doctor_list.js"></script>
-    <script defer src="./js/swiper-bundle.js"></script>
+    <script src="./js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="./js/common/common.js"></script>
+    <script defer src="./js/medi_depart/doctor_list.js"></script>
+    <script defer src="./js/common/swiper-bundle.js"></script>
     <script src="./js/unpaid.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="./js/google.js"></script>
+    <script src="./js/common/google.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -364,16 +365,17 @@
                 <div class="m_select_nav_box">
                     <div class="submenu_box">
                         <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
-                            <option value="./unpaid.html">비급여</option>
+                            <option value="./unpaid.html?selec=0">비급여</option>
                         </select>
+                        <div class="arrow"><img src="./img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
                     </div>
                 </div>
 
                 <div class="m_flex">
-                    <div class="title">
-                        <span class="title_icon"></span>
-                        <h1>비급여 안내</h1>
-                    </div>
+                    <h1 class="title_box">
+                        <div class="img_box"><img src="./img/common/title_icon2.png" alt="title_icon" class="title_icon"></div> 
+                        <span>비급여 안내</span>
+                    </h1>
                     <span class="danger">모바일에서는 보기 불편함으로 모니터화면으로 봐주시기 바랍니다.</span>
 
                     <div class="page_section">

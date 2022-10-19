@@ -11,15 +11,15 @@
     <link rel="stylesheet" href="./css/medi_center.css">
     <link rel="stylesheet" href="./css/m_left_common.css">
 
-    <script src="./js/jquery-2.1.4.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <script defer src="./js/doctor_list.js"></script>
-    <script src="./js/medi_center2.js"></script>
-    <script src="./js/center_list.js"></script>
+    <script src="./js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="./js/common/common.js"></script>
+    <script defer src="./js/medi_depart/doctor_list.js"></script>
+    <script src="./js/cancer_hos/medi_center2.js"></script>
+    <script src="./js/cancer_hos/center_list.js"></script>
     <!-- <script defer src="./js/medi_detail.js"></script> -->
-    <script defer src="./js/swiper-bundle.js"></script>
+    <script defer src="./js/common/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script src="./js/google.js"></script>
+    <script src="./js/common/google.js"></script>
 
     <style>
         .ml_li:nth-of-type(8) > a {
@@ -397,16 +397,17 @@
                             <div class="m_select_nav_box">
                                 <div class="submenu_box">
                                     <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
-                                        <option value="./medi_center2.html?cen2_v=1&item=0"> 암병원</option>
-                                        <option value="./medi_center2.html?cen2_v=1&item=0"> - 간센터</option>
-                                        <option value="./medi_center2.html?cen2_v=5&item=1">- 소화기암수술센터</option>
-                                        <option value="./medi_center2.html?cen2_v=10&item=2">- 여성암센터</option>
-                                        <option value="./medi_center2.html?cen2_v=11&item=3">- 유방ㆍ갑상선암 센터</option>
-                                        <option value="./medi_center2.html?cen2_v=15&item=4">- 인터벤션센터(중재시술)</option>
-                                        <option value="./medi_center2.html?cen2_v=18&item=5">- 전립선암센터</option>
-                                        <option value="./medi_center2.html?cen2_v=24&item=6">- 폐암수술센터</option>
-                                        <option value="./medi_center2.html?cen2_v=25&item=7">- 항암방사선치료센터</option>
+                                        <option value="./medi_center2.html?cen2_v=1&item=0&selec=0"> 암병원</option>
+                                        <option value="./medi_center2.html?cen2_v=1&item=0&selec=0" id="selec0"> - 간센터</option>
+                                        <option value="./medi_center2.html?cen2_v=5&item=1&selec=1" id="selec1">- 소화기암수술센터</option>
+                                        <option value="./medi_center2.html?cen2_v=10&item=2&selec=2" id="selec2">- 여성암센터</option>
+                                        <option value="./medi_center2.html?cen2_v=11&item=3&selec=3" id="selec3">- 유방ㆍ갑상선암 센터</option>
+                                        <option value="./medi_center2.html?cen2_v=15&item=4&selec=4" id="selec4">- 인터벤션센터(중재시술)</option>
+                                        <option value="./medi_center2.html?cen2_v=18&item=5&selec=5" id="selec5">- 전립선암센터</option>
+                                        <option value="./medi_center2.html?cen2_v=24&item=6&selec=6" id="selec6">- 폐암수술센터</option>
+                                        <option value="./medi_center2.html?cen2_v=25&item=7&selec=7" id="selec7">- 항암방사선치료센터</option>
                                     </select>
+                                    <div class="arrow"><img src="./img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
                                 </div>
                             </div>
                             <!-- <div class="m_r_content_box">
