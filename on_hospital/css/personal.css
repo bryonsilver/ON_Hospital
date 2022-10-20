@@ -59,6 +59,7 @@
     font-size:18px;
     font-weight: bolder;
     color: #000;
+    position: relative;
 }
 .c_c_box {margin-top: 20px;}
 .font_small{

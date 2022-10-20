@@ -9,6 +9,8 @@ console.log(value)
 
 
 
+
+
     for(let i=0; i<DOCTOR[value].length; i++) {
         let list = `
                         <div>
