@@ -7,7 +7,41 @@ const value = urlParams.get('value');
 console.log(value)
 
 
+ var $el = $('#quick');
+    var $window = $(window);
+    var top = 80; //header 높이
+    
+     
+    
+    $window.bind("scroll resize", function() {
+        var offset = $("body #container:first-child").offset;
+        var visibleRight = offset.left + 990;	
+        var gap = $window.height() - $el.height() ;
+        var visibleFoot = 234 - ($(window).scrollTop() + $(window).height());
+        var scrollTop = $window.scrollTop();
 
+        console.log(scrollTop+"/"+top);
+        
+       
+
+        
+        if (scrollTop > top) {
+            $el.css({
+                top: (scrollTop -top + 80) + "px",
+                bottom: "auto"
+            });
+        } else if (visibleFoot > gap) {
+            $el.css({
+                top: "auto",
+                bottom: visibleFoot + "px"
+            });
+        } else {
+            $el.css({
+                top:30,
+                bottom: "auto"
+            });
+        }
+    }).scroll();
 
 
 
