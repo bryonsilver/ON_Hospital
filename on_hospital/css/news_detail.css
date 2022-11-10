@@ -11,6 +11,20 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
     box-sizing: border-box;
     border-bottom: 2px solid #444547;
 }
+.red_text {
+    color: #ff3300;
+    text-decoration: underline;
+    text-decoration-color: #666;
+    text-decoration-thickness: 2px;
+    margin: 0 3px;
+}
+.red_text2 {
+    color: #ff3300;
+    margin: 0 3px;
+}
+.question {
+    font-weight: 400 !important;
+}
 
 .mr_t_title {
     font-size: 23px;

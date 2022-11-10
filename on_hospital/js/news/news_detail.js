@@ -27,8 +27,10 @@ $(document).ready(function(){
         $('.nav_6').addClass('active')
     }
 
+    
     let d_num = de_num -1
     let data = NEWS_DETAIL[num];
+    let dn5_const = data[d_num].const
     for(let i=0; i<1; i++) {
          let list = `
                         <div class="mr_title_box">
@@ -52,15 +54,49 @@ $(document).ready(function(){
                         if(num == 0 ) {
                     list += `<div class="mr_coment_box">
                                 <div class="mr_main_comment">
-                                    <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
-                                    <p>공지사항 test</p>
-                                    <p>[※ 응급실: 051) 607-0119]</p>
+                                    <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>`
+                                    if(de_num == 1) {
+                                        list += `
+                                        <p>${data[d_num].const[0]}<span class="red_text">${data[d_num].red[0]}</span>${data[d_num].const[1]}<span class="red_text">${data[d_num].red[1]}</span>${data[d_num].const[2]}</p>
+                                        `
+                                    } else if (de_num == 2 || de_num == 3 || de_num == 4 || de_num == 5) {
+                                        list += `<p><span class="red_text2">${data[d_num].red}</span>${data[d_num].const}</p>`
+                                    }
+                            list += `
+                                        <p>단,<span class="red_text2">온종합병원 응급의료센터는 365일 24시간 언제든 이용 가능합니다.</span></p>
+                                        <p>[※ 응급실: 051) 607-0119]</p>
                                 </div>`
-                        } else {
+                        } else if (num == 1) {
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">
-                                            <p>${data[d_num].title} test</p>
+                                            <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
                                         </div>`
+                        } else if (num == 2) {
+                            list += `<div class="mr_coment_box">
+                                        <div class="mr_main_comment">
+                                            <p>${data[d_num].img_src}</p>
+                                            <div class="mr_con_box">
+                                                <div class="mr_t_box">${data[d_num].con_title}</div>
+                                                <div class="mr_c_box">${data[d_num].con_title}</div>
+                                            </div>
+                                        </div>`
+                        } else if (num == 3) {
+                            list += `<div class="mr_coment_box">
+                                        <div class="mr_main_comment">
+                                            <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
+                                        </div>`
+                        } else if (num == 4) {
+                            list += `<div class="mr_coment_box">
+                                        <div class="mr_main_comment">
+                                            <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
+                                        </div>`
+                        } else if (num == 5) {
+                            list += `<div class="mr_coment_box">
+                                        <div class="mr_main_comment">`
+                                            for (let j=0; j<dn5_const.length; j++) {
+                                         list += `<p class="question">${data[d_num].const[j]}</p>`
+                                            }
+                                list += `</div>`
                         }
             list += `   <div class="turn_table_box">
                                 <div class="pr_ne_box">
