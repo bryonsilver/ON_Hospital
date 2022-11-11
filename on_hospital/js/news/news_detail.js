@@ -31,6 +31,8 @@ $(document).ready(function(){
     let d_num = de_num -1
     let data = NEWS_DETAIL[num];
     let dn5_const = data[d_num].const
+    let dn2_const = data[d_num].top_content
+    let dn2_center_con = data[d_num].center_con
     for(let i=0; i<1; i++) {
          let list = `
                         <div class="mr_title_box">
@@ -74,12 +76,27 @@ $(document).ready(function(){
                         } else if (num == 2) {
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">
-                                            <p>${data[d_num].img_src}</p>
-                                            <div class="mr_con_box">
-                                                <div class="mr_t_box">${data[d_num].con_title}</div>
-                                                <div class="mr_c_box">${data[d_num].con_title}</div>
-                                            </div>
-                                        </div>`
+                                            <p class="top_small">${data[d_num].top_small}</p>`
+                                            if(data[d_num].top_content) {
+                                                for(let j=0; j<data[d_num].top_content.legnth; j++) {
+                                                list += `<p class="top_bold">${data[d_num].top_bold[j]}</p>`
+                                                }
+                                            } else {
+                                                list += `<p class="top_bold">안됨</p>`
+                                            }
+                                    list += `<p class="top_content">${data[d_num].top_content}</p>
+                                            <p class="img_p"><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
+                                            <p class="img_text">${data[d_num].img_text}</p>`
+                                            if(data[d_num].top_content) {
+                                                for(let j=0; j<data[d_num].center_con.legnth; j++) {
+                                        list += `<p class="center_con">${data[d_num].center_con[j]}</p>`
+                                                }
+                                            }
+                                    list +=  `<div class="sources_box">
+                                            <div>${data[d_num].editor}</div>
+                                            <div>${data[d_num].sources}</div>
+                                        </div>
+                                    </div>`
                         } else if (num == 3) {
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">

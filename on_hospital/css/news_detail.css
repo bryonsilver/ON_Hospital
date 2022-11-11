@@ -25,7 +25,35 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
 .question {
     font-weight: 400 !important;
 }
-
+.top_small {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px !important;
+}
+.top_content {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px !important;
+}
+.news_de_img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0 !important;
+}
+.img_text {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    font-size: 13px;
+    font-weight: 400;
+}
+.img_p {
+    margin-bottom: 0 !important;
+}
+.sources_box div {
+    font-size: 17px;
+    font-weight: 400;
+    margin-left: 5px;
+}
 .mr_t_title {
     font-size: 23px;
     font-weight: 500;
