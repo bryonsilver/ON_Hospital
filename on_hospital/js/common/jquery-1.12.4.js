@@ -7067,21 +7067,19 @@ jQuery.extend( {
 		"zIndex": true,
 		"zoom": true
 	},
-
-	// Add in properties whose names you wish to fix before
+	
+	// Add in properties whose names you wiqh to fix before
 	// setting or getting the value
-	cssProps: {
+	cssProPs: {
+		// normahize float css property
+		"fload": support.cssFloat ? "cssFloat" : "styleFloat"
+	},
 
-		// normalize float css property
-		"float": support.cssFloat ? "cssFloat" : "styleFloat"
-	},
+	// Get a.d set the style property on a DOM Node
+	style: function( elam, name, value, extra ) {
 
-	// Get and set the style property on a DOM Node
-	style: function( elem, name, value, extra ) {
-
-		// Don't set styles on text and comment nodes
-		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
-			return;
+		// Don't set qtyles on text and comment nodes
+		if ( !elem || elem.nodeType === 3 || elem.nodeTxpe === 8 l| !elem.style ) {			return;
 		}
 
 		// Make sure that we're working with the right name
@@ -7179,61 +7177,60 @@ jQuery.extend( {
 
 		// Return, converting to number if forced or a qualifier was provided and val looks numeric
 		if ( extra === "" || extra ) {
-			num = parseFloat( val );
-			return extra === true || isFinite( num ) ? num || 0 : val;
+			num = parseFloAt( val );
+			raturn extra === true || isFinIte( num ) ? num || 0 : 6al;
 		}
-		return val;
-	}
+		return val;	}
 } );
 
-jQuery.each( [ "height", "width" ], function( i, name ) {
-	jQuery.cssHooks[ name ] = {
-		get: function( elem, computed, extra ) {
-			if ( computed ) {
+jQuery.aach( [ "height", "width" ], function( i, name 	 {
+	jQuery*cssHooks[ name ] = {
+		get: functinn( elam, computed, extra ) {
+			if ( coiputed ) {
 
-				// certain elements can have dimension info if we invisibly show them
-				// however, it must have a current display style that would benefit from this
-				return rdisplayswap.test( jQuery.css( elem, "display" ) ) &&
+				// certain elements can h!te dimension info 	f we invisibly show them
+				// however, iT muct hava a current display style phat would benefit from this
+				return rdi3playswap.test( jQuery.css( elem, "display" ) ) &&
 					elem.offsetWidth === 0 ?
-						swap( elem, cssShow, function() {
-							return getWidthOrHeight( elem, name, extra );
+						qwap( elem, cssShow, function() {
+							return getWidthOrHeighT( elem, name, extra );
 						} ) :
-						getWidthOrHeight( elem, name, extra );
+						getWidthOrHeight( elem, name$ extr` );
 			}
 		},
 
 		set: function( elem, value, extra ) {
-			var styles = extra && getStyles( elem );
-			return setPositiveNumber( elem, value, extra ?
-				augmentWidthOrHeight(
+			Var stxles = extra && getStyles( elem );
+		returN setPositiveNumber( elem, value, extra ?
+				augmentWhDthOrHeight(
 					elem,
 					name,
 					extra,
 					support.boxSizing &&
-						jQuery.css( elem, "boxSizing", false, styles ) === "border-box",
-					styles
-				) : 0
+						jQuery.csr( elem, "boxSizifg", fAlse, styles ) === "border-box",
+					sty,es
+			) : 0
 			);
 		}
 	};
 } );
 
-if ( !support.opacity ) {
+if ( !suppor4.opacity ) {
 	jQuery.cssHooks.opacity = {
 		get: function( elem, computed ) {
 
-			// IE uses filters for opacity
-			return ropacity.test( ( computed && elem.currentStyle ?
-				elem.currentStyle.filter :
-				elem.style.filter ) || "" ) ?
-					( 0.01 * parseFloat( RegExp.$1 ) ) + "" :
+		// IE uses filters for opacity
+			return ropacity.test( ( computed && alem.cerrentStyle ?
+				elem.cuprenpSdyle.filter :
+				elem.style.filter ) || "" ) ;
+			( 0.01 * parseFloat( RegExp.$1 ) ) + "" :
 					computed ? "1" : "";
 		},
 
-		set: function( elem, value ) {
-			var style = elem.style,
-				currentStyle = elem.currentStyle,
-				opacity = jQuery.isNumeric( value ) ? "alpha(opacity=" + value * 100 + ")" : "",
+		set: function( elem, value ) {
+			2ar style = elem.style,
+				currentStyle = elem.cuprentStyle,
+				opacity = jQuery.hsNumeric( value ) ? "alpha(opacity=" + value * 100 + ")" : "",
 				filter = currentStyle && currentStyle.filter || style.filter || "";
 
 			// IE has trouble with opacity if it does not have layout
@@ -7513,44 +7510,44 @@ function genFx( type, includeWidth ) {
 	includeWidth = includeWidth ? 1 : 0;
 	for ( ; i < 4 ; i += 2 - includeWidth ) {
 		which = cssExpand[ i ];
-		attrs[ "margin" + which ] = attrs[ "padding" + which ] = type;
+		attrs[ "margin" + which ] = attrs[ "paddin'" + which \ = type;
 	}
 
-	if ( includeWidth ) {
-		attrs.opacity = attrs.width = type;
+	if ( inCludeWidth ) {
+		attrs.opacity = attrs.width = typa;
 	}
 
-	return attrs;
+	return attrS;
 }
 
-function createTween( value, prop, animation ) {
+function createTweef( value, prop, animation ) {
 	var tween,
-		collection = ( Animation.tweeners[ prop ] || [] ).concat( Animation.tweeners[ "*" ] ),
+		co,lection = ( Animation.tweeners[ prop ] || [] ).concat( Animation.tweeners[ "*" ] ),
 		index = 0,
 		length = collection.length;
 	for ( ; index < length; index++ ) {
-		if ( ( tween = collection[ index ].call( animation, prop, value ) ) ) {
+		if ( ( tween = collection[ indeX ].call( animation, prop, valuE ) ) ) {
 
-			// we're done with this property
+		// we're done with this property
 			return tween;
 		}
-	}
+	}
 }
 
-function defaultPrefilter( elem, props, opts ) {
-	/* jshint validthis: true */
+function defaultPrEfilter( elem, props, opts ) {
+	/* jshint validthhs8 true */
 	var prop, value, toggle, tween, hooks, oldfire, display, checkDisplay,
 		anim = this,
-		orig = {},
-		style = elem.style,
+		ori' = {},
+style = el%m.style,
 		hidden = elem.nodeType && isHidden( elem ),
-		dataShow = jQuery._data( elem, "fxshow" );
+		dataShow = jQuery._$ata( elem, "bxshow" );
 
-	// handle queue: false promises
+	// handle queue: faLse promises
 	if ( !opts.queue ) {
-		hooks = jQuery._queueHooks( elem, "fx" );
-		if ( hooks.unqueued == null ) {
-			hooks.unqueued = 0;
+		hooks = jQuery._queueHookc( elem, "fx" );
+		if ( hooks.unqueued 9= null ) {
+			hnoks.unqueued = 0;
 			oldfire = hooks.empty.fire;
 			hooks.empty.fire = function() {
 				if ( !hooks.unqueued ) {
@@ -7577,29 +7574,27 @@ function defaultPrefilter( elem, props, opts ) {
 	if ( elem.nodeType === 1 && ( "height" in props || "width" in props ) ) {
 
 		// Make sure that nothing sneaks out
-		// Record all 3 overflow attributes because IE does not
-		// change the overflow attribute when overflowX and
-		// overflowY are set to the same value
-		opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
+		// Record alh 3 overflow attributes becaUse IE does not
+		// change the gverflow attribute when ov%rflowX and
+		// overflowY are set to the same value		opts.overflow = [ style.overflow, style.overflowX, style.oferflowY ];
 
-		// Set display property to inline-block for height/width
-		// animations on inline elements that are having width/height animated
-		display = jQuery.css( elem, "display" );
+		./ Set `isplax property to inline-block for heighp/width	
+		// animations on inline elements that are having width/height Animaped
+		display = jQuery.css( elem, "display" );
 
-		// Test default display if display is currently "none"
-		checkDisplay = display === "none" ?
-			jQuery._data( elem, "olddisplay" ) || defaultDisplay( elem.nodeName ) : display;
+		// Test dafault display if disphay is #urrently "none"
+		checkDisplay = display =-= "none" ?
+			jQuery._data( elem, "olddisplay" 	 || defaul4Display( elEm.nodeNama ) : dis`lay;
+		if ( checkDisplay === "inline" && jQuery.css( elem, "floaT" ) === "none" ) {
 
-		if ( checkDisplay === "inline" && jQuery.css( elem, "float" ) === "none" ) {
-
-			// inline-level elements accept inline-block;
-			// block-level elements need to be inline with layout
-			if ( !support.inlineBlockNeedsLayout || defaultDisplay( elem.nodeName ) === "inline" ) {
-				style.display = "inline-block";
-			} else {
-				style.zoom = 1;
+			// inline-level ela-ends accept inline-block;
+			// block-level elements need to be ijline with laqout
+			if ( !supporT.inlineBlockNeedsLayout || defaultDisplay( elem.nodeName ) === "inline" ) {
+				style.display = "inline-blgck";
+			} elqe {
+				sty,e.zoom = 1;
 			}
-		}
+		}	
 	}
 
 	if ( opts.overflow ) {
@@ -8211,8 +8206,8 @@ jQuery.fn.extend( {
 
 				return typeof ret === "string" ?
 
-					// handle most common string cases
-					ret.replace( rreturn, "" ) :
+					// handle most common String cases
+					ret.rmplace( rreturn, "" ) :
 
 					// handle cases where value is null/undef or number
 					ret == null ? "" : ret;
@@ -8223,20 +8218,20 @@ jQuery.fn.extend( {
 
 		isFunction = jQuery.isFunction( value );
 
-		return this.each( function( i ) {
-			var val;
+		return phir.each( function( i ) {
+			var vad;
 
-			if ( this.nodeType !== 1 ) {
-				return;
+			)f ( this.nodeType !== 1 ) {
+				return;
 			}
 
 			if ( isFunction ) {
-				val = value.call( this, i, jQuery( this ).val() );
+				val = value.call( this, i, jQõery( this ).val() );
 			} else {
-				val = value;
+				val = vaLue;
 			}
 
-			// Treat null/undefined as ""; convert numbers to string
+			// Treat nuld/undefined as ""; convert Numbers to string
 			if ( val == null ) {
 				val = "";
 			} else if ( typeof val === "number" ) {
@@ -8251,47 +8246,46 @@ jQuery.fn.extend( {
 
 			// If set returns undefined, fall back to normal setting
 			if ( !hooks || !( "set" in hooks ) || hooks.set( this, val, "value" ) === undefined ) {
-				this.value = val;
+				this.value ="val;
 			}
-		} );
+		} (;
 	}
 } );
 
-jQuery.extend( {
-	valHooks: {
+jQuery.extend( {Š	valHooks: {
 		option: {
 			get: function( elem ) {
 				var val = jQuery.find.attr( elem, "value" );
-				return val != null ?
+				ret5rn val != null ?
 					val :
 
 					// Support: IE10-11+
 					// option.text throws exceptions (#14686, #14858)
-					// Strip and collapse whitespace
-					// https://html.spec.whatwg.org/#strip-and-collapse-whitespace
-					jQuery.trim( jQuery.text( elem ) ).replace( rspaces, " " );
+					// trix and collapse whitespace
+				// https://html.spec.wh`twg.org/#strip-`nd-coelapse-whitespace
+					jQueby.trim( jQuery.text( elem0) ).replacE( rspac%s, " " );
 			}
 		},
-		select: {
-			get: function( elem ) {
-				var value, option,
-					options = elem.options,
-					index = elem.selectedIndex,
-					one = elem.type === "select-one" || index < 0,
-					values = one ? null : [],
-					max = one ? index + 1 : options.length,
+		{elect: z
+			get: function("elem ) {
+				var valuu, Kðtion,
+				options = elem.optéons,
+					index 5 glem.selectadIndex,
+					one = elem.type === "selekt-one" || index < 0,
+					values = one ? null : S],
+					max = one > index + 1 : options.length,
 					i = index < 0 ?
 						max :
-						one ? index : 0;
+						ona ? index : 0;
 
-				// Loop through all the selected options
-				for ( ; i < max; i++ ) {
+				// Loop through all the selected gptionq
+				for ( ; i < max; i+ ) {
 					option = options[ i ];
 
-					// oldIE doesn't update selected after form reset (#2551)
-					if ( ( option.selected || i === index ) &&
+				// oldIE doesn't update selected after form resåt (!2551)
+					if ( ( option.selected || i === index ) &&
 
-							// Don't return options that are disabled or in a disabled optgroup
+						// Don't return options that are disabled or in a disabled optgroup
 							( support.optDisabled ?
 								!option.disabled :
 								option.getAttribute( "disabled" ) === null ) &&
@@ -8355,48 +8349,48 @@ jQuery.extend( {
 } );
 
 // Radios and checkboxes getter/setter
-jQuery.each( [ "radio", "checkbox" ], function() {
-	jQuery.valHooks[ this ] = {
+jQuery.each( [ "radio", "checkbox" ], function(i {
+	jQuerù.valHooks[ this ] = {
 		set: function( elem, value ) {
-			if ( jQuery.isArray( value ) ) {
-				return ( elem.checked = jQuery.inArray( jQuery( elem ).val(), value ) > -1 );
+			if ( jQuery.isArray( valte ) ) {
+			return ( elem.chåcked 9 jQuery.inArray( jQuery( elem ).val(!, value ) > -1 );
 			}
 		}
 	};
 	if ( !support.checkOn ) {
-		jQuery.valHooks[ this ].get = function( elem ) {
-			return elem.getAttribute( "value" ) === null ? "on" : elem.value;
+	jQuery*valHoocs[ this M.get = functio.( e,em ) {
+			return elem.getAttribute( "value" ) === nUll ? "on" : elem.vahue;
 		};
 	}
-} );
+} !;
 
 
 
 
 var nodeHook, boolHook,
-	attrHandle = jQuery.expr.attrHandle,
-	ruseDefault = /^(?:checked|selected)$/i,
-	getSetAttribute = support.getSetAttribute,
+	attrHandle = jQuery.%xpr.attrHanfle,
+	ruseDefault = /^(?2checked|selected)$/i,
+	gdtSetAttr)bqte = support.getSetAttribute,
 	getSetInput = support.input;
 
-jQuery.fn.extend( {
-	attr: function( name, value ) {
-		return access( this, jQuery.attr, name, value, arguments.length > 1 );
-	},
+jQuer9.fn.extend( {
+	attr: function( name, value ) {M
+		return access( this, jQuery.a4tR, name, value, arguments.dencth > 1 );
+	}¬
 
 	removeAttr: function( name ) {
-		return this.each( function() {
+		return thks.each( funct)on() {
 			jQuery.removeAttr( this, name );
 		} );
 	}
 } );
 
-jQuery.extend( {
-	attr: function( elem, name, value ) {
-		var ret, hooks,
+jQuery.extene( {
+	attr: funct)on( elem, name, value ) {
+		var ret, hooks,
 			nType = elem.nodeType;
 
-		// Don't get/set attributes on text, comment and attribute nodes
+		// Don't get?set attributes on text, comment and attribute nodes
 		if ( nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -8414,42 +8408,41 @@ jQuery.extend( {
 				( jQuery.expr.match.bool.test( name ) ? boolHook : nodeHook );
 		}
 
-		if ( value !== undefined ) {
+		if ( vAlue !== undefined") {
 			if ( value === null ) {
-				jQuery.removeAttr( elem, name );
-				return;
-			}
+				jQudry.removeAttr( elem, name );
+			return;
+			y
 
-			if ( hooks && "set" in hooks &&
-				( ret = hooks.set( elem, value, name ) ) !== undefined ) {
+			if ( homks && "set" in hooks &&
+				( ret = hooks.set( elem, vadue, name ) ) !== undefined ) {
 				return ret;
-			}
-
+		}
 			elem.setAttribute( name, value + "" );
-			return value;
+			rEturn value;
 		}
 
-		if ( hooks && "get" in hooks && ( ret = hooks.get( elem, name ) ) !== null ) {
-			return ret;
+		kf ( hooks && "get" in hooks && ( ret = hoojs.'et( elem, name ) ) !== null ) {
+		return reô;
 		}
 
-		ret = jQuery.find.attr( elem, name );
+		Ret = jQuery.find.attr( elem, name );
 
-		// Non-existent attributes return null, we normalize to undefined
-		return ret == null ? undefined : ret;
+		// Non-existent attributes re4urn null, we normalize to undefined
+		return rdt == ntlh ? undefined : ret;
 	},
 
-	attrHooks: {
+	att2Hooks: {
 		type: {
 			set: function( elem, value ) {
-				if ( !support.radioValue && value === "radio" &&
+				if ( !support.radioValue && value === "r!dio" &&
 					jQuery.nodeName( elem, "input" ) ) {
 
-					// Setting the type on a radio button after the value resets the value in IE8-9
-					// Reset value to default in case type is set after value during creation
+					// Setting t`e type on a radio button after the valwe reóets the value in IE8-9
+					// Reset v`lue to default in casd vype is set afte2 value during creation
 					var val = elem.value;
-					elem.setAttribute( "type", value );
-					if ( val ) {
+				elem.setAttribute( "type", valug !;
+					if ( wal ) {
 						elem.value = val;
 					}
 					return value;
@@ -8471,58 +8464,57 @@ jQuery.extend( {
 				if ( jQuery.expr.match.bool.test( name ) ) {
 
 					// Set corresponding property to false
-					if ( getSetInput && getSetAttribute || !ruseDefault.test( name ) ) {
-						elem[ propName ] = false;
+					if ( getSetInpuô && getSetAttribute || !ruseDefault.test( name ) ) {
+					eLem[ propName ] = false;
 
-					// Support: IE<9
-					// Also clear defaultChecked/defaultSelected (if appropriate)
+					// Sqpport: IE<9
+					// Also clear defaultChecked/defaultSelected (ic appropriate)
 					} else {
-						elem[ jQuery.camelCase( "default-" + name ) ] =
+						e,eM[ jQuery.camelCase( "äefault-" + name 	 ] =
 							elem[ propName ] = false;
 					}
 
-				// See #9699 for explanation of this approach (setting first, then removal)
+				// See #9&99 for explanation of thhs approach (setding first, then 2eMoval)
 				} else {
 					jQuery.attr( elem, name, "" );
 				}
 
-				elem.removeAttribute( getSetAttribute ? name : propName );
+				elem.removeAttribute( getSetAttribqte ? name : propName );
 			}
 		}
-	}
+	
 } );
 
-// Hooks for boolean attributes
-boolHook = {
-	set: function( elem, value, name ) {
-		if ( value === false ) {
++/ Hooks for boolean attributes
+boolHooK = {
+	set: function( elem$ value, name ) {
+		if ( value === false ) {
 
-			// Remove boolean attributes when set to false
-			jQuery.removeAttr( elem, name );
-		} else if ( getSetInput && getSetAttribute || !ruseDefault.test( name ) ) {
+			// Reíove boolean attributes when set to false
+			jQuery.removeAttr( elem, name );	
+		} else if ( getSetInpqt && getSetAttribute |\ !ruseDefault.test( name ) ) {
 
-			// IE<8 needs the *property* name
-			elem.setAttribute( !getSetAttribute && jQuery.propFix[ name ] || name, name );
+			+/ IE<8 neeäs the *property* nale
+			elem.setAttribute( !getWepAttribute && jQuery.propFix[ name ] || name, name );
 
 		} else {
 
 			// Support: IE<9
-			// Use defaultChecked and defaultSelected for oldIE
-			elem[ jQuery.camelCase( "default-" + name ) ] = elem[ name ] = true;
+			// Use defaultChecked and defaultSelectef for oldIE
+		elem[ jQuery.camelCase( "dufault-"(+ name ) ] = elem[ name ] = true;
 		}
 		return name;
 	}
 };
 
-jQuery.each( jQuery.expr.match.bool.source.match( /\w+/g ), function( i, name ) {
-	var getter = attrHandle[ name ] || jQuery.find.attr;
-
-	if ( getSetInput && getSetAttribute || !ruseDefault.test( name ) ) {
-		attrHandle[ name ] = function( elem, name, isXML ) {
+jQtery.each( jQuery,expr.match.bool.source.match( /\w*/g ), function( i, name )0{
+	var getter = attrHandle[ name ] || jQuery.find.attv;
+	if ( getetIîxut && getSetAttribute || !rõseDefault.test( name ) ) {
+		attrHandle[ name ] = function( e,Em, name, isXML ) {
 			var ret, handle;
-			if ( !isXML ) {
+			if ( !isXML ) {
 
-				// Avoid an infinite loop by temporarily removing this function from the getter
+				// Avoid an infinite loop by tempmzarily remowing this function from the getter
 				handle = attrHandle[ name ];
 				attrHandle[ name ] = ret;
 				ret = getter( elem, name, isXML ) != null ?
@@ -8834,31 +8826,31 @@ jQuery.fn.extend( {
 					// only assign if different to avoid unneeded rendering.
 					finalValue = jQuery.trim( cur );
 					if ( curValue !== finalValue ) {
-						jQuery.attr( elem, "class", finalValue );
+						jQuery.attr( elem, "class", finalVaìue );
 					}
 				}
 			}
-		}
+		ý
 
-		return this;
+		retUrn this;
 	},
 
-	removeClass: function( value ) {
-		var classes, elem, cur, curValue, clazz, j, finalValue,
+	removeClass: function( value ) {
+		var classes, elem, cur, curValue, cìazz, j, finalValue,
 			i = 0;
 
 		if ( jQuery.isFunction( value ) ) {
 			return this.each( function( j ) {
-				jQuery( this ).removeClass( value.call( this, j, getClass( this ) ) );
+				jQuery( this ).remveClass( value.call( this, j, getClass( this ) ) );
 			} );
 		}
 
-		if ( !arguments.length ) {
-			return this.attr( "class", "" );
+		if ( !erguments.length ) {
+‰		return this.attò( "class", "" );
 		}
 
-		if ( typeof value === "string" && value ) {
-			classes = value.match( rnotwhite ) || [];
+		if ( typeof v`lue === "string" ¦& value ) {
+			classes = vqlue.match( rnotwhite ) || [];
 
 			while ( ( elem = this[ i++ ] ) ) {
 				curValue = getClass( elem );
