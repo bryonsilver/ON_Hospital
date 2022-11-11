@@ -54,6 +54,94 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
     font-weight: 400;
     margin-left: 5px;
 }
+
+.blue_bold_t {
+    color: #2980b9 !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+.orange_bold_t {
+    font-size: 18px !important;
+    color: #d35400 !important;
+    font-weight: 700 !important ;
+}
+.box {
+    margin-bottom: 30px;
+}
+.box > p {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px !important;
+}
+.bold {
+    font-weight: 600 !important;
+}
+.bold2 {
+    font-weight: 500 !important;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+.n_bold {
+    font-weight: 400 !important;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.small {
+    font-size: 13px !important;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.small_under {
+    font-size: 13px !important;
+    text-decoration: underline;
+    font-weight: 600 !important;
+    color:  #666;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.small_left {
+    font-size: 14px !important;
+    color: #666;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.left {
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.left2 {
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+.left3 {
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.left4 {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.left5 {
+    padding-left: 88px;
+    box-sizing: border-box;
+}
+
+.center_con {
+    font-size: 24px;
+    font-weight: 400 !important;
+    margin-bottom: 30px !important;
+}
+.top_bold {
+    font-weight: 500 !important;
+    font-size: 24px;
+    margin: 0 !important;
+    color: #333;
+}
+
+
+
+
 .mr_t_title {
     font-size: 23px;
     font-weight: 500;

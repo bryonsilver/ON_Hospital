@@ -16,6 +16,7 @@ $(document).ready(function(){
     } else if (num == 2) {
          $('#selec2').prop("selected", true);
         $('.nav_3').addClass('active')
+        // $('.mr_main_comment').css({margin:'0 !important', padding: '0 !important'})
     } else if (num == 3) {
          $('#selec3').prop("selected", true);
         $('.nav_4').addClass('active')
@@ -31,8 +32,9 @@ $(document).ready(function(){
     let d_num = de_num -1
     let data = NEWS_DETAIL[num];
     let dn5_const = data[d_num].const
-    let dn2_const = data[d_num].top_content
+    let dn2_const = data[d_num].top_bold
     let dn2_center_con = data[d_num].center_con
+    let dn_con_4 = data[d_num].con4
     for(let i=0; i<1; i++) {
          let list = `
                         <div class="mr_title_box">
@@ -77,20 +79,18 @@ $(document).ready(function(){
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">
                                             <p class="top_small">${data[d_num].top_small}</p>`
-                                            if(data[d_num].top_content) {
-                                                for(let j=0; j<data[d_num].top_content.legnth; j++) {
+                                            if(de_num != 1) {
+                                                for(let j=0; j<dn2_const.length; j++) {
                                                 list += `<p class="top_bold">${data[d_num].top_bold[j]}</p>`
                                                 }
-                                            } else {
+                                            } else if (de_num == 1) {
                                                 list += `<p class="top_bold">안됨</p>`
                                             }
                                     list += `<p class="top_content">${data[d_num].top_content}</p>
                                             <p class="img_p"><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
                                             <p class="img_text">${data[d_num].img_text}</p>`
-                                            if(data[d_num].top_content) {
-                                                for(let j=0; j<data[d_num].center_con.legnth; j++) {
-                                        list += `<p class="center_con">${data[d_num].center_con[j]}</p>`
-                                                }
+                                            for(let j=0; j<dn2_center_con.length; j++) {
+                                                list += `<p class="center_con">${data[d_num].center_con[j]}</p>`
                                             }
                                     list +=  `<div class="sources_box">
                                             <div>${data[d_num].editor}</div>
@@ -100,8 +100,148 @@ $(document).ready(function(){
                         } else if (num == 3) {
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">
-                                            <p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
-                                        </div>`
+                                            `
+                                            if (de_num == 1) {
+                                     list +=  `<p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>`
+                                            } else if(de_num != 5) {
+                                    list += `<p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p> 
+                                            <div class="box_1 box">
+                                                <p class="blue_bold_t">${data[d_num].con_title[0]}</p>`
+                                                for(let j=0; j<3;j++) {
+                                         list +=  `<p>${data[d_num].con1[j]}</p>`
+                                                }
+                                    list+= ` </div>
+                                            <div class="box_2 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[1]}</p>`
+                                                for(let j=0; j<data[d_num].con2.length;j++) {
+                                                    if (de_num == 1 == 3) {
+                                                        list +=  `<p>${data[d_num].con2[j]}</p>`
+                                                    } 
+                                                    else if (de_num == 4) {
+                                                        list +=  `<p class="bold">${data[d_num].con2[j]}</p>`
+                                                    }
+                                                } 
+                                                if (de_num == 2) {
+                                                    list +=  `<p class="bold">${data[d_num].con2[0]}</p>
+                                                            <p class="left3">${data[d_num].con2[1]}</p>
+                                                            <p class="left4">${data[d_num].con2[2]}</p>
+                                                    `
+                                                } 
+                                    list+= `</div>
+                                            <div class="box_3 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[2]}</p>
+                                                <p class="bold">${data[d_num].con3[0]}</p>
+                                                <p>${data[d_num].con3[1]}</p>
+                                            </div>
+                                            <div class="box_4 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[3]}</p>`
+                                                for(let j=0; j<dn_con_4.length; j++) {
+                                            list +=`<p>${data[d_num].con4[j]}</p>`
+                                                }
+                                     list+=  `</div>
+                                            <div class="box_5 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[4]}</p>`
+                                                if (de_num != 4) {
+                                                    list+=    `<p>${data[d_num].con5[0]}</p>
+                                                    <p class="small_left">${data[d_num].con5[1]}</p>
+                                                    <p class="small_left">${data[d_num].con5[2]}</p>
+                                                    <p class="small_left">${data[d_num].con5[3]}</p>
+                                                    <p class="small_left">${data[d_num].con5[4]}</p>
+                                                    <p class="small_left">${data[d_num].con5[5]}</p>`
+                                                } else if (de_num == 4) [
+                                                    list+=   `<p>${data[d_num].con5[0]}</p>
+                                                    <p class="small">${data[d_num].con5[1]}</p>
+                                                    <p class="small">${data[d_num].con5[2]}</p>
+                                                    <p class="small">${data[d_num].con5[3]}</p>
+                                                    <p class="small_under">${data[d_num].con5[4]}</p>
+                                                    <p class="small_under">${data[d_num].con5[5]}</p>`
+                                                ]
+                                                
+                                                list+=  `</div>
+
+                                            <div class="box_6 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[5]}</p>
+                                                <p>${data[d_num].con6[0]}</p>
+                                                <p>${data[d_num].con6[1]}</p>
+                                            </div>
+
+                                            <div class="box_7 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[6]}</p>`
+                                            if (de_num != 4) {
+                                        list += `<p>${data[d_num].con7[0]}</p>
+                                                <p>${data[d_num].con7[1]}</p>
+                                                <p>${data[d_num].con7[2]}</p>
+                                                <p>${data[d_num].con7[3]}</p>`
+                                            } else if (de_num == 4) {
+                                        list +=  `<p>${data[d_num].con7[0]}</p>
+                                                <p>${data[d_num].con7[1]}</p>
+                                                <p class="left2">${data[d_num].con7[2]}</p>
+                                                <p class="left">${data[d_num].con7[3]}</p>
+                                                <p class="left">${data[d_num].con7[4]}</p>
+                                                <p class="left">${data[d_num].con7[5]}</p>
+                                                <p class="left">${data[d_num].con7[6]}</p>
+                                                <p class="left">${data[d_num].con7[7]}</p>
+                                                <p class="left">${data[d_num].con7[8]} <span  class="bold">${data[d_num].con7[9]}</span></p>`
+                                            }
+                                   list += `</div>
+                                            <div class="box_8 box"> 
+                                                <p class="blue_bold_t">${data[d_num].con_title[7]}</p>
+                                                <p>${data[d_num].con8[0]}</p>
+                                                <p>${data[d_num].con8[1]}</p>
+                                            </div>
+                                                
+                                            `
+                                            } else if (de_num == 5) {
+                                    list += `<p><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>
+                                            <span class="bold2">${data[d_num].img_text}</span>
+                                            <div class="box_1 box">
+                                                <p class="orange_bold_t">${data[d_num].con_title[0]}</p>`
+                                                for(let j=0; j<3;j++) {
+                                         list +=  `<p>${data[d_num].con1[j]}</p>`
+                                                }
+                                    list+= ` </div>
+                                            <div class="box_2 box"> 
+                                                <p class="orange_bold_t">${data[d_num].con_title[1]}</p>
+                                                <p class="bold">${data[d_num].con2[0]}</p>
+                                                <p class="bold">${data[d_num].con2[1]}</p>
+                                                <p class="bold">${data[d_num].con2[2]}</p>
+                                                <p>${data[d_num].con2[3]}</p>
+                                                <p>${data[d_num].con2[4]}</p>
+                                            </div>
+                                            <div class="box_3 box"> 
+                                                <p class="orange_bold_t">${data[d_num].con_title[2]}</p>
+                                                <p>${data[d_num].con3}</p>
+                                            </div>
+                                            <div class="box_4"> 
+                                                <p class="orange_bold_t">${data[d_num].con_title[3]}</p>`
+                                                for(let j=0; j<10; j++) {
+                                            list +=`<p class="n_bold">${data[d_num].con4[j]}</p>`
+                                                }
+                                        list +=`</div>
+                                            <div class="box_5 box"> 
+                                                <p class="orange_bold_t">${data[d_num].con_title[4]}</p>
+                                                <p>${data[d_num].con5[0]}</p>
+                                                <p class="small">${data[d_num].con5[1]}</p>
+                                                <p class="small">${data[d_num].con5[2]}</p>
+                                                <p class="small">${data[d_num].con5[3]}</p>
+                                                <p class="small_under">${data[d_num].con5[4]}</p>
+                                                <p class="small_under">${data[d_num].con5[5]}</p>
+                                            </div>
+
+                                            <div class="box_6 box"> 
+                                                <p class="orange_bold_t">${data[d_num].con_title[5]}</p>
+                                                <p>${data[d_num].con6[0]}</p>
+                                                <p class="left5">${data[d_num].con6[1]}</p>
+                                                <p class="left5">${data[d_num].con6[2]}</p>
+                                                <p>${data[d_num].con6[3]} <span  class="bold">${data[d_num].con6[4]}</span></p>
+                                            </div>
+                                            <div class="box_7 box"> 
+                                                <p class="orange_bold_t">${data[d_num].con_title[6]}</p>
+                                                <p>${data[d_num].con7[0]}</p>
+                                                <p>${data[d_num].con7[1]}</p>
+                                            </div>
+                                            `
+                                            }
                         } else if (num == 4) {
                             list += `<div class="mr_coment_box">
                                         <div class="mr_main_comment">

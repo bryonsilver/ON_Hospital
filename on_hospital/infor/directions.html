@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온종합병원 그룹 - 오시는 길</title>
+
+    <link rel="stylesheet" href="../css/comon.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.css">
+    <link rel="stylesheet" href="../css/medi_detail.css">
+    <link rel="stylesheet" href="../css/guide.css">
+    <link rel="stylesheet" href="../css/m_left_common.css">
+
+    <script src="../js/common/jquery-2.1.4.min.js"></script>
+    <script defer src="../js/common/common.js"></script>
+    <script defer src="../js/medi_depart/doctor_list.js"></script>
+    <script defer src="../js/guide/guide.js"></script>
+    <script src="../js/guide/guide_list.js"></script>
+
+    <script defer src="../js/common/swiper-bundle.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../js/common/google.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="black_pan"></div>
+        <div class="all_s_tab_box">
+            <div class="as_tab_title">
+                <span>전체보기<span class="as_t_small">(닫기)</span></span>
+            </div>
+            <div class="as_tab_menu_box">
+                <ul class="as_tab_ul">
+                    <li class="as_tab_li">
+                        <a href="../infor/infor.html">병원안내</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="../infor/infor.html">인사말</a></li>
+                            <li><a href="../infor/history.html">연혁</a></li>
+                            <li><a href="../infor/mission.html">미션/비전</a></li>
+                            <li><a href="../infor/floor.html">층별안내</a></li>
+                            <li><a href="../infor/directions.html">오시는길</a></li>
+                            <li><a href="../infor/phone_num.html">전화번호</a></li>
+                            <li><a href="../infor/customer.html">고객지원센터</a></li>
+                            <li><a href="../infor/emergency.html">응급의료센터</a></li>
+                            <li><a href="../guide.html?num=8">편의시설안내</a></li>
+                            <li><a href="../infor/funeral.html">장례식장</a></li>
+                        </ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="../medi_infor/infor.html">진료안내</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="../medi_infor/infor.html">진료안내</a></li>
+                            <li><a href="../medi_infor/visit.html">병문안안내</a></li>
+                            <li><a href="../medi_infor/admission.html">입/퇴원 안내</a></li>
+                            <li><a href="../medi_infor/issuance.html">제증명서발급</a></li>
+                        </ul>
+                        <div class="as_tab_ul_div">
+                            <a href="../medi_depart.html">진료과ㆍ의료진</a>
+                        </div>
+                    </li>
+                    <li class="as_tab_li special">
+                        <a href="../medi_center.html?cen_v=0">전문센터</a>
+                        <div class="as_tu_ul_div">
+                            <ul class="as_tu_ul">
+                                <li><a href="../medi_center.html?cen_v=0">간담췌센터 위ㆍ대장암</a></li>
+                                <li><a href="../medi_center.html?cen_v=1">간센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=2">감염센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=3">대장항문센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=4">소아청소년 정신건강센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=5">소화기암수술센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=6">신경센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=7">심뇌혈관센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=8">알레르기 센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=9">암재활프로그램</a></li>
+                                <li><a href="../medi_center.html?cen_v=10">여성암센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=11">유방ㆍ갑상선암 센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=12">유방암센터</a></li>
+                                <li><a href="../infor/emergency.html">응급의료센터</a></li>
+                            </ul>
+                            <ul class="as_tu_ul">
+                                <li><a href="../medi_center.html?cen_v=14">인공신장센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=15">인터벤션센터(중재시술)</a></li>
+                                <li><a href="../medi_center.html?cen_v=16">장례식장</a></li>
+                                <li><a href="../medi_center.html?cen_v=17">재활치료센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=18">전립선ㆍ배뇨장애 센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=19">전립선암센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=20">척추관절센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=21">초음파진단센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=22">췌장담도센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=23">턱얼굴수술센터(양악센터)</a></li>
+                                <li><a href="../medi_center.html?cen_v=24">페암수술센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=25">항암방사선치료센터</a></li>
+                                <li><a href="../medi_center.html?cen_v=26">호스피스완화의료병동</a></li>
+                                <li><a href="../medi_center.html?cen_v=27">호흡기센터</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="../medi_center2.html?cen2_v=1&item=1">암병원</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="../medi_center2.html?cen2_v=1&item=1">간센터</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=5&item=2">소화기암수술센터</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=10&item=3">여성암센터</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=11&item=4">유방ㆍ갑상선암 센터</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=15&item=5">인터벤션센터(중재시술)</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=18&item=6">전립선암센터</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=24&item=7">폐암수술센터</a></li>
+                            <li><a href="../medi_center2.html?cen2_v=25&item=8">항암방사선치료센터</a></li>
+                        </ul>
+                    </li>
+                    <li class="as_tab_li">
+                        <a href="../news.html?num=0">병원소식</a>
+                        <ul class="as_tu_ul">
+                            <li><a href="../news.html?num=0">공지사항</a></li>
+                            <li><a href="../news.html?num=1">기타소식</a></li>
+                            <li><a href="../news.html?num=2">언론보도</a></li>
+                            <li><a href="../news.html?num=3">채용정보</a></li>
+                            <li><a href="../news.html?num=4">오늘의 식단</a></li>
+                            <li><a href="../news.html?num=5">자주묻는질문</a></li>
+                        </ul>
+                        <div class="as_tab_ul_div">
+                            <a href="../unpaid.html">비급여</a>
+                        </div>
+                    </li>
+                    <li class="as_tab_li nothing"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top_btn">
+            <div class="top_btn_img">
+                <img src="../img/common/top.png" alt="top_btn_img" class="top_btn">
+            </div>
+        </div>
+        <div class="header">
+            <div class="h_fixed">
+                <div class="container h_flex">
+                    <div class="first_box">
+                        <div class="logo_box">
+                            <a href="../index.html"><img src="../img/common/logo-dark2.png" alt="logo_img" class="logo_img"></a>
+                        </div>
+                        <div class="g_first_box">
+                            <div id="google_translate_element"></div>
+                        </div>
+                    </div>
+                    <div class="burger_menu_box">
+                        <span class="burger_span">
+                            <div class="line_menu first_line"></div>
+                            <div class="line_menu mid_bur"></div>
+                            <div class="line_menu last_line"></div>
+                        </span> 
+                    </div>
+                    <div class="black_pan_bur"></div>
+                    <div class="burger_nav_box">
+                        <div class="burger_n_long">
+                            <ul class="bn_ul">
+                                <li class="bn_li">
+                                    <a href="../infor/infor.html">병원안내</a>
+                                    <ul class="bn_n_ul">
+                                        <li class="bn_n_li"><a href="../infor/infor.html">인사말</a></li>
+                                        <li class="bn_n_li"><a href="../infor/history.html">연혁</a></li>
+                                        <li class="bn_n_li"><a href="../infor/mission.html">미션/비전</a></li>
+                                        <li class="bn_n_li"><a href="../infor/floor.html">층별안내</a></li>
+                                        <li class="bn_n_li"><a href="../infor/directions.html">오시는길</a></li>
+                                        <li class="bn_n_li"><a href="../infor/phone_num.html">전화번호</a></li>
+                                        <li class="bn_n_li"><a href="../infor/customer.html">고객지원센터</a></li>
+                                        <li class="bn_n_li"><a href="../infor/emergency.html">응급의료센터</a></li>
+                                        <li class="bn_n_li"><a href="../guide.html?num=8">편의시설안내</a></li>
+                                        <li class="bn_n_li"><a href="../infor/funeral.html">장례식장</a></li>
+                                    </ul>
+                                    <span class="btn_p">
+                                        <div class="bn_plus_btn"><span class="bn_p_after"></span></div>
+                                    </span>
+                                </li>
+                                <li class="bn_li">
+                                    <a href="../medi_infor/infor.html">진료안내</a>
+                                    <ul class="bn_n_ul">
+                                        <li class="bn_n_li"><a href="../medi_infor/infor.html">진료안내</a></li>
+                                        <li class="bn_n_li"><a href="../medi_infor/visit.html">병문안안내</a></li>
+                                        <li class="bn_n_li"><a href="../medi_infor/admission.html">입/퇴원 안내</a></li>
+                                        <li class="bn_n_li"><a href="../medi_infor/issuance.html">제증명서발급</a></li>
+                                    </ul>
+                                    <span class="btn_p">
+                                        <div class="bn_plus_btn"><span class="bn_p_after"></span></div>
+                                    </span>
+                                </li>
+                                <li class="bn_li">
+                                    <a href="../medi_depart.html">진료과ㆍ의료진</a>
+                                </li>
+                                <li class="bn_li">
+                                    <a href="../medi_center.html?cen_v=0">전문센터</a>
+                                    <ul class="bn_n_ul">
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=0">간담췌센터 위ㆍ대장암</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=1">간센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=2">감염센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=3">대장항문센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=4">소아청소년 정신건강센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=5">소화기암수술센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=6">신경센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=7">심뇌혈관센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=8">알레르기 센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=9">암재활프로그램</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=10">여성암센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=11">유방ㆍ갑상선암 센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=12">유방암센터</a></li>
+                                        <li class="bn_n_li"><a href="../infor/emergency.html">응급의료센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=14">인공신장센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=15">인터벤션센터(중재시술)</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=16">장례식장</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=17">재활치료센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=18">전립선ㆍ배뇨장애 센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=19">전립선암센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=20">척추관절센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=21">초음파진단센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=22">췌장담도센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=23">턱얼굴수술센터(양악센터)</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=24">페암수술센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=25">항암방사선치료센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=26">호스피스완화의료병동</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center.html?cen_v=27">호흡기센터</a></li>
+                                    </ul>
+                                    <span class="btn_p">
+                                        <div class="bn_plus_btn"><span class="bn_p_after"></span></div>
+                                    </span>
+                                </li>
+                                <li class="bn_li">
+                                    <a href="../medi_center2.html?cen2_v=1&item=1">암병원</a>
+                                    <ul class="bn_n_ul">
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=1&item=1">간센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=5&item=2">소화기암수술센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=10&item=3">여성암센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=11&item=4">유방ㆍ갑상선암 센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=15&item=5">인터벤션센터(중재시술)</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=18&item=6">전립선암센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=24&item=7">폐암수술센터</a></li>
+                                        <li class="bn_n_li"><a href="../medi_center2.html?cen2_v=25&item=8">항암방사선치료센터</a></li>
+                                    </ul>
+                                    <span class="btn_p">
+                                        <div class="bn_plus_btn"><span class="bn_p_after"></span></div>
+                                    </span>
+                                </li>
+                                <li class="bn_li">
+                                    <a href="../news.html?num=0">병원소식</a>
+                                    <ul class="bn_n_ul">
+                                        <li class="bn_n_li"><a href="../news.html?num=0">공지사항</a></li>
+                                        <li class="bn_n_li"><a href="../news.html?num=1">기타소식</a></li>
+                                        <li class="bn_n_li"><a href="../news.html?num=2">언론보도</a></li>
+                                        <li class="bn_n_li"><a href="../news.html?num=3">채용정보</a></li>
+                                        <li class="bn_n_li"><a href="../news.html?num=4">오늘의 식단</a></li>
+                                        <li class="bn_n_li"><a href="../news.html?num=5">자주묻는질문</a></li>
+                                    </ul>
+                                    <span class="btn_p">
+                                        <div class="bn_plus_btn"><span class="bn_p_after"></span></div>
+                                    </span>
+                                </li>
+                                <li class="bn_li">
+                                    <a href="../unpaid.html">비급여</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_box">
+                    <div class="container nav_height">
+                        <div class="all_see">
+                            <span class="line_box_as">
+                                <div class="line_menu2 first_line2"></div>
+                                <div class="line_menu2 mid_bur"></div>
+                                <div class="line_menu2 last_line2"></div>
+                            </span>
+                            <span>전체메뉴</span>
+                        </div>
+                        <ul class="nav_ul">
+                            <li class="nav_li">
+                                <a href="../infor/infor.html">병원안내</a>
+                                <ul class="n_nav_ul">
+                                    <li class="hos_infor_1"><a href="../infor/infor.html">인사말</a></li>
+                                    <li class="hos_infor_2"><a href="../infor/history.html">연혁</a></li>
+                                    <li class="hos_infor_3"><a href="../infor/mission.html">미션/비전</a></li>
+                                    <li class="hos_infor_4"><a href="../infor/floor.html">층별안내</a></li>
+                                    <li class="hos_infor_5"><a href="../infor/directions.html">오시는길</a></li>
+                                    <li class="hos_infor_6"><a href="../infor/phone_num.html">전화번호</a></li>
+                                    <li class="hos_infor_7"><a href="../infor/customer.html">고객지원센터</a></li>
+                                    <li class="hos_infor_8"><a href="../infor/emergency.html">응급의료센터</a></li>
+                                    <li class="hos_infor_9"><a href="../guide.html?num=8">편의시설안내</a></li>
+                                    <li class="hos_infor_10"><a href="../infor/funeral.html">장례식장</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_li">
+                                <a href="../medi_infor/infor.html">진료안내</a>
+                                <ul class="n_nav_ul">
+                                    <li class="medi_infor_1"><a href="../medi_infor/infor.html">진료안내</a></li>
+                                    <li class="medi_infor_2"><a href="../medi_infor/visit.html">병문안안내</a></li>
+                                    <li class="medi_infor_3"><a href="../medi_infor/admission.html">입/퇴원 안내</a></li>
+                                    <li class="medi_infor_4"><a href="../medi_infor/issuance.html">제증명서발급</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../medi_depart.html">진료과ㆍ의료진</a>
+                            </li>
+                            <li class="nav_li">
+                                <a href="../medi_center.html?cen_v=0">전문센터</a>
+                                <ul class="n_nav_ul">
+                                    <li class="spe_cen_1"><a href="../medi_center.html?cen_v=0">간담췌센터 위ㆍ대장암</a></li>
+                                    <li class="spe_cen_2"><a href="../medi_center.html?cen_v=1">간센터</a></li>
+                                    <li class="spe_cen_3"><a href="../medi_center.html?cen_v=2">감염센터</a></li>
+                                    <li class="spe_cen_4"><a href="../medi_center.html?cen_v=3">대장항문센터</a></li>
+                                    <li class="spe_cen_5"><a href="../medi_center.html?cen_v=4">소아청소년 정신건강센터</a></li>
+                                    <li class="spe_cen_6"><a href="../medi_center.html?cen_v=5">소화기암수술센터</a></li>
+                                    <li class="spe_cen_7"><a href="../medi_center.html?cen_v=6">신경센터</a></li>
+                                    <li class="spe_cen_8"><a href="../medi_center.html?cen_v=7">심뇌혈관센터</a></li>
+                                    <li class="spe_cen_9"><a href="../medi_center.html?cen_v=8">알레르기 센터</a></li>
+                                    <li class="spe_cen_10"><a href="../medi_center.html?cen_v=9">암재활프로그램</a></li>
+                                    <li class="spe_cen_11"><a href="../medi_center.html?cen_v=10">여성암센터</a></li>
+                                    <li class="spe_cen_12"><a href="../medi_center.html?cen_v=11">유방ㆍ갑상선암 센터</a></li>
+                                    <li class="spe_cen_13"><a href="../medi_center.html?cen_v=12">유방암센터</a></li>
+                                    <li class="spe_cen_14"><a href="../infor/emergency.html">응급의료센터</a></li>
+                                    <li class="spe_cen_15"><a href="../medi_center.html?cen_v=14">인공신장센터</a></li>
+                                    <li class="spe_cen_16"><a href="../medi_center.html?cen_v=15">인터벤션센터(중재시술)</a></li>
+                                    <li class="spe_cen_17"><a href="../medi_center.html?cen_v=16">장례식장</a></li>
+                                    <li class="spe_cen_18"><a href="../medi_center.html?cen_v=17">재활치료센터</a></li>
+                                    <li class="spe_cen_19"><a href="../medi_center.html?cen_v=18">전립선ㆍ배뇨장애 센터</a></li>
+                                    <li class="spe_cen_20"><a href="../medi_center.html?cen_v=19">전립선암센터</a></li>
+                                    <li class="spe_cen_21"><a href="../medi_center.html?cen_v=20">척추관절센터</a></li>
+                                    <li class="spe_cen_22"><a href="../medi_center.html?cen_v=21">초음파진단센터</a></li>
+                                    <li class="spe_cen_23"><a href="../medi_center.html?cen_v=22">췌장담도센터</a></li>
+                                    <li class="spe_cen_24"><a href="../medi_center.html?cen_v=23">턱얼굴수술센터(양악센터)</a></li>
+                                    <li class="spe_cen_25"><a href="../medi_center.html?cen_v=24">페암수술센터</a></li>
+                                    <li class="spe_cen_26"><a href="../medi_center.html?cen_v=25">항암방사선치료센터</a></li>
+                                    <li class="spe_cen_27"><a href="../medi_center.html?cen_v=26">호스피스완화의료병동</a></li>
+                                    <li class="spe_cen_28"><a href="../medi_center.html?cen_v=27">호흡기센터</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_li">
+                                <a href="../medi_center2.html?cen2_v=1&item=1">암병원</a>
+                                <ul class="n_nav_ul">
+                                    <li class="canc_1"><a href="../medi_center2.html?cen2_v=1&item=1">간센터</a></li>
+                                    <li class="canc_1"><a href="../medi_center2.html?cen2_v=5&item=2">소화기암수술센터</a></li>
+                                    <li class="canc_2"><a href="../medi_center2.html?cen2_v=10&item=3">여성암센터</a></li>
+                                    <li class="canc_3"><a href="../medi_center2.html?cen2_v=11&item=4">유방ㆍ갑상선암 센터</a></li>
+                                    <li class="canc_4"><a href="../medi_center2.html?cen2_v=15&item=5">인터벤션센터(중재시술)</a></li>
+                                    <li class="canc_5"><a href="../medi_center2.html?cen2_v=18&item=6">전립선암센터</a></li>
+                                    <li class="canc_6"><a href="../medi_center2.html?cen2_v=24&item=7">폐암수술센터</a></li>
+                                    <li class="canc_7"><a href="../medi_center2.html?cen2_v=25&item=8">항암방사선치료센터</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_li">
+                                <a href="../news.html?num=0">병원소식</a>
+                                <ul class="n_nav_ul">
+                                    <li class="n_news_1"><a href="../news.html?num=0">공지사항</a></li>
+                                    <li class="n_news_2"><a href="../news.html?num=1">기타소식</a></li>
+                                    <li class="n_news_3"><a href="../news.html?num=2">언론보도</a></li>
+                                    <li class="n_news_4"><a href="../news.html?num=3">채용정보</a></li>
+                                    <li class="n_news_5"><a href="../news.html?num=4">오늘의 식단</a></li>
+                                    <li class="n_news_6"><a href="../news.html?num=5">자주묻는질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../unpaid.html">비급여</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="main_flex">
+                    <div class="m_left">
+                        <div class="m_l_aside">
+                            <h4 class="ml_pic">
+                                <span>병원안내</span>
+                            </h4>
+                            <ul class="ml_ul">
+                                <li class="ml_li pm_1" id="m_li"><a href="../infor/infor.html">인사말</a></li>
+                                <li class="ml_li pm_2" id="m_li"><a href="../infor/history.html">연혁</a></li>
+                                <li class="ml_li pm_3" id="m_li"><a href="../infor/mission.html">미션/비전</a></li>
+                                <li class="ml_li pm_4" id="m_li"><a href="../infor/floor.html">층별안내</a></li>
+                                <li class="ml_li pm_5" id="m_li"><a href="../infor/directions.html">오시는길</a></li>
+                                <li class="ml_li pm_6" id="m_li"><a href="../infor/phone_num.html">전화번호</a></li>
+                                <li class="ml_li pm_7" id="m_li"><a href="../infor/customer.html">고객지원센터</a></li>
+                                <li class="ml_li pm_8" id="m_li"><a href="../infor/emergency.html">응급의료센터</a></li>
+                                <li class="ml_li pm_9" id="m_li"><a href="../guide.html?num=8">편의시설안내</a></li>
+                                <li class="ml_li pm_10" id="m_li"><a href="../infor/funeral.html">장례식장</a></li>
+                            </ul>
+                            <form id="frm" method="get" action="">
+                                <input type="hidden" name="pageName" id="pageName">
+                            </form>
+                        </div>
+                    </div> 
+                    <div class="m_right">
+                        <div class="m_select_nav_box">
+                            <div class="submenu_box">
+                                <select name="select_s" id="select_id" class="select_class" onchange="if(this.value) location.href=(this.value);">
+                                    <option value="./infor/infor.html">병원안내</option>
+                                    <option value="./infor/infor.html" id="selec0">- 인사말</option>
+                                    <option value="./infor/history.html" id="selec1">- 연혁</option>
+                                    <option value="./infor/mission.html" id="selec2">- 미션/비전</option>
+                                    <option value="./infor/floor.html" id="selec3">- 층별안내</option>
+                                    <option value="./infor/directions.html" id="selec4">- 오시는길</option>
+                                    <option value="./infor/phone_num.html" id="selec5">- 전화번호</option>
+                                    <option value="./infor/customer.html" id="selec6">- 고객지원센터</option>
+                                    <option value="./infor/emergency.html" id="selec7">- 응급의료센터</option>
+                                    <option value="./guide.html?num=8" id="selec8">- 편의시설안내</option>
+                                    <option value="./infor/funeral.html" id="selec9">- 장례식장</option>
+                                </select>
+                                <div class="arrow"><img src="../img/common/submenu_arrow.png" alt="sub_arrow" class="sub_arrow"></div>
+                            </div>
+                        </div>
+                        <div class="m_flex_box">
+                            <div class="row mb-4"> 
+                                <div class="col-lg-12"><h1 class="page-title"><i class="fas fa-plus-square"></i> 오시는길</h1></div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-12">
+                                    부산의 중심인 서면교차로 1KM내에 자리하여 [원스톱서비스] 가 절실한 서면지역 환자들에게 편리합니다. <br>
+                                    타 병원과 비교해 버스, 지하철역과 논스톱으로 연결되어 찾아오시기 편리합니다. 편리한 온종합병원으로 오십시오. 
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-12">
+                                    <div class="box-map">
+                                        <!-- * 카카오맵 - 지도퍼가기 -->
+                                        <!-- 1. 지도 노드 -->
+                                        <div id="daumRoughmapContainer1588742219467" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                        
+                                        <!--
+                                            2. 설치 스크립트
+                                            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                                        -->
+                                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="../ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                                        
+                                        <!-- 3. 실행 스크립트 -->
+                                        <script charset="UTF-8">
+                                            new daum.roughmap.Lander({
+                                                "timestamp" : "1588742219467",
+                                                "key" : "y8zp",
+                                                "mapWidth" : "640",
+                                                "mapHeight" : "360"
+                                            }).render();
+                                        </script>				
+                                    </div>			
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-12">
+                                    <h5 class="mb-4">온종합병원 본관 │ 대중교통 이용안내</h5>
+                                    <hr class="my-5">
+                                    <div class="row align-itmes-center">
+                                        <div class="col-lg-3">
+                                            <div class="text-center"><i class="fas fa-subway fa-3x" style="color: #13beff;"></i></div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <span class="circle" style="background-color: #1DB359;">2</span>호선 <br>
+                                            부암역 하차 ▶ 6번 출구 지하로 바로 연결
+                                        </div>
+                                    </div>
+                                    <hr class="my-4">
+                                    <div class="row align-itmes-center">
+                                        <div class="col-lg-3">
+                                            <div class="text-center py-4"><i class="fas fa-bus fa-3x" style="color: #13beff;"></i></div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <ul class="fa-ul ml-4">
+                                                <li class="mb-2"><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>당감입구 정류장<br>17, 23, 129-1, 138-1, 141, 160, 167, 169-1, 141(심야)번</li>
+                                                <li><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>부암지하철 정류장<br>31, 33, 62, 67, 68, 77, 85, 87, 110-1, 108, 133, 138, 1004(심야)번</li>
+                                            </ul>
+                                        </div>
+                                    </div>	
+                                    <hr class="mb-4">			
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-12">
+                                    <h5 class="mb-4">건강검진서면센터 │ 대중교통 이용안내</h5>
+                                    <hr class="my-5">
+                                    <div class="row align-itmes-center">
+                                        <div class="col-lg-3">
+                                            <div class="text-center"><i class="fas fa-subway fa-3x" style="color: #13beff;"></i></div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <span class="circle" style="background-color: #035EA8;">1</span> <span class="circle" style="background-color: #1DB359;">2</span>호선<br> 서면역 하차 ▶ 롯데백화점 지하 분수대 광장 ▶ 부산은행 서면롯데지점 ▶ 맞은편 계단(좌측출구)
+                                        </div>
+                                    </div>
+                                    <hr class="my-4">
+                                    <div class="row align-itmes-center">
+                                        <div class="col-lg-3">
+                                            <div class="text-center py-4"><i class="fas fa-bus fa-3x" style="color: #13beff;"></i></div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <ul class="fa-ul ml-4">
+                                                <li class="mb-2"><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>롯데호텔 백화점 정류장<br>17, 23, 67, 68, 85, 87, 108, 110-1, 129-1, 138, 141, 167, 1000, 1004, 1010</li>
+                                                <li><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>마을버스(롯데호텔 백화점 정류장)<br>부산진구 15번, 사상구 6번</li>
+                                            </ul>						
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-12">				
+                                    <div class="row align-itmes-center">
+                                        <div class="col-lg-3">
+                                            <div class="text-center py-4"><h5 class="mb-4">문의</h5></div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <ul class="fa-ul ml-4">
+                                                <li class="mb-2"><span class="fa-li"><i style="color: #a196ad;" class="fas fa-phone-square-alt"></i></span>전화번호. 051.6070-114</li>
+                                                <li class="mb-2"><span class="fa-li"><i style="color: #a196ad;" class="fas fa-envelope-open-text"></i></span>이메일. onhospital@hanmail.net</li>
+                                                <li class="mb-2"><span class="fa-li"><i style="color: #a196ad;" class="fas fa-desktop"></i></span>홈페이지. www.onhospital.org</li>
+                                            </ul>							
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border"></div>
+            <div class="swiper_box4 cooperaiton container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="swiper mySwiper4">
+                                <div class="swiper-wrapper">
+                                  <div class="swiper-slide">
+                                    <a href="https://www.kuh.ac.kr/main.do" class="coope">
+                                        <img src="./img/common/coope_1.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.paik.ac.kr/paik/user/main/view.do" class="coope">
+                                        <img src="./img/common/coope_2.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.kosinmed.or.kr/" class="coope">
+                                        <img src="./img/common/coope_3.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.damc.or.kr/main/main_2017.php" class="coope">
+                                        <img src="./img/common/coope_4.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.cmcseoul.or.kr/page/main" class="coope">
+                                        <img src="./img/common/coope_5.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="http://www.snuh.org/intro.do" class="coope">
+                                        <img src="./img/common/coope_6.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="#" class="coope"> <!--부산대학교 병원 사이트 안됨.. -->
+                                        <img src="./img/common/coope_7.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://sev.severance.healthcare/sev/intro.do" class="coope">
+                                        <img src="./img/common/coope_8.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.hyumc.com/" class="coope">
+                                        <img src="./img/common/coope_9.png" alt="cooperation_img">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container f_margin">
+                <div class="f_text_box">
+                    <div class="footer_top_box">
+                        <div class="ft_logo_box">온종합병원</div>
+                        <div class="f_top_box">
+                            <ul class="f_nav_ul">
+                                <li class="f_nav_li">
+                                    <a href="./personal.html" class="f_nav_link">개인정보처리방침</a>
+                                </li>
+                                <li class="f_nav_li">
+                                    <a href="./infor/infor.html" class="f_nav_link">병원안내</a>
+                                </li>
+                                <li class="f_nav_li">
+                                    <a href="./medi_infor/infor.html" class="f_nav_link">진료안내</a>
+                                </li>
+                                <li class="f_nav_li">
+                                    <a href="./medi_depart.html" class="f_nav_link">진료과ㆍ의료진</a>
+                                </li>
+                                <li class="f_nav_li">
+                                    <a href="./medi_center.html?cen_v=0" class="f_nav_link">전문센터</a>
+                                </li>
+                                <li class="f_nav_li">
+                                    <a href="./medi_center2.html?cen2_v=1&item=1" class="f_nav_link">암병원</a>
+                                </li>
+                                <li class="f_nav_li">
+                                    <a href="./news.html?num=0" class="f_nav_link">병원소식</a>
+                                </li>
+                                
+                                <li class="f_nav_li">
+                                    <a href="./unpaid.html" class="f_nav_link">비급여</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ft_detail_box">
+                        <div class="ft_d_box">47261 부산광역시 부산진구 가야대로 721 (당감동 966번지) | 의료기관명칭 : 의료법인 온그룹의료재단 온종합병원</div>
+                        <div class="ft_d_box">사업자등록번호 : 605-82-11399 | TEL : 051-607-0114, 응급실: 051-607-0129 | FAX : 051-607-0220</div>
+                        <div class="ft_d_box">E-Mail : onhospital@hanmail.net | 대표자명 : 윤선희</div>
+                        <div class="ft_d_box">© 온종합병원. ALL RIGHTS RESERVED.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
