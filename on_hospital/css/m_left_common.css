@@ -128,9 +128,6 @@
     }
 }
 @media (max-width: 770px) {
-    .main > .container {
-        max-width: 500px !important;
-    }
     .title h1,
     .mr_page_title {
         font-size: 25px;

@@ -129,16 +129,10 @@ table * {
     border-color: #516f80;
     position: relative;
 }
-.two::after {
-    content: "";
-    left: 50%;
-    bottom: -66px;
-    width: 1px;
-    height: 60px;
-    border-right: 1px solid;
-    border-color: #516f80;
-    position: relative;
+.moblie_line {
+    display: none;
 }
+
 .three::after {
     content: "";
     left: 50%;
@@ -150,7 +144,7 @@ table * {
     position: relative;
 }
 .line_2 {
-    width: 68%;
+    width: 71%;
     height: 1px;
     background-color: #516f80;
     position: relative;
@@ -335,12 +329,119 @@ svg:not(:root).svg-inline--fa {
     bottom: -9%;
 }
 
+
+
+
+.po_1 {
+    width: 1px;
+    height: 199px;
+    background-color: #516f80;
+    position: absolute;
+    left: 50%;
+    bottom: -130%;
+}
+.po_3,
+.po_2 {
+    width: 1px;
+    height: 30px;
+    background-color: #516f80;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+}
+.po_4 {
+    width: 1px;
+    height: 30px;
+    background-color: #516f80;
+    position: absolute;
+    left: 50%;
+    top: 31px;
+}
+.po_5 {
+    width: 1px;
+    height: 50px;
+    background-color: #516f80;
+    position: absolute;
+    left: 50%;
+    top: 90px;
+}
+.po_6 {
+    width: 120px;
+    height: 1px;
+    background-color: #516f80;
+    position: absolute;
+    left: 40%;
+    top: 140px;
+}
+.po_7 {
+    width: 1px;
+    height: 30px;
+    background-color: #516f80;
+    position: absolute;
+    left: 79%;
+    top: 160px;
+}
+.po_8 {
+    width: 1px;
+    height: 50px;
+    background-color: #516f80;
+    position: absolute;
+    left: 25%;
+    top: 200px;
+}
+.po_9 {
+    width: 1px;
+    height: 50px;
+    background-color: #516f80;
+    position: absolute;
+    left: 77%;
+    top: 300px;
+}
+.po_10 {
+    width: 1px;
+    height: 50px;
+    background-color: #516f80;
+    position: absolute;
+    left: 25%;
+    top: 300px;
+}
+.po_11 {
+    width: 1px;
+    height: 50px;
+    background-color: #516f80;
+    position: absolute;
+    left: 77%;
+    top: 360px;
+}
+.po_12 {
+    width: 1px;
+    height: 50px;
+    background-color: #516f80;
+    position: absolute;
+    left: 25%;
+    top: 360px;
+}
+
+
+
 @media (max-width:1350px) {
     .st_th_1::after {
         top: 43%;
     }
 }
+@media (max-width:1100px)  {
+    .line_2 {
+        width: 69%;
+    }
+}
 @media (max-width:991px) {
+    .two_box,
+    .two,
+    .three,
+    .one {position: relative;}
+    .moblie_line {
+        display: inline-block;
+    }
     .medi_con_box {
         flex-direction: column;
         justify-content: flex-start;
@@ -395,7 +496,7 @@ svg:not(:root).svg-inline--fa {
         margin-top: 20px;
     }
     .st_th_1 {
-        margin-top: 170px !important;
+        margin-top: 198px !important;
     }
 
     .second_table_line {
@@ -410,14 +511,14 @@ svg:not(:root).svg-inline--fa {
         position: absolute;
         right: 0;
         top: -15%;
-        transform: translateX(20%);
+        transform: translateX(6%);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
     .moblie_text {
         margin-bottom: 40px;
-        width: 50%;
+        width: 43%;
     }
     .flex {
         gap: 20px;
@@ -426,12 +527,20 @@ svg:not(:root).svg-inline--fa {
     .st_t_left {
         width: calc((100% - 20px) / 2);
     }
+    .st_th_2 > span, .st_th_1 > span {
+        width: 65%;
+        margin-bottom: 20px;
+    }
 
 }
 
 @media (max-width:771px) {
     .third_table_line  {
-        transform: translateX(14%);
+        transform: translateX(8%);
+    }
+    .st_th_2 > span, .st_th_1 > span {
+        width: 60%;
+        margin-bottom: 20px;
     }
 }
 @media (max-width:500px) {
@@ -440,5 +549,29 @@ svg:not(:root).svg-inline--fa {
     }
     .st_th_1 {
         margin-top: 189px;
+    }
+    
+}
+@media (max-width:385px) {
+    .po_1 {
+        height: 229px;
+        bottom: -150%;
+    }
+    .po_5 {
+        left: 46%;
+    }
+    .po_7 {
+        left: 75%;
+    }
+    .po_8 {
+        top: 220px;
+    }
+    .po_10 {
+        height: 30px;
+        top: 320px;
+    }
+    .po_12,
+    .po_11 {
+        top: 370px;
     }
 }

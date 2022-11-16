@@ -845,7 +845,7 @@ iframe.goog-te-banner-frame { display: none !important; }
         display: inline-block;
     }
     .h_flex {
-        justify-content: space-between;
+        justify-content: space-between !important;
     }
     .h_fixed {height: 60px; padding: 0;}
     .header {
