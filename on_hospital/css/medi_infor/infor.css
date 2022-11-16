@@ -70,6 +70,7 @@ table * {
 }
 .third_table_line {
     text-align: center;
+    position: relative;
 }
 .st_t_left {
     margin-bottom: 15px;
@@ -98,7 +99,25 @@ table * {
     margin-bottom: 15px;
 }
 .st_th_1 {
-    margin-top: 170px;
+    margin-top: 160px;
+}
+.st_th_1::before {
+    content: "";
+    width: 70px;
+    height: 1px;
+    background-color: #516f80;
+    position: absolute;
+    left: 0;
+    top: 41%;
+}
+.st_th_1::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #516f80;
+    position: absolute;
+    left: 50%;
+    top: 45%;
 }
 .one::after {
     content:'';
@@ -276,8 +295,51 @@ svg:not(:root).svg-inline--fa {
     display: flex;
     gap: 5px;
 }
+.st_t_2 {
+    position: relative;
+}
+.st_t_left::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #516f80;
+    position: absolute;
+    left: 17%;
+    top: -39%;
+}
+.st_t_left::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #516f80;
+    position: absolute;
+    left: 17%;
+    bottom: -9%;
+}
+.st_t_right::before {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #516f80;
+    position: absolute;
+    left: 92%;
+    top: -39%;
+}
+.st_t_right::after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background-color: #516f80;
+    position: absolute;
+    left: 92%;
+    bottom: -9%;
+}
 
-
+@media (max-width:1350px) {
+    .st_th_1::after {
+        top: 43%;
+    }
+}
 @media (max-width:991px) {
     .medi_con_box {
         flex-direction: column;
@@ -313,6 +375,12 @@ svg:not(:root).svg-inline--fa {
     .three {
         width: calc((100% - 20px) / 2);
     }
+    .st_th_1::before,
+    .st_th_1::after,
+    .st_t_left::before,
+    .st_t_left::after,
+    .st_t_right::before,
+    .st_t_right::after,
     .st_t_1::before,
     .line_2,
     .one::after,
@@ -325,6 +393,9 @@ svg:not(:root).svg-inline--fa {
     }
     .st_t_1 {
         margin-top: 20px;
+    }
+    .st_th_1 {
+        margin-top: 170px !important;
     }
 
     .second_table_line {

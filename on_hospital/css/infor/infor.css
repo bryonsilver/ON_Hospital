@@ -31,14 +31,19 @@
     gap: 20px;
 }
 .col-lg-3  {
-    font-size: 17px;
+    width: 35.333%;
+    font-size: 15px;
     color: #777;
     line-height: 25px;
 }
 .col-lg-3 h5 {
-    font-size: 20px;
+    font-size: 18px;
     color: #333;
     font-weight: 500;
+
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .img-fluid {
@@ -87,5 +92,11 @@
     .img_box_text div {
         font-size: 16px;
         margin-top: 5px;
+    }
+    .col-lg-3  {
+        width: 100%;
+        font-size: 15px;
+        color: #777;
+        line-height: 25px;
     }
 }
