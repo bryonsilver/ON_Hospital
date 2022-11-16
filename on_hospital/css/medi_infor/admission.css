@@ -1,0 +1,30 @@
+body{font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;}
+.m_flex_box {margin-bottom: 100px;}
+
+.icon img {
+    width: 20px;
+}
+
+.text-justify h4 {
+    color: #007dd6;
+    font-size: 23px;
+    font-weight: 600;
+}
+.text-justify {
+    font-size: 15px;
+    line-height: 25px;
+    color: #666;
+}
+.circle_ul {
+    list-style: disc;
+    font-weight: 400;
+    margin-left: 20px;
+    color: #666;
+}
+.ol_1 {
+    font-weight: 400;
+    color: #666;
+}
+.margin_span {
+    margin-top: 20px;
+}

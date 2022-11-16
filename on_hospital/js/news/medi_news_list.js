@@ -2,19 +2,13 @@ const NEWS_LIST = [
 
     //공지사항
     [
-        {cate_no:0, item_no:1, num:5, title:'[진료 안내] 10월 진료 일정 안내(2022년 개천절, 한글날)', writer: '온그룹의료재단온종합병원', date:'2022.09.16',},
-        {cate_no:0, item_no:2, num:4, title:'[진료 안내] 6월 진료 일정 안내(2022년 지방선거, 현충일)', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:0, item_no:3, num:3, title:'[휴진 안내] 어린이날 휴진 안내', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:0, item_no:4, num:2, title:'[휴진 안내] 설연휴 휴진 안내', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:0, item_no:5, num:1, title:'[휴진 안내] 성탄절 및 신정 휴진 안내', writer: '온종합병원', date:'2022.05.27',},
+        {cate_no:0, item_no:1, num:1, title:'[진료 안내] 10월 진료 일정 안내(2022년 개천절, 한글날)', writer: '온그룹의료재단온종합병원', date:'2022.09.16',},
+        {cate_no:0, item_no:2, num:2, title:'[진료 안내] 6월 진료 일정 안내(2022년 지방선거, 현충일)', writer: '온종합병원', date:'2022.05.27',},
     ],
     //기타소식
     [
-        {cate_no:1, item_no:1, num:5, title:'ON mo:m 온몸 매거진 7호가 발행되었습니다.', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:1, item_no:2, num:4, title:'KHT건강시대 17호가 발행되었습니다.', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:1, item_no:3, num:3, title:'온종합병원그룹 가족을 위한 해운대 온 리조트가 오픈하였습니다.', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:1, item_no:4, num:2, title:'대회 연기안내- 제6회 온종합병원 그룹 - 건강백일장 & 그림그리기 대회', writer: '온종합병원', date:'2022.05.27',},
-        {cate_no:1, item_no:5, num:1, title:'호스피스 자원봉사자 교육 및 실습과정 수강 신청', writer: '온종합병원', date:'2022.05.27',},
+        
+        {cate_no:1, item_no:1, num:1, title:'호스피스 자원봉사자 교육 및 실습과정 수강 신청', writer: '온종합병원', date:'2022.05.27',},
     ],
     //언론보도
     [

@@ -166,7 +166,6 @@ $(document).ready(function(){
         swiper.autoplay.start()
     })
 
-	
-
+	// 병원소식이든 진료안내 등등 옆 m_left의 active 된 li에 hover 했을때  글자 색상 하양그대로로
 	
 })

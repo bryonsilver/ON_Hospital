@@ -84,8 +84,11 @@
 .active {
     background: #eb5f22;
     color: #fff;
-    pointer-events: none;
 }
+.active:hover {
+    color: #fff !important;
+}
+
 
 .submenu_box {position: relative;}
 .arrow {
@@ -124,7 +127,7 @@
 }
 @media (max-width:950px) {
     .main .container {
-        max-width: 700px;
+        max-width: 900px;
     }
 }
 @media (max-width: 770px) {

@@ -1,0 +1,182 @@
+body{font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;}
+.m_flex_box {
+    margin-bottom: 100px;
+}
+.icon img {
+    width: 20px;
+}
+.text-justify h4 {
+    color: #007dd6;
+    font-size: 23px;
+    font-weight: 500;
+}
+.text-justify h6 {
+    font-size: 17px;
+    color: #5a72cc;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px !important;
+}
+.text_1 {
+    font-size: 16px;
+    color: #777;
+    font-weight: 400;
+    margin: 0;
+    line-height: 25px;
+}
+.text-justify ol {
+    font-size: 16px;
+    color: #777;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.text-justify ol li {
+    margin-bottom: 12px;
+}
+
+.d-md-none {
+    display: none;
+}
+.text-center {
+    text-align: center;
+    color: #777;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+    color: #777;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+
+.btn-download {
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #999;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: 1px 2px 3px rgb(0 0 0 / 10%);
+}
+.btn-download:hover {
+    color: #007dd9;
+    box-shadow: 3px 5px 10px rgb(0 0 0 / 10%);
+}
+.mb-2 {
+    margin-bottom: 0.5rem!important;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    line-height: 28px;
+}
+
+.four th,
+.three th,
+.two th ,
+.one th {
+    min-width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    color: #222;
+    background-color: #f6f6f6;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 8px;
+    box-sizing: border-box;
+}
+.three tr:first-child td,
+.three tr:first-child th,
+.two tr:first-child td,
+.two tr:first-child th,
+.one tr:first-child td, 
+.one tr:first-child th {
+    border-top: 3px solid #3c3c3c;
+}
+
+.four tr:first-child td,
+.four tr:first-child th {
+    border-top: 2px solid #3c3c3c;
+}
+.three tr:last-child td,
+.three tr:last-child th,
+.two tr:last-child td,
+.two tr:last-child th,
+.one tr:last-child td,
+.one tr:last-child th {
+    border-bottom: 1px solid #3c3c3c;
+}
+.mb-0 {margin: 0;}
+.one th,.one td {
+    border-bottom: 1px solid #3c3c3c;
+}
+.four table td, 
+.four table th {
+    font-size: 14px;
+}
+.margin_top_table {padding-bottom: 20px;}
+.four td,
+.three td,
+.two td,
+.one td {
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #666;
+}
+
+.four tr:last-child td,
+.three tr:last-child td,
+.two tr:last-child td {
+    padding-bottom: 10px ;
+    box-sizing: border-box;
+}
+.font-oswald {
+    color: #597288 !important;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.font-oswald b {
+    font-weight: bold;
+}
+
+.table-phone ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+.span_text {
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #777;
+}
+
+@media (max-width:971px) {
+    .one {overflow-x: scroll;}
+}
+@media (max-width:900px) {
+    .two {overflow-x: scroll;}
+}
+@media (max-width:830px) {
+    .four {overflow-x: scroll;}
+}
+@media (max-width:710px) {
+    .three {overflow-x: scroll;}
+}

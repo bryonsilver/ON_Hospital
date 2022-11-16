@@ -84,7 +84,6 @@ $(document).ready(function(){
                                                 list += `<p class="top_bold">${data[d_num].top_bold[j]}</p>`
                                                 }
                                             } else if (de_num == 1) {
-                                                list += `<p class="top_bold">안됨</p>`
                                             }
                                     list += `<p class="top_content">${data[d_num].top_content}</p>
                                             <p class="img_p"><img src="./img/news/${data[d_num].img_src}" alt="${data[d_num].img_src}" class="news_de_img"></p>

@@ -26,8 +26,7 @@
 .no-gutters {
     margin-top: 40px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 20px;
 }
 .col-lg-3  {
@@ -36,14 +35,18 @@
     color: #777;
     line-height: 25px;
 }
-.col-lg-3 h5 {
-    font-size: 18px;
+.text_box h5 {
+    font-size: 18px !important;
     color: #333;
     font-weight: 500;
 
     word-break: break-all;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.text_box {
+    font-size: 16px !important;
+    margin-top: 25px !important;
 }
 
 .img-fluid {
@@ -57,11 +60,11 @@
     align-items: center;
 }
 .img_box_text h5 {
-     font-size: 15px;
-     margin: 0;
+     font-size: 18px;
+     margin: 10px 0 0 0  !important;
 }   
 .img_box_text div {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 @media (max-width: 1400px) {
@@ -98,5 +101,9 @@
         font-size: 15px;
         color: #777;
         line-height: 25px;
+    }
+    
+    .text_box {
+        margin-bottom: 30px !important;
     }
 }

@@ -1,3 +1,6 @@
+.main {
+    margin-bottom: 100px;
+}
 .icon img {
     width: 20px;
 }
@@ -8,5 +11,53 @@
     font-weight: 600;
 }
 table {
+    width: 100%;
     border-spacing: 0;
 }
+
+.second_table th ,
+.first_table th {
+    min-width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    color: #222;
+    background-color: #f6f6f6;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 12px;
+    box-sizing: border-box;
+}
+.second_table tr:first-child td,
+.second_table tr:first-child th,
+.first_table tr:first-child td, 
+.first_table tr:first-child th {
+    border-top: 3px solid #3c3c3c;
+}
+.second_table tr:last-child td,
+.second_table tr:last-child th,
+.first_table tr:last-child td,
+.first_table tr:last-child th {
+    border-top: 1px solid #3c3c3c;
+    border-bottom: 1px solid #3c3c3c;
+}
+.second_table td,
+.first_table td {
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: #666;
+}
+.span,
+.first_table span {
+    margin-top: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #777;
+}
+.span:last-child{margin-top: 0;}
