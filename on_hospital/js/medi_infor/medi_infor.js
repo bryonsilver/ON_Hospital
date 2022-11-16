@@ -23,30 +23,30 @@ $(document).ready(function(){
         $('.medi_infor_4').addClass('nav_active')
     }
 
-    let data = INFOR_LIST[0];
-    for(let i=0; i<1; i++){
-        let infor_list = `
-                            <div class="mr_title">
-                                <h1 class="title_box">
-                                    <div class="img_box"><img src="./img/common/title_icon2.png" alt="title_icon" class="title_icon"></div>
-                                    <span>${data[num].title}</span>
-                                </h1>
-                            </div>
+    // let data = INFOR_LIST[0];
+    // for(let i=0; i<1; i++){
+    //     let infor_list = `
+    //                         <div class="mr_title">
+    //                             <h1 class="title_box">
+    //                                 <div class="img_box"><img src="./img/common/title_icon2.png" alt="title_icon" class="title_icon"></div>
+    //                                 <span>${data[num].title}</span>
+    //                             </h1>
+    //                         </div>
 
-                            <div class="mr_content">
-                                <div class="mr_c_title">${data[num].sub_title}</div>
+    //                         <div class="mr_content">
+    //                             <div class="mr_c_title">${data[num].sub_title}</div>
 
-                                <div class="mr_c_img"></div>
-                                <div class="mr_c_first_content">
-                                    <p>${data[num].content_name}</p>`
-                                    for(let j=0; j<data[num].content.length; j++) {
-                         infor_list += `<p>
-                                            ${data[num].content[j]}
-                                        </p>`
-                                    }
-                       infor_list += `</div>
-                            </div>
-                            `
-        $('.m_content_box').append(infor_list)
-    }
+    //                             <div class="mr_c_img"></div>
+    //                             <div class="mr_c_first_content">
+    //                                 <p>${data[num].content_name}</p>`
+    //                                 for(let j=0; j<data[num].content.length; j++) {
+    //                      infor_list += `<p>
+    //                                         ${data[num].content[j]}
+    //                                     </p>`
+    //                                 }
+    //                    infor_list += `</div>
+    //                         </div>
+    //                         `
+    //     $('.m_content_box').append(infor_list)
+    // }
 })

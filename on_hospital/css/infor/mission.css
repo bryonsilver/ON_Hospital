@@ -1,0 +1,110 @@
+.icon img {
+    width: 20px;
+}
+.page-title i {
+    font-weight: 500;
+}
+.col-lg-12 h4 {
+    color: #007dd6;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.text-justify {
+    color: #777;
+    font-size: 12px;
+    line-height: 23px;
+    width: 100%;
+}
+.mb-5 {
+    height: 1px;
+    margin-bottom: 3rem !important;
+    margin-top: 3rem !important;
+    color: #d9d9d9;
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.col-lg {
+    display: flex;
+    justify-content: center;
+}
+.page-section .vision .circle-box {
+    width: 200px;
+    height: 200px;
+    line-height: 180px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 17%);
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.page-section .vision .circle-box.bg3 {
+    background-color:#61ae89 ;
+}
+.page-section .vision .circle-box.bg2 {
+    background-color:#6861AE ;
+}
+.page-section .vision .circle-box.bg1 {
+    background-color: #d280a4;
+}
+
+
+.mb-4 {
+    font-weight: 500;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.mb-5 {
+    margin-bottom: 3rem !important;
+}
+.d-none {
+    display: none !important;
+}
+.row2 {
+    display: flex;
+    flex-wrap: wrap !important; 
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+    margin-bottom: 40px;
+}
+.page-section .vision .one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    line-height: 1.4;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #598dd0;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 17%);
+}
+.page-section .vision .type2 .one {
+    background-color: #9377af;
+}
+.mb-2 {
+    margin-bottom: 0.5rem!important;
+}
+.col {
+    flex: 1 0 0%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+@media (max-width:991px) {
+    .row {
+        flex-direction: column;
+    }
+}

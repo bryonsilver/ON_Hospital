@@ -107,7 +107,7 @@ $(document).ready(function(){
                         
                         }
 
-            $('.m_flex_box').append(guide_list)
+            // $('.m_flex_box').append(guide_list)
                         
     }
 

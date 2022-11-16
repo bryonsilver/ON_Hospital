@@ -16,6 +16,9 @@
     padding-bottom: 80px;
     box-sizing: border-box;
 }
+.main_right {
+    width: 80%;
+}
 
 
 
@@ -33,7 +36,7 @@
     font-size: 25px;
     margin-left: 20px;
     position: absolute;
-    z-index: 99;
+    z-index: 9;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -46,7 +49,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 5;
 }
 
 
@@ -141,6 +144,9 @@
     }
     .mr_page_title {
         font-size: 22px;
+    }
+    .main_right {
+        width: 100%;
     }
 }
 

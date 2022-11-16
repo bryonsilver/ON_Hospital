@@ -1,0 +1,108 @@
+.icon img {
+    width: 25px;
+}
+.page-title {font-weight: 500;}
+.box-img {
+    height: 400px;
+    background-image: url(../../img/guide/emergency_1.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.col-lg-12 h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+    color: #777;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.fa-3x {
+    color: #69d6ef;
+    font-size: 3em;
+    width: 1.25em;
+}
+
+td  h6 {
+    color: #5a72cc;
+    font-size: 17px;
+    font-weight: 500;
+}
+td {
+    border-right: 1px solid #69d6ef;
+    border-bottom: 1px solid #3c3c3c;
+}
+.text-info {
+    font-size: 15px;
+    color: #69d6ef;
+}
+table {
+    border-top: 2px solid #3c3c3c;
+    border-bottom: 1px solid #999;
+    border-spacing: 0;
+    text-align: center;
+    min-width: 680px;
+}
+.table>:not(caption)>*>* {
+    padding: 1.5rem 1.0rem;
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.text-left h5 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #333;
+    font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;
+}
+.text-left h5 span {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.text-left {
+    font-size: 13px;
+    color: #777;
+    line-height: 25px;
+    border-right: 0;
+}
+.text-left h6 {
+    margin: 10px 0;
+}
+
+.d-lg-none {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin: 15px 0;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .table-responsive-lg {
+        overflow-x: scroll;
+    }
+    .d-lg-none  {display: block;}
+}
+@media (max-width:770px) {
+    .main > .container {
+        max-width: 600px !important;
+    }
+}

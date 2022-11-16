@@ -1,0 +1,150 @@
+.icon img {
+    width: 20px;
+}
+.text {
+    font-size: 17px;
+    color: #777;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.m_flex_box {
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width: 950px) {
+    .main .container {
+        max-width: 800px;
+    }
+}
+@media (max-width: 991px) {
+    .align-itmes-center {
+        flex-direction: column;
+        
+        justify-content: flex-start;
+        align-items: flex-start !important;
+        margin: 20px 0;
+    }
+    .col-lg-9 {
+        width: 100%;
+        align-items: flex-start !important;
+    }
+    .col-lg-3 {
+        text-align: center;
+        width: 100%;
+    }
+    .text_down {
+        width: 100%;
+    }
+    .box_title {
+        text-align: center !important;
+    }
+}
+
+.col-lg-12 .mb-4 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 500;
+    text-align: left;
+    margin: 50px 0 20px 0;
+}
+
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #13beff;
+}
+.svg-inline--fa.fa-w-16 {
+    width: 3em;
+}
+.fa-3x {
+    font-size: 3em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 3em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    margin: 0 60px;
+}
+.col-lg-9 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0;
+    box-sizing: border-box;
+    color: #777;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.align-itmes-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bus_2 {
+    overflow: visible !important;
+    color: #0d6efd !important;
+}
+.fa-li {
+    height: 20px;
+    font-weight: 600;
+}
+.bus_2 {
+    width: 1em !important;
+    margin: 0 !important;
+    height: 15px;
+}
+.fa-ul li,
+.mb-2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.fa-ul li:last-child {
+    margin-bottom: 0;
+}
+.text_down {
+    display: block;
+}
+
+
+
+.ext_icon {
+    color: #a196ad;
+    width: 1.125em !important;
+    height: 15px;
+    overflow: visible;
+    margin: 0;
+}
+.fa-li2 {
+    width: 15px;
+    height: 15px;
+}
+.mb-3 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px !important;
+}
+.box {
+    display: flex;
+}
+.py-4 h5 {
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+}

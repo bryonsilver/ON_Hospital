@@ -134,6 +134,11 @@ $(document).ready(function(){
         $('.spe_cen_29').addClass('nav_active')
     } 
 
+    let cen_sub_context = CENT_LIST[0][cen_v].sub_context1
+    let cen_sub_context2 = CENT_LIST[0][cen_v].sub_context2
+    let cen_sub_context3 = CENT_LIST[0][cen_v].sub_context3
+    let cen_sub_context4 = CENT_LIST[0][cen_v].sub_context4
+    let cen_sub_context5 = CENT_LIST[0][cen_v].sub_context5
     for(let i=0; i<1; i++) {
         let cent_list = `
         <div class="m_r_content_box">
@@ -146,17 +151,132 @@ $(document).ready(function(){
      cent_list += `</h1>
             </div>
             <div class="mr_img">`
-            for(let j=0; j<1; j++) {
-      cent_list += `<div class="box_img cen2_${LIST_N[0][cen_v].name}"></div>`
+            if (cen_v == 0 || 2 || 12 || 14 || 17 || 28) {
+                    for(let j=0; j<1; j++) {
+            cent_list += `<div class="box_img cen2_${LIST_N[0][cen_v].name}"></div>`
+                    }
             }
+            if(cen_v == 5 || 24 || 13 || 3 || 19 || 26 || 25){
 cent_list += `</div>
             <div class="mr_content">
-                <div class="mr_c_box">
-                    <div class="mr_c_title">${CENT_LIST[0][cen_v].sub_title}</div>
-                    <div class="mr_c_content">
-                        <span>${CENT_LIST[0][cen_v].sub_context1}</span>
-                    </div>
+                <div class="mr_c_box">`
+                    if (cen_v != 1 || 2 || 8 || 10 || 14 || 17 || 18) {
+            cent_list += `<div class="mr_c_title">${CENT_LIST[0][cen_v].sub_title[0]}</div>`
+                    }
+        cent_list +=  `<div class="mr_c_content">`
+                       if(cen_v == 24){
+                            for(let j=0; j<cen_sub_context.length; j++) {
+                                cent_list += `<span>${CENT_LIST[0][cen_v].sub_context1[j]}</span>`
+                            }
+                            for(let j=0; j<cen_sub_context2.length; j++) {
+                                cent_list += `<span>${CENT_LIST[0][cen_v].sub_context2[j]}</span>`
+                            }
+                            for(let j=0; j<cen_sub_context3.length; j++) {
+                                cent_list += `<span>${CENT_LIST[0][cen_v].sub_context3[j]}</span>`
+                            }
+                            for(let j=0; j<cen_sub_context4.length; j++) {
+                                cent_list += `<span>${CENT_LIST[0][cen_v].sub_context4[j]}</span>`
+                            }
+                            for(let j=0; j<cen_sub_context5.length; j++) {
+                                cent_list += `<span>${CENT_LIST[0][cen_v].sub_context5[j]}</span>`
+                            }
+                       } else if (cen_v == 12) {
+                cent_list += `<div class="mr_c_content cent_13  border12">
+                                <span class="cent_box">
+                                    <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                    <div>${CENT_LIST[0][cen_v].sub_context1[1]}</div>
+                                    <div>${CENT_LIST[0][cen_v].sub_context1[2]}</div>
+                                    <div>${CENT_LIST[0][cen_v].sub_context1[3]}</div>
+                                </span>
+                                <span class="cent_box">
+                                    <div>${CENT_LIST[0][cen_v].sub_context2[0]}</div>
+                                    <div>${CENT_LIST[0][cen_v].sub_context2[1]}</div>
+                                </span>
+                                <span class="cent_box">
+                                    <div>${CENT_LIST[0][cen_v].sub_context3[0]}</div>
+                                </span>
+                                `
+                    } else if (cen_v == 3) {
+                        cent_list += `<div class="mr_c_content cent_13  border12">
+                                        <span class="cent_box">
+                                            <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div>${CENT_LIST[0][cen_v].sub_context2[0]}</div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div>${CENT_LIST[0][cen_v].sub_context3[0]}</div>
+                                            <div>${CENT_LIST[0][cen_v].sub_context3[1]}</div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div>${CENT_LIST[0][cen_v].sub_context4[0]}</div>
+                                            <div>${CENT_LIST[0][cen_v].sub_context4[1]}</div>
+                                            <div>${CENT_LIST[0][cen_v].sub_context4[2]}</div>
+                                        </span>
+                                        `
+                            }
+          cent_list += `</div>`
+                    if (cen_v != 1 || 2 || 8 || 10 || 14 || 17 || 18) {
+                        cent_list += `<div class="mr_c_title margin2">${CENT_LIST[0][cen_v].sub_title[1]}</div>`
+                    }
+                    if (cen_v == 5) {
+                    cent_list += `<div class="mr_c_content cent_24">`
+                                    for(let j=0; j<cen_sub_context2.length; j++) {
+                            cent_list +=`<span><div class="small_circle"></div>${CENT_LIST[0][cen_v].sub_context2[j]}</span>`
+                        }
+                    } else if (cen_v == 24) {
+                    cent_list += `<div class="mr_c_content cent_24">
+                                    <div class="cent_24_span">
+                                        <span class="bold">${CENT_LIST[0][cen_v].pro_title[0]}</span>
+                                        <div class="margin con">
+                                            <div>${CENT_LIST[0][cen_v].pro_context1[0]}</div>
+                                            <div>${CENT_LIST[0][cen_v].pro_context1[1]}</div>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="cent_24_span">
+                                        <span class="bold">${CENT_LIST[0][cen_v].pro_title[1]}</span>
+                                        <div class="con">${CENT_LIST[0][cen_v].pro_context2}</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="cent_24_span">
+                                        <span class="bold">${CENT_LIST[0][cen_v].pro_title[2]}</span>
+                                        <div class="con">${CENT_LIST[0][cen_v].pro_context3}</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="cent_24_span">
+                                        <span class="bold">${CENT_LIST[0][cen_v].pro_title[3]}</span>
+                                        <div class="con">${CENT_LIST[0][cen_v].pro_context4}</div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="cent_24_span">
+                                        <span class="bold">${CENT_LIST[0][cen_v].pro_title[4]}</span>
+                                        <div class="con">${CENT_LIST[0][cen_v].pro_context5}</div>
+                                    </div>
+                                    <div class="line"></div>
+                                
+                                `
+                    } else if (cen_v == 12) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                <div>${CENT_LIST[0][cen_v].sub_context4[0]}</div>`
+                    } else if (cen_v == 3) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                <div>${CENT_LIST[0][cen_v].sub_context5[0]}</div>
+                                <div>${CENT_LIST[0][cen_v].sub_context5[1]}</div>`
+                    }
+    cent_list +=  `</div>
                 </div>`
+            } else {
+                cent_list += `<div>Lover</div>`
+            }
+// cent_list += `</div>
+//             <div class="mr_content">
+//                 <div class="mr_c_box">
+//                     <div class="mr_c_title">${CENT_LIST[0][cen_v].sub_title}</div>
+//                     <div class="mr_c_content">
+//                         <span>${CENT_LIST[0][cen_v].sub_context1}</span>
+//                     </div>
+//                 </div>`
                 // `<div class="mr_c_box">
                 //     <div class="mr_title">센터 의료진 소개</div>
                 //     <div class="mr_cb_content">`

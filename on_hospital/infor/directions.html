@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="../css/medi_detail.css">
     <link rel="stylesheet" href="../css/guide.css">
     <link rel="stylesheet" href="../css/m_left_common.css">
+    <link rel="stylesheet" href="../css/infor/directions.css">
 
     <script src="../js/common/jquery-2.1.4.min.js"></script>
     <script defer src="../js/common/common.js"></script>
     <script defer src="../js/medi_depart/doctor_list.js"></script>
     <script defer src="../js/guide/guide.js"></script>
     <script src="../js/guide/guide_list.js"></script>
+    
 
     <script defer src="../js/common/swiper-bundle.js"></script>
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -408,10 +410,15 @@
                         </div>
                         <div class="m_flex_box">
                             <div class="row mb-4"> 
-                                <div class="col-lg-12"><h1 class="page-title"><i class="fas fa-plus-square"></i> 오시는길</h1></div>
+                                <div class="col-lg-12">
+                                    <h1 class="page-title">
+                                        <span class="icon"><img src="../img/common/title_icon2.png" alt=""></span>
+                                        <i class="fas fa-plus-square"></i> 오시는길
+                                    </h1>
+                                </div>
                             </div>
                             <div class="row mb-5">
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 text">
                                     부산의 중심인 서면교차로 1KM내에 자리하여 [원스톱서비스] 가 절실한 서면지역 환자들에게 편리합니다. <br>
                                     타 병원과 비교해 버스, 지하철역과 논스톱으로 연결되어 찾아오시기 편리합니다. 편리한 온종합병원으로 오십시오. 
                                 </div>
@@ -421,23 +428,23 @@
                                     <div class="box-map">
                                         <!-- * 카카오맵 - 지도퍼가기 -->
                                         <!-- 1. 지도 노드 -->
-                                        <div id="daumRoughmapContainer1588742219467" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-                                        
+                                        <div id="daumRoughmapContainer1668237529554" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
                                         <!--
                                             2. 설치 스크립트
                                             * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
                                         -->
-                                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="../ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-                                        
+                                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
                                         <!-- 3. 실행 스크립트 -->
                                         <script charset="UTF-8">
                                             new daum.roughmap.Lander({
-                                                "timestamp" : "1588742219467",
-                                                "key" : "y8zp",
-                                                "mapWidth" : "640",
-                                                "mapHeight" : "360"
+                                                "timestamp" : "1668237529554",
+                                                "key" : "2cibc",
+                                                "mapWidth" : "980",
+                                                "mapHeight" : "500"
                                             }).render();
-                                        </script>				
+                                        </script>	
                                     </div>			
                                 </div>
                             </div>
@@ -447,22 +454,40 @@
                                     <hr class="my-5">
                                     <div class="row align-itmes-center">
                                         <div class="col-lg-3">
-                                            <div class="text-center"><i class="fas fa-subway fa-3x" style="color: #13beff;"></i></div>
+                                            <div class="text-center">
+                                                <i class="fas fa-subway fa-3x" style="color: #13beff;"></i>
+                                            </div>
                                         </div>
                                         <div class="col-lg-9">
-                                            <span class="circle" style="background-color: #1DB359;">2</span>호선 <br>
-                                            부암역 하차 ▶ 6번 출구 지하로 바로 연결
+                                            <svg class="svg-inline--fa fa-subway fa-w-14 fa-3x" style="color: #13beff;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="subway" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 96v256c0 51.815-61.624 96-130.022 96l62.98 49.721C386.905 502.417 383.562 512 376 512H72c-7.578 0-10.892-9.594-4.957-14.279L130.022 448C61.82 448 0 403.954 0 352V96C0 42.981 64 0 128 0h192c65 0 128 42.981 128 96zM200 232V120c0-13.255-10.745-24-24-24H72c-13.255 0-24 10.745-24 24v112c0 13.255 10.745 24 24 24h104c13.255 0 24-10.745 24-24zm200 0V120c0-13.255-10.745-24-24-24H272c-13.255 0-24 10.745-24 24v112c0 13.255 10.745 24 24 24h104c13.255 0 24-10.745 24-24zm-48 56c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm-256 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg>
+                                            <span>
+                                                <span class="circle" style="background-color: #1DB359;">2</span>호선 <br>
+                                                부암역 하차 ▶ 6번 출구 지하로 바로 연결
+                                            </span>
                                         </div>
                                     </div>
                                     <hr class="my-4">
                                     <div class="row align-itmes-center">
                                         <div class="col-lg-3">
-                                            <div class="text-center py-4"><i class="fas fa-bus fa-3x" style="color: #13beff;"></i></div>
+                                            <div class="text-center py-4">
+                                                <svg class="svg-inline--fa fa-bus fa-w-16 fa-3x" style="color: #13beff;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+                                                <i class="fas fa-bus fa-3x" style="color: #13beff;"></i>
+                                            </div>
                                         </div>
                                         <div class="col-lg-9">
                                             <ul class="fa-ul ml-4">
-                                                <li class="mb-2"><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>당감입구 정류장<br>17, 23, 129-1, 138-1, 141, 160, 167, 169-1, 141(심야)번</li>
-                                                <li><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>부암지하철 정류장<br>31, 33, 62, 67, 68, 77, 85, 87, 110-1, 108, 133, 138, 1004(심야)번</li>
+                                                <li class="mb-2"><span class="fa-li">
+                                                    <svg class="svg-inline--fa fa-bus fa-w-16 text-primary bus_2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+                                                    <i class="fas fa-bus text-primary"></i>
+                                                    </span>당감입구 정류장<br>17, 23, 129-1, 138-1, 141, 160, 167, 169-1, 141(심야)번
+                                                </li>
+                                                <li>
+                                                    <span class="fa-li">
+                                                        <svg class="svg-inline--fa fa-bus fa-w-16 text-primary bus_2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+                                                        <i class="fas fa-bus text-primary"></i>
+                                                    </span>부암지하철 정류장<br>
+                                                    31, 33, 62, 67, 68, 77, 85, 87, 110-1, 108, 133, 138, 1004(심야)번
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>	
@@ -475,21 +500,35 @@
                                     <hr class="my-5">
                                     <div class="row align-itmes-center">
                                         <div class="col-lg-3">
-                                            <div class="text-center"><i class="fas fa-subway fa-3x" style="color: #13beff;"></i></div>
+                                            <div class="text-center">
+                                                <svg class="svg-inline--fa fa-subway fa-w-14 fa-3x" style="color: #13beff;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="subway" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 96v256c0 51.815-61.624 96-130.022 96l62.98 49.721C386.905 502.417 383.562 512 376 512H72c-7.578 0-10.892-9.594-4.957-14.279L130.022 448C61.82 448 0 403.954 0 352V96C0 42.981 64 0 128 0h192c65 0 128 42.981 128 96zM200 232V120c0-13.255-10.745-24-24-24H72c-13.255 0-24 10.745-24 24v112c0 13.255 10.745 24 24 24h104c13.255 0 24-10.745 24-24zm200 0V120c0-13.255-10.745-24-24-24H272c-13.255 0-24 10.745-24 24v112c0 13.255 10.745 24 24 24h104c13.255 0 24-10.745 24-24zm-48 56c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm-256 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"></path></svg>
+                                                <i class="fas fa-subway fa-3x" style="color: #13beff;"></i>
+                                            </div>
                                         </div>
                                         <div class="col-lg-9">
-                                            <span class="circle" style="background-color: #035EA8;">1</span> <span class="circle" style="background-color: #1DB359;">2</span>호선<br> 서면역 하차 ▶ 롯데백화점 지하 분수대 광장 ▶ 부산은행 서면롯데지점 ▶ 맞은편 계단(좌측출구)
+                                            <span class="circle" style="background-color: #035EA8;">1</span> <span class="circle" style="background-color: #1DB359;">2</span>호선<br> <span class="text_down">서면역 하차 ▶ 롯데백화점 지하 분수대 광장 ▶ 부산은행 서면롯데지점 ▶ 맞은편 계단(좌측출구)</span>
                                         </div>
                                     </div>
                                     <hr class="my-4">
                                     <div class="row align-itmes-center">
                                         <div class="col-lg-3">
-                                            <div class="text-center py-4"><i class="fas fa-bus fa-3x" style="color: #13beff;"></i></div>
+                                            <div class="text-center py-4">
+                                                <svg class="svg-inline--fa fa-bus fa-w-16 fa-3x" style="color: #13beff;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+                                                <i class="fas fa-bus fa-3x" style="color: #13beff;"></i>
+                                            </div>
                                         </div>
                                         <div class="col-lg-9">
                                             <ul class="fa-ul ml-4">
-                                                <li class="mb-2"><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>롯데호텔 백화점 정류장<br>17, 23, 67, 68, 85, 87, 108, 110-1, 129-1, 138, 141, 167, 1000, 1004, 1010</li>
-                                                <li><span class="fa-li"><i class="fas fa-bus text-primary"></i></span>마을버스(롯데호텔 백화점 정류장)<br>부산진구 15번, 사상구 6번</li>
+                                                <li class="mb-2"><span class="fa-li">
+                                                    <svg class="svg-inline--fa fa-bus fa-w-16 text-primary bus_2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+                                                    <i class="fas fa-bus text-primary"></i>
+                                                    </span>롯데호텔 백화점 정류장<br>17, 23, 67, 68, 85, 87, 108, 110-1, 129-1, 138, 141, 167, 1000, 1004, 1010
+                                                </li>
+                                                <li><span class="fa-li">
+                                                    <svg class="svg-inline--fa fa-bus fa-w-16 text-primary bus_2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M488 128h-8V80c0-44.8-99.2-80-224-80S32 35.2 32 80v48h-8c-13.25 0-24 10.74-24 24v80c0 13.25 10.75 24 24 24h8v160c0 17.67 14.33 32 32 32v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h192v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h6.4c16 0 25.6-12.8 25.6-25.6V256h8c13.25 0 24-10.75 24-24v-80c0-13.26-10.75-24-24-24zM112 400c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm16-112c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h256c17.67 0 32 14.33 32 32v128c0 17.67-14.33 32-32 32H128zm272 112c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+                                                    <i class="fas fa-bus text-primary"></i>
+                                                    </span>마을버스(롯데호텔 백화점 정류장)<br>부산진구 15번, 사상구 6번
+                                                </li>
                                             </ul>						
                                         </div>
                                     </div>
@@ -498,15 +537,30 @@
                             </div>
                             <div class="row mb-5">
                                 <div class="col-lg-12">				
-                                    <div class="row align-itmes-center">
+                                    <div class="row align-itmes-center box">
                                         <div class="col-lg-3">
-                                            <div class="text-center py-4"><h5 class="mb-4">문의</h5></div>
+                                            <div class="text-center py-4"><h5 class="mb-4 box_title">문의</h5></div>
                                         </div>
                                         <div class="col-lg-9">
                                             <ul class="fa-ul ml-4">
-                                                <li class="mb-2"><span class="fa-li"><i style="color: #a196ad;" class="fas fa-phone-square-alt"></i></span>전화번호. 051.6070-114</li>
-                                                <li class="mb-2"><span class="fa-li"><i style="color: #a196ad;" class="fas fa-envelope-open-text"></i></span>이메일. onhospital@hanmail.net</li>
-                                                <li class="mb-2"><span class="fa-li"><i style="color: #a196ad;" class="fas fa-desktop"></i></span>홈페이지. www.onhospital.org</li>
+                                                <li class="mb-3">
+                                                    <span class="fa-li2">
+                                                        <svg style="color: #a196ad;" class="ext_icon svg-inline--fa fa-phone-square-alt fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-square-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"></path></svg>
+                                                        <i style="color: #a196ad;" class="fas fa-phone-square-alt"></i>
+                                                    </span>전화번호. 051.6070-114
+                                                </li>
+                                                <li class="mb-3">
+                                                    <span class="fa-li2">
+                                                        <svg style="color: #a196ad;" class="ext_icon svg-inline--fa fa-envelope-open-text fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg>
+                                                        <i style="color: #a196ad;" class="fas fa-envelope-open-text"></i>
+                                                    </span>이메일. onhospital@hanmail.net
+                                                </li>
+                                                <li class="mb-3">
+                                                    <span class="fa-li2">
+                                                        <svg style="color: #a196ad;" class="ext_icon svg-inline--fa fa-desktop fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="desktop" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"></path></svg>
+                                                        <i style="color: #a196ad;" class="fas fa-desktop"></i>
+                                                    </span>홈페이지. www.onhospital.org
+                                                </li>
                                             </ul>							
                                         </div>
                                     </div>
@@ -526,47 +580,47 @@
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
                                     <a href="https://www.kuh.ac.kr/main.do" class="coope">
-                                        <img src="./img/common/coope_1.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_1.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="https://www.paik.ac.kr/paik/user/main/view.do" class="coope">
-                                        <img src="./img/common/coope_2.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_2.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="https://www.kosinmed.or.kr/" class="coope">
-                                        <img src="./img/common/coope_3.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_3.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="https://www.damc.or.kr/main/main_2017.php" class="coope">
-                                        <img src="./img/common/coope_4.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_4.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="https://www.cmcseoul.or.kr/page/main" class="coope">
-                                        <img src="./img/common/coope_5.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_5.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="http://www.snuh.org/intro.do" class="coope">
-                                        <img src="./img/common/coope_6.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_6.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="#" class="coope"> <!--부산대학교 병원 사이트 안됨.. -->
-                                        <img src="./img/common/coope_7.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_7.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="https://sev.severance.healthcare/sev/intro.do" class="coope">
-                                        <img src="./img/common/coope_8.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_8.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                   <div class="swiper-slide">
                                     <a href="https://www.hyumc.com/" class="coope">
-                                        <img src="./img/common/coope_9.png" alt="cooperation_img">
+                                        <img src="../img/common/coope_9.png" alt="cooperation_img">
                                     </a>
                                   </div>
                                 </div>

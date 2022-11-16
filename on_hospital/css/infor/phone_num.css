@@ -1,0 +1,104 @@
+.icon img {
+    width: 20px;
+}
+
+.text-justify h4 {
+    color: #007dd6;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.table-phone {
+    border-top: 2px solid #3c3c3c;
+    border-bottom: 1px solid #999;
+}
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+
+    border-spacing: 0;
+    padding: 0;
+}
+th {
+    min-width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    color: #222;
+    background-color: #f6f6f6;
+    white-space: nowrap;
+    border-bottom: 1px solid #999;
+    font-weight: 400;
+}
+td {
+    color: #3c3c3c;
+    border-bottom: 1px solid #999;
+    font-weight: 300;
+}
+.table>:not(caption)>*>* {
+    padding: 0.5rem 0.5rem;
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+.scroll_3,
+.scroll_2,
+.scroll_1 {
+    overflow-x: hidden;
+}
+
+.d-md-none {
+    color: #777;
+    display: none;
+    text-align: center;
+    margin: 10px 0;
+}
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+.svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+@media (max-width: 991px) {
+    .scroll_1 {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+@media (max-width: 767px) {
+    .scroll_2 {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .d-md-none {
+        display: block;
+    }
+}
+@media (max-width: 534px) {
+    .scroll_3 {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+@media (max-width: 770px) {
+    .main > .container {
+        max-width: 600px !important;
+    }
+    
+}
