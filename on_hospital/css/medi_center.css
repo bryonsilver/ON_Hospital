@@ -1,4 +1,4 @@
-body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif ;}
+body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif ; box-sizing: border-box;}
 
 
 .cent_5 span {
@@ -47,6 +47,7 @@ body {font-family:'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple 
 }
 .margin_top_30{margin-top: 30px;}
 .margin_bottom_30 {margin-bottom: 30px;}
+.margin_bottom_40 {margin-bottom: 40px;}
 .img_box img {
     width: 100%;
 }
@@ -155,10 +156,22 @@ svg:not(:root).svg-inline--fa {
     line-height: 30px;
     margin-bottom: 20px;
 }
+.top_text_box2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
 .top_small_text {
     font-size: 16px;
     color: #777;
     line-height: 27px;
+    margin-top: 40px;
 }
 
 .black_bold {
@@ -206,6 +219,7 @@ svg:not(:root).svg-inline--fa {
     width: 25%;
     text-align: left;
     padding: 15px ;
+    box-sizing: border-box;
     line-height: 25px;
     box-sizing: border-box;
     font-size: 19px;
@@ -299,6 +313,24 @@ svg:not(:root).svg-inline--fa {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.cen2_21 {
+    background: url(../img/medi_center/22_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cen2_22 {
+    background: url(../img/medi_center/23_.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cen2_23 {
+    background: url(../img/medi_center/24_.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .cen2_24 {
     background: url(../img/medi_center/page-img10.jpg);
     background-position: center;
@@ -306,15 +338,118 @@ svg:not(:root).svg-inline--fa {
     background-repeat: no-repeat;
 }
 .cen2_25 {
-    background: url(../img/medi_center/page-img4.jpg);
+    background: url(../img/medi_center/26_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cen2_27 {
+    background: url(../img/medi_center/28_.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
+.c_25 {
+    padding-top: 0 !important;
+    gap: 0 !important;
+}
+.c_25_top {
+    margin-top: 30px;
+}
+.cent_22 {color: #666 !important;}
 .margin20 {
     margin-top: 0 !important;
+}
+/* .c_26_pad {
+    padding: 7px 10px;
+    background-color: #ED5929;
+    color: #fff;
+    border-radius: 5px;
+} */
+.color {
+    color: #333;
+}
+.c_26_ {
+    font-size: 20px;
+    font-weight: 500;
+}
+.c_26_pad a {
+    padding: 10px 7px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #ED5929;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    display: inline-block;
+}
+.margin_bottom_15 {
+    margin-bottom: 15px;
+}
+.margin_bottom_0 {
+    margin-bottom: 10px !important;
+}
+.c_26_pad:hover {
+    color: #222;
+    cursor: pointer;
+}
+.c_26 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.c_4 {
+    margin-top: 20px;
+}
+.c_23 {
+    padding-top:0 !important;
+}
+.mr_ul2 {
+    list-style: disc;
+    margin-left: 30px;
+    line-height: 30px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.line_height {
+    line-height: 30px;
+}
+.c_27 {
+    margin-top: 20px;
+}
+.c_27_ {
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.small {
+    font-size: 19px;
+    margin: 10px 0;
+    color: #dc3545;
+    font-weight: 400;
+}
+.blue {
+    background-color: #007aff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 33px;
+}
+.circle_num {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 10px;
+}
+.gap_0 {
+    gap:0 !important;
+}
+.c_23_top {
+    margin-bottom: 0 !important;
+    margin-top: 20px;
 }
 .text_18 {
     margin-bottom: 20px;
@@ -322,7 +457,7 @@ svg:not(:root).svg-inline--fa {
 .flower img {
     width: auto !important;
 }
-.f_text_box ul {
+.f_text_box2 ul {
     list-style: disc;
     margin-left: 30px;
     line-height: 30px;
@@ -347,6 +482,7 @@ svg:not(:root).svg-inline--fa {
     font-size: 16px;
     line-height: 27px;
     color: #777;
+    margin-top: 20px;
 }
 .cent_13 > span {
     display: inline-block !important;
@@ -598,6 +734,82 @@ img {
     line-height: 25px;
 }
 
+.border_box {
+    font-size: 22px;
+    color: #007dd6;
+    border: 3px solid #007dd6;
+    border-radius: 30px;
+    padding: 5px 20px ;
+    box-sizing: border-box;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.title_21 {
+    width: 100%;
+    font-size: 25px !important;
+}
+.f_text_box_21 {
+    margin-bottom: 20px;
+}
+.circle_box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.circle_text {
+    width: 30%;
+    flex: 0 0 auto;
+}
+.cir_box {
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    background-color: #7f79c1;
+    border-radius: 50%;
+    box-shadow: 0px 5px 12px 0px rgb(0 0 0 / 20%);
+}
+.cir_span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    /* -webkit-align-items: center; */
+    align-items: center;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+}
+.cir_span>h6 {
+    line-height: 1.4;
+    font-size: 18px;
+    width: 150px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 45px
+}
+.cir_num {
+    color: #d2ceff;
+    font-size: 27px;
+}
+.cir_text {
+    color: #5a72cc;
+}
+
+
+
+
+
 @media (max-width: 1150px) {
     .mr_cb_content {flex-direction: column;}
     .mr_doc_n {width: 100%;}
@@ -639,17 +851,21 @@ img {
     .flex_box_2 {
         flex-direction: column;
     }
-    .text_box {font-size: 16px;}
+    .padding_0 {
+        padding: 0 !important;
+    }
+    .text_box {font-size: 16px; margin-bottom: 0 !important;}
     .num_box {
         display: flex;
         gap: 5px;
         word-break: break-all;
         overflow: hidden;
         text-overflow: ellipsis;
+        margin-top: 5px !important;
         margin: 0;
     }
     .f_right_box {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .chk_text {
         display: flex;
@@ -667,6 +883,54 @@ img {
     .f_text_box_20 {
         width: 100%;
     }
+    .circle_text  {
+        width: auto;
+    }
+    .cir_box {
+        width: 150px;
+        height: 150px;
+    }
+    .cir_span>h6 {
+        font-size: 15px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .cir_num {
+        font-size: 25px;
+    }
+    .title_21 {
+        font-size: 19px !important;
+        margin-bottom: 20px;
+    }
+    .mr_c_title {
+        font-size: 20px;
+    }
+    .text_4 {
+        text-align: left;
+        font-size: 14px;
+    }
+    .c_27_ {font-size: 20px;}
+    .circle_num {font-size: 16px;}
+    .blue {width: 25px; height: 25px; line-height: 24px !important;}
+    .small {font-size: 16px;}
+
+    .border_box {
+        font-size: 20px;
+        color: #007dd6;
+        border: 3px solid #007dd6;
+        border-radius: 35px;
+        padding: 5px 20px ;
+        box-sizing: border-box;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .c_title {
+        font-size: 18px !important;
+    }
+    .f_text_box2 ul {font-size: 16px;}
+    .chk_t {font-size: 16px;}
+
 }
 @media (max-width: 1000px)  {
     .flex_box_11 {
@@ -723,6 +987,10 @@ img {
         font-size: 22px !important;
         line-height: 35px;
     }
+    .f_text_box_21 {
+        font-size: 18px !important;
+    }
+    
 }
 @media (max-width:400px) {
     .f_img_box img {
@@ -735,7 +1003,7 @@ img {
     }
 }
 @media (max-width: 300px)  {
-    .mr_c_content > span {line-height: 27px;}
+    .mr_c_content > span {line-height: 30px;}
     .m_r_content_box {gap: 0;}
     
 }

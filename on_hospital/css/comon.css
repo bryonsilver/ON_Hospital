@@ -104,8 +104,8 @@ span {display: inline-block;}
 
 .wrap {
     width: 100%;
-    max-width: 2000px;
     position: relative;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -895,7 +895,7 @@ iframe.goog-te-banner-frame { display: none !important; }
     }
 }
 @media (max-width: 500px) {
-    .f_margin {padding: 0;}
+    .f_margin {padding: 0 10px !important; box-sizing: border-box;}
 }
 @media (max-width: 450px) {
     .h_flex {padding: 0 10px;}

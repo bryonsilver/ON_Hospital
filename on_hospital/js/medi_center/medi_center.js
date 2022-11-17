@@ -140,9 +140,13 @@ $(document).ready(function(){
     let cen_sub_context4 = CENT_LIST[0][cen_v].sub_context4
     let cen_sub_context5 = CENT_LIST[0][cen_v].sub_context5
     for(let i=0; i<1; i++) {
-        let cent_list = `
-        <div class="m_r_content_box">
-            <div class="mr_title">
+        let cent_list = ``
+        if (cen_v == 25) {
+cent_list += `<div class="m_r_content_box c_25">`
+        } else {
+            cent_list += `<div class="m_r_content_box">`
+        }
+cent_list += `<div class="mr_title">
                 <h1 class="title_box">`
                 for(let j=0; j<1; j++) {
          cent_list += `<div class="img_box"><img src="./img/common/title_icon2.png" alt="title_icon" class="title_icon"></div> 
@@ -158,7 +162,7 @@ cent_list += `</div>`
                 if (cen_v == 4) {
                     cent_list += `
                                     <span class="cent_box">
-                                        <div class="top_text_box">
+                                        <div class="top_text_box  c_4">
                                             <div>${CENT_LIST[0][cen_v].bold_top[0]}</div>
                                             <div>${CENT_LIST[0][cen_v].bold_top[1]}</div>
                                             <div>${CENT_LIST[0][cen_v].bold_top[2]}</div>
@@ -215,9 +219,46 @@ cent_list += `</div>`
                                     </div>
                                     `
                 }
-cent_list+= `<div class="mr_content">
-                <div class="mr_c_box">`
-                if (cen_v == 11 || cen_v == 20) {
+                else if (cen_v == 23) {
+                    cent_list += `
+                                    <span class="cent_box c_23_top">
+                                        <div class="top_text_box">
+                                            <div>${CENT_LIST[0][cen_v].bold_top[0]}</div>
+                                            <div>${CENT_LIST[0][cen_v].bold_top[1]}</div>
+                                            <div>${CENT_LIST[0][cen_v].bold_top[2]}</div>
+                                        </div>
+                                    </span>
+                                    `
+                }
+                else if (cen_v == 25) {
+                    cent_list += `  <div>
+                                        <div class="top_gray_text c_25_top">
+                                            ${CENT_LIST[0][cen_v].sub_context1[0]}
+                                            ${CENT_LIST[0][cen_v].sub_context1[1]}
+                                        </div>
+                                    </div>
+                                    `
+                }
+                else if (cen_v == 27) {
+                    cent_list += `  <div>
+                                        <div class="top_gray_text c_25_top">
+                                            ${CENT_LIST[0][cen_v].top_small}
+                                        </div>
+                                    </div>
+                                    `
+                }
+cent_list+= `<div class="mr_content">`
+                if (cen_v == 25) {
+                    cent_list+=  `<div class="mr_c_box c_25">`
+                } else if (cen_v == 23 || cen_v == 21 || cen_v == 18 || cen_v == 4 || cen_v ==7) {
+                    cent_list+=  `<div class="mr_c_box c_23">`
+                } 
+                else {
+                    cent_list+=  `<div class="mr_c_box ">`
+                }
+
+
+                if (cen_v == 11 || cen_v == 20 || cen_v == 21) {
                     cent_list += `<div class="mr_c_title"></div>`
                 } else {
                     cent_list += `<div class="mr_c_title">${CENT_LIST[0][cen_v].sub_title[0]}</div>`
@@ -242,7 +283,7 @@ cent_list+= `<div class="mr_content">
                             }
                        } 
                        else if (cen_v == 12) {
-                cent_list += `<div class="mr_c_content cent_13  border12">
+                cent_list += `<div class="mr_c_content cent_13">
                                 <span class="cent_box">
                                     <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
                                     <div>${CENT_LIST[0][cen_v].sub_context1[1]}</div>
@@ -258,7 +299,7 @@ cent_list+= `<div class="mr_content">
                                 </span>
                                 `
                     } else if (cen_v == 3) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
                                         </span>
@@ -276,7 +317,7 @@ cent_list+= `<div class="mr_content">
                                         </span>
                                         `
                     }  else if (cen_v == 0) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
                                             <div>${CENT_LIST[0][cen_v].sub_context1[1]}</div>
@@ -291,12 +332,12 @@ cent_list+= `<div class="mr_content">
                                         `
                     }
                     else if (cen_v == 1) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
-                                        <span class="cent_box margin_bottom_30">
+                        cent_list += `<div class="mr_c_content cent_13">
+                                        <span class="cent_box margin_bottom_0">
                                             <div class="img_box image_box"><img src="./img/medi_center/${CENT_LIST[0][cen_v].img_src[0]}" alt="${CENT_LIST[0][cen_v].img_src[0]}"></div>
                                             <div class="cent_1_text margin_top_30">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
                                             <div class="cent_1_text">${CENT_LIST[0][cen_v].sub_context1[1]}</div>
-                                            <div class="cent_1_text margin_bottom_30">${CENT_LIST[0][cen_v].sub_context1[2]}</div>
+                                            <div class="cent_1_text margin_bottom_15">${CENT_LIST[0][cen_v].sub_context1[2]}</div>
                                         </span>
                                         <span class="cent_box">
                                             <div class="img_box image_box"><img src="./img/medi_center/${CENT_LIST[0][cen_v].img_src[1]}" alt="${CENT_LIST[0][cen_v].img_src[1]}"></div>
@@ -338,14 +379,14 @@ cent_list+= `<div class="mr_content">
                                         `
                     }
                     else if (cen_v == 2) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
                                         </span>
                                         `
                     }
                     else if (cen_v == 4) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div class="top_text_box">
                                                 <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -356,7 +397,7 @@ cent_list+= `<div class="mr_content">
                                         `
                     }
                     else if (cen_v == 5) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>
                                                 <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -385,7 +426,7 @@ cent_list+= `<div class="mr_content">
                                         `
                     }
                     else if (cen_v == 6) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>
                                                 <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -449,7 +490,7 @@ cent_list+= `<div class="mr_content">
                                         `
                     }
                     else if (cen_v == 8) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>
                                                 <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>\
@@ -498,7 +539,7 @@ cent_list+= `<div class="mr_content">
                                         `
                     }
                     else if (cen_v == 9) {
-                        cent_list += `<div class="mr_c_content cent_13  border12">
+                        cent_list += `<div class="mr_c_content cent_13">
                                         <span class="cent_box">
                                             <div>
                                                 <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -514,11 +555,12 @@ cent_list+= `<div class="mr_content">
                                                 <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[2]}</div>
                                             </div>
                                         </span>
+                                        <div class="line"></div>
                                         `
                     }
                     else if (cen_v == 11) {
                         cent_list += `  <div class="flex_box_11">
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <div class="mr_c_title">${CENT_LIST[0][cen_v].sub_title[0]}</div>
                                                 <div class="ft_box">
                                                     <div class="f_box">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -540,7 +582,7 @@ cent_list+= `<div class="mr_content">
                     }
                     else if (cen_v == 13) {
                         cent_list += `  <div class="flex_box_11">
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <div class="c_title">${CENT_LIST[0][cen_v].middle_text[0]}</div>
                                                 <div class="line"></div>
                                                 <div class="circle_box">
@@ -581,7 +623,7 @@ cent_list+= `<div class="mr_content">
                     }
                     else if (cen_v == 15) {
                         cent_list += `  <div>
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <div class="chk_box_2">
                                                     <div class="chk_text">
                                                         <span><svg class="svg-inline--fa fa-check-square fa-w-14 fa-lg text-primary" aria-hidden="true" focusable="false" data-prefix="far" data-icon="check-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M400 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm0 400H48V80h352v352zm-35.864-241.724L191.547 361.48c-4.705 4.667-12.303 4.637-16.97-.068l-90.781-91.516c-4.667-4.705-4.637-12.303.069-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l59.792 60.277 141.352-140.216c4.705-4.667 12.303-4.637 16.97.068l22.536 22.718c4.667 4.706 4.637 12.304-.068 16.971z"></path></svg></span>
@@ -598,7 +640,7 @@ cent_list+= `<div class="mr_content">
                                                 </div>
                                                 <div class="line"></div>
                                                 <span class="cent_box">
-                                                    <div class="flex_box_2">
+                                                    <div class="flex_box_2 padding_0">
                                                         <div class="f_left_box">
                                                             <div class="bold text_box">${CENT_LIST[0][cen_v].phone_num[0]}<span class="small">${CENT_LIST[0][cen_v].phone_num[1]}</span></div>
                                                             <div class="num_box">
@@ -622,7 +664,7 @@ cent_list+= `<div class="mr_content">
                     }
                     else if (cen_v == 16) {
                         cent_list += `  <div>
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <ul>
                                                     <li class="cent_li">${CENT_LIST[0][cen_v].sub_context1[0]}</li>
                                                     <li class="cent_li">${CENT_LIST[0][cen_v].sub_context1[1]}</li>
@@ -658,14 +700,6 @@ cent_list+= `<div class="mr_content">
                     }
                      else if (cen_v == 17) {
                         cent_list+= `<div class="m_flex_box">
-                                        <div class="row mb-4"> 
-                                            <div class="col-lg-12">
-                                                <h1 class="page-title">
-                                                    <span class="icon"><img src="./img/common/title_icon2.png" alt=""></span>
-                                                    <i class="fas fa-plus-square"></i> 장례식장
-                                                </h1>
-                                            </div>
-                                        </div>
                                         <div class="row mb-5">
                                             <div class="col-lg-12">
                                                 <div class="top">
@@ -791,7 +825,7 @@ cent_list+= `<div class="mr_content">
                      }
                      else if (cen_v == 18) {
                         cent_list += `  <div>
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <span class="cent_box">
                                                     <div>
                                                         <div class="text_18">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -818,7 +852,7 @@ cent_list+= `<div class="mr_content">
                     }
                     else if (cen_v == 19) {
                         cent_list += `  <div>
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <span class="cent_box">
                                                     <div class="text_18">
                                                         <div>${CENT_LIST[0][cen_v].sub_context1[0]}</div>
@@ -837,7 +871,7 @@ cent_list+= `<div class="mr_content">
                     }
                     else if (cen_v == 20) {
                         cent_list += `  <div class="flex_20">
-                                            <div class="f_text_box_20">
+                                            <div class="f_text_box2_20">
                                                 <div class="mr_c_title title_20">${CENT_LIST[0][cen_v].sub_title[0]}</div>
                                                 <div class="mr_c_title title_20">${CENT_LIST[0][cen_v].sub_title[1]}</div>
                                                 <div class="chk_box_20">
@@ -871,10 +905,230 @@ cent_list+= `<div class="mr_content">
                                         </div>
                                         `
                     }
+                    else if (cen_v == 21) {
+                        cent_list += `  <div class="flex_21">
+                                            <div class="f_text_box2_21">
+                                                <div class="mr_c_title title_21">${CENT_LIST[0][cen_v].sub_title[0]}</div>
+                                                <div class="mr_c_title title_21">${CENT_LIST[0][cen_v].sub_title[1]}</div>
+                                                <div class="mr_c_title title_21">${CENT_LIST[0][cen_v].sub_title[2]}</div>
+                                            </div>
+                                        </div>
+                                        <div class="circle_box">
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[0]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[0]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[1]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[1]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[2]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[2]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[3]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[3]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[4]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[4]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[5]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[5]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[6]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[6]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[7]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[7]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_num">${CENT_LIST[0][cen_v].circle_num[8]}</span>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[8]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="cent_box">
+                                            <div>
+                                                <div class="text_21">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                                <div class="text_21">${CENT_LIST[0][cen_v].sub_context1[1]}</div>
+                                            </div>
+                                        </span>
+                                        `
+                    }
+                    else if (cen_v == 22) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                        <span class="cent_box">
+                                            <div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].small_top[0]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].small_top[1]}</div>
+                                            </div>
+                                        </span>
+                                        
+                                        `
+                    }
+                    else if (cen_v == 23) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                        <span class="cent_box">
+                                            <div class="top_text_box">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[1]}</div>
+                                            </div>
+                                        </span>
+                                        `
+                    }
+                    else if (cen_v == 26) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                            </div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context2[0]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context2[1]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context2[2]}</div>
+                                            </div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context3[0]}</div>
+                                            </div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context4[0]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context4[1]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context4[2]}</div>
+                                            </div>
+                                        </span>
+                                        `
+                    }
+                    else if (cen_v == 27) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                        <ul class="mr_ul2">
+                                            <li class="mr_li">${CENT_LIST[0][cen_v].top_li[0]}</li>
+                                            <li class="mr_li">${CENT_LIST[0][cen_v].top_li[1]}</li>
+                                            <li class="mr_li">${CENT_LIST[0][cen_v].top_li[2]}</li>
+                                            <li class="mr_li">${CENT_LIST[0][cen_v].top_li[3]}</li>
+                                        </ul>
+                                        `
+                    }
+                    else if (cen_v == 28) {
+                        cent_list += `<div class="mr_c_content cent_13 ">
+                                        <div>
+                                            <span class="border_box">${CENT_LIST[0][cen_v].circle_border}</span>
+                                        </div>
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[1]}</div>
+                                            </div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context2[0]}</div>
+                                            </div>
+                                        </span>
+                                        <span class="cent_box">
+                                            <div class="top_text_box2">
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context3[0]}</div>
+                                            </div>
+                                        </span>
+
+                                        <div class="circle_box">
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[0]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[1]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="circle_text">
+                                                <div class="cir_box">
+                                                    <span class="cir_span">
+                                                        <h6>
+                                                            <span class="cir_text">${CENT_LIST[0][cen_v].circle_text[2]}</span>
+                                                        </h6>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        `
+                    }
 
 
           cent_list += `</div>`
-                            if (cen_v == 20) {
+                            if (cen_v == 20 || cen_v == 21 || cen_v == 28) {
                                 cent_list += `<div class="mr_c_title"></div>`
                             } else {
                                 cent_list +=  `<div class="mr_c_title margin2 margin${CENT_LIST[0][cen_v].item_no}">${CENT_LIST[0][cen_v].sub_title[1]}</div>`
@@ -977,7 +1231,6 @@ cent_list+= `<div class="mr_content">
                                             <div class="margin_bottom_30">
                                                 <span class="text_4">${CENT_LIST[0][cen_v].sub_context8[0]}</span>
                                             </div>
-                                            <div class="line"></div>
                                 `
                     }
                     else if (cen_v == 6)  {
@@ -1041,7 +1294,7 @@ cent_list+= `<div class="mr_content">
                     else if (cen_v == 9) {
                         cent_list += `
                                     <div class="margin_bottom_30">
-                                    <div>
+                                    <div class="margin_bottom_40">
                                         <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[4]}</div>
                                         <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[5]}</div>
                                         <div class="text_4">${CENT_LIST[0][cen_v].sub_context1[6]}</div>
@@ -1067,7 +1320,7 @@ cent_list+= `<div class="mr_content">
                     }
                     else if (cen_v == 19) {
                         cent_list += `  <div>
-                                            <div class="f_text_box">
+                                            <div class="f_text_box2">
                                                 <span class="cent_box">
                                                     <div class="text_18">
                                                         <div>${CENT_LIST[0][cen_v].sub_context3[0]}</div>
@@ -1075,6 +1328,119 @@ cent_list+= `<div class="mr_content">
                                                     </div>
                                                 </span>
                                                 <div class="line"></div>
+                                            </div>
+                                        </div>
+                                        `
+                    }
+                    else if (cen_v == 22) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                <ul class="mr_ul">
+                                    <li class="mr_li cent_22">${CENT_LIST[0][cen_v].sub_context1[0]}</li>
+                                    <li class="mr_li cent_22">${CENT_LIST[0][cen_v].sub_context1[1]}</li>
+                                    <li class="mr_li cent_22">${CENT_LIST[0][cen_v].sub_context1[2]}</li>
+                                    <li class="mr_li cent_22">${CENT_LIST[0][cen_v].sub_context1[3]}</li>
+                                    <li class="mr_li cent_22">${CENT_LIST[0][cen_v].sub_context1[4]}</li>
+                                </ul>
+                                `
+                    }
+                    else if (cen_v == 23) {
+                        cent_list += `<div class="mr_c_content cent_13">
+                                            <div class="margin_bottom_30">
+                                                <span class="text_4">${CENT_LIST[0][cen_v].sub_context2[0]}</span>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context2[1]}</div>
+                                            </div>
+                                            <div class="line"></div>
+
+                                            <div class="mr_c_title margin2">${CENT_LIST[0][cen_v].sub_title[2]}</div>
+
+                                            <div class="margin_bottom_30">
+                                                <span class="text_4">${CENT_LIST[0][cen_v].sub_context3[0]}</span>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context3[1]}</div>
+                                            </div>
+                                            <div class="line"></div>
+
+                                            <div class="mr_c_title margin2">${CENT_LIST[0][cen_v].sub_title[3]}</div>
+
+                                            <div class="margin_bottom_30">
+                                                <span class="text_4">${CENT_LIST[0][cen_v].sub_context4[0]}</span>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context4[1]}</div>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context4[2]}</div>
+                                            </div>
+                                            <div class="line"></div>
+
+                                            <div class="mr_c_title margin2">${CENT_LIST[0][cen_v].sub_title[4]}</div>
+
+                                            <div class="margin_bottom_30">
+                                                <span class="text_4 bolder">${CENT_LIST[0][cen_v].sub_context5[0]}</span>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context5[1]}</div>
+                                                <span class="text_4 bolder">${CENT_LIST[0][cen_v].sub_context5[2]}</span>
+                                                <div class="text_4">${CENT_LIST[0][cen_v].sub_context5[3]}</div>
+                                            </div>
+                                `
+                    }
+                    else if (cen_v == 25) {
+                        cent_list += `  <div>
+                                            <div class="f_text_box2">
+                                                <span class="cent_box">
+                                                    <div class="text_18">
+                                                        <div>${CENT_LIST[0][cen_v].sub_context2[0]}</div>
+                                                        <div>${CENT_LIST[0][cen_v].sub_context2[1]}</div>
+                                                        <div>${CENT_LIST[0][cen_v].sub_context2[2]}</div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        `
+                    }
+                    else if (cen_v == 26) {
+                        cent_list += `  <div>
+                                            <div class="f_text_box2">
+                                                <span class="cent_box">
+                                                    <div class="bolder color c_26_">
+                                                        <div>${CENT_LIST[0][cen_v].bold}</div>
+                                                    </div>
+                                                    <div class="text_18 c_26">
+                                                        <div>${CENT_LIST[0][cen_v].sub_context5[0]}</div>
+                                                        <div class="c_26_pad"> <a href="#" target="_black">${CENT_LIST[0][cen_v].sub_context5[1]}</a></div>
+                                                    </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        `
+                    }
+                    else if (cen_v == 27) {
+                        cent_list += `  <div>
+                                            <div class="f_text_box2">
+                                                <span class="cent_box">
+                                                    <div class="text_18 c_27">
+                                                        <div class="bolder color c_27_"><span class="blue circle_num">${CENT_LIST[0][cen_v].main_num[0]}</span>${CENT_LIST[0][cen_v].main_title[0]}</div>
+                                                        <div class="small">${CENT_LIST[0][cen_v].main_red_text}</div>
+                                                        <div class="line_height">${CENT_LIST[0][cen_v].sub_context1[0]}</div>
+                                                        <div class="line_height">${CENT_LIST[0][cen_v].sub_context1[1]}</div>
+                                                    </div>
+                                                </span>
+                                                <span class="cent_box">
+                                                    <div class="text_18 c_27">
+                                                        <div class="bolder color c_27_"><span class="blue circle_num">${CENT_LIST[0][cen_v].main_num[1]}</span>${CENT_LIST[0][cen_v].main_title[1]}</div>
+                                                        <div class="small">${CENT_LIST[0][cen_v].main_red_text}</div>
+                                                        <div class="line_height">${CENT_LIST[0][cen_v].sub_context2[0]}</div>
+                                                    </div>
+                                                </span>
+                                                <span class="cent_box">
+                                                    <div class="text_18 c_27">
+                                                        <div class="bolder color c_27_"><span class="blue circle_num">${CENT_LIST[0][cen_v].main_num[2]}</span>${CENT_LIST[0][cen_v].main_title[2]}</div>
+                                                        <div class="small">${CENT_LIST[0][cen_v].main_red_text}</div>
+                                                        <div class="line_height">${CENT_LIST[0][cen_v].sub_context3[0]}</div>
+                                                    </div>
+                                                </span>
+                                                <span class="cent_box">
+                                                    <div class="text_18 c_27">
+                                                        <div class="bolder color c_27_"><span class="blue circle_num">${CENT_LIST[0][cen_v].main_num[3]}</span>${CENT_LIST[0][cen_v].main_title[3]}</div>
+                                                        <div class="small">${CENT_LIST[0][cen_v].main_red_text}</div>
+                                                        <div class="line_height">${CENT_LIST[0][cen_v].sub_context4[0]}</div>
+                                                        <div class="line_height">${CENT_LIST[0][cen_v].sub_context4[1]}</div>
+                                                    </div>
+                                                </span>
                                             </div>
                                         </div>
                                         `
@@ -1107,9 +1473,9 @@ cent_list+= `<div class="mr_content">
         $('.m_right').append(cent_list);
     }
 
-    if (cen_v == 0 || cen_v ==1 || cen_v == 2 || cen_v == 8 || cen_v == 10 || cen_v == 11 || cen_v == 13 || cen_v == 14 || cen_v == 20) {
+    if (cen_v == 0 || cen_v ==1 || cen_v == 2 || cen_v == 8 || cen_v == 10 || cen_v == 11 || cen_v == 13 || cen_v == 14 || cen_v == 20 || cen_v == 17 || cen_v == 26 || cen_v == 28) {
         $('.mr_img').css({display:'none'})
-        $('.mr_c_box').css({paddingTop:'0', gap:'0'})
+        $('.mr_c_box').css({paddingTop:'0',})
         $('.m_r_content_box').css({gap:'0'})
     } else if (cen_v == 3 || cen_v == 4) {
         $('.mr_img').css({display:'block'})

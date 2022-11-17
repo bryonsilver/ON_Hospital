@@ -10,10 +10,12 @@ $(document).ready(function(){
          $('#selec0').prop("selected", true);
         $('.notice').addClass('active')
         $('.n_news_1').addClass('nav_active')
+        $('.m_right').css({paddingBottom:'150px'})
     } else if (num == 1) {
          $('#selec1').prop("selected", true);
         $('.ect').addClass('active')
         $('.n_news_2').addClass('nav_active')
+        $('.m_right').css({paddingBottom:'200px'})
     } else if (num == 2) {
          $('#selec2').prop("selected", true);
         $('.media').addClass('active')
@@ -26,6 +28,7 @@ $(document).ready(function(){
          $('#selec4').prop("selected", true);
         $('.diet').addClass('active')
         $('.n_news_5').addClass('nav_active')
+        $('.m_right').css({paddingBottom:'150px'})
     } else if (num == 5) {
          $('#selec5').prop("selected", true);
         $('.question').addClass('active')

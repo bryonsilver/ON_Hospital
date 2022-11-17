@@ -5,7 +5,7 @@ a.point-hover:hover,
 .navik-menu-fixed ul li:hover>a, 
 .navik-menu-fixed>ul>li.current-menu>a,
 .navik-menu ul li:hover>a,
-.navik-menu ul li.current-menu>a {color:#ED5929!important;}
+.navik-menu ul li.current-menu>a {color:#ffffff!important;}
 .point-bg {background-color:#ED5929;}
 .point-bghover:hover {color:#fff !important;background-color:#ED5929 !important;}
 .navik-menu.submenu-top-border li>ul {border-top-color: #ED5929!important;;}
