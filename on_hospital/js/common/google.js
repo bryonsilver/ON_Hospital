@@ -18,13 +18,14 @@
 function googleTranslateElementInit() {
     //setCookie('googtrans', '/en',1);
     new google.translate.TranslateElement({
-        pageLanguage: 'en',
+        pageLanguage: 'ko',
         includedLanguages: "en,af,sq,ar,ar-EG,ar-SA,ar-AE,bg,zh-TW,zh-CN,hr,cs,da,nl,en-PH,et,fa,fi,fr,de,el,hi,hu,id,it,ja,ko,mk,ms,mn,no,pt,ro,ru,es,sv,th,tr-TR,uk,uz,vi",
         autoDisplay: true,
         multilanguagePage: true
 
     }, 'google_translate_element');
 }
+
 //frequently asked questions
 
 /////////////////////////////////

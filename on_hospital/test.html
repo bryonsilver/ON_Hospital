@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .goog-trans{background:#f0f0f0}
+        .goog-trans-control{float:left;height:40px}
+        .goog-trans-control a{display:inline-block;padding:0 10px;height:40px;line-height:40px;background:#383838;color:#fff;text-align:center;text-decoration:none}
+        .goog-trans-info{float:left;margin:0 0 0 10px;height:40px;line-height:40px;color:#686868}
+        .goog-trans:after{display:block;visibility:hidden;clear:both;content:''}
+        </style>
+        
+        <script>
+            function googleSectionalElementInit() {
+                new google.translate.SectionalElement({
+                    sectionalNodeClassName: 'goog-trans-section',
+                    controlNodeClassName: 'goog-trans-control',
+                    background: '#78E7FF'
+                }, 'google_sectional_element');
+            }
+        </script>
+        <script src="//translate.google.com/translate_a/element.js?cb=googleSectionalElementInit&ug=section&hl=ko"></script>
+        <script type="text/javascript">
+            google_initialized = false;
+        
+            function google_auto_translate()
+            {
+                if(google_initialized)
+                {
+                    jQuery('a.goog-te-gadget-link')[0].click();
+                }
+                else if( jQuery('a.goog-te-gadget-link').length )
+                {
+                    console.log('has button');
+                    google_initialized = true;
+                    setTimeout(google_auto_translate, 500);
+                }
+                else{
+                    console.log('no button');
+                    setTimeout(google_auto_translate, 100);
+                }
+            }
+        
+            jQuery(document).ready(function(){
+                setTimeout(google_auto_translate, 1000);
+            });
+        </script>
+</head>
+<body>
+    <div id="google_sectional_element" style="display:none"></div>
+    <div class="goog-trans-section">
+        <div class="goog-trans">
+            <div class="goog-trans-control"></div>
+            <div class="goog-trans-info">[번역]을 누르시면 번역이 됩니다.</div>
+        </div>
+        <div id="google_translate_element_area">The page you are looking at is being generated dynamically by CodeIgniter.</div>
+    </div>
+</body>
+</html>

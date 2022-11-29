@@ -103,4 +103,96 @@ $(document).ready(function(){
 		return false;
     })
 
+    $('.h_nav_li').click(function(){
+
+        var clicks = $(this).data('clicks');
+		if (clicks) {
+		   // odd clicks
+           $('.nav_pan_box').css({height:'0px'})
+           $('.window_black').css({display:'none'})
+		} else {
+		   // even clicks
+           $('.nav_pan_box').css({height:'300px'})
+           $('.window_black').css({display:'block'})
+		}
+		$(this).data("clicks", !clicks);
+
+    })
+
+    $('.nav_0').click(function(){
+        var clicks1 = $(this).data('clicks');
+        if (clicks1) {
+             // odd clicks
+            $('.n_pan_0').css({opacity:'1', height: '300px', zIndex:'999'})
+            $('.n_pan_1').css({opacity:'0', height: '0px'})
+            $('.n_pan_2').css({opacity:'0', height: '0px'})
+            $('.n_pan_3').css({opacity:'0', height: '0px'})
+        }
+        else {
+            // even clicks
+            $('.n_pan_0').css({opacity:'0', height: '0px'})
+            $('.n_pan_1').css({opacity:'0', height: '0px'})
+            $('.n_pan_2').css({opacity:'0', height: '0px'})
+            $('.n_pan_3').css({opacity:'0', height: '0px'})
+        }
+        $(this).data("clicks1", !clicks1);
+           
+    })
+    $('.nav_1').click(function(){
+        var clicks2 = $(this).data('clicks');
+        if (clicks2) {
+            // odd clicks
+            $('.n_pan_1').css({opacity:'1', height: '300px', zIndex:'999'})
+            $('.n_pan_0').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_2').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_3').css({opacity:'0', height: '0px', zIndex:'1'})
+
+        } else {
+            // even clicks
+            $('.n_pan_1').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_0').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_2').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_3').css({opacity:'0', height: '0px', zIndex:'1'})
+        }
+        $(this).data("clicks2", !clicks2);
+    })
+    $('.nav_2').click(function(){
+        var clicks3 = $(this).data('clicks');
+        if (clicks3) {
+            // odd clicks
+            $('.n_pan_2').css({opacity:'1', height: '300px', zIndex:'999'})
+            $('.n_pan_1').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_0').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_3').css({opacity:'0', height: '0px', zIndex:'1'})
+        } else {
+            // even clicks
+            $('.n_pan_2').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_1').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_0').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_3').css({opacity:'0', height: '0px', zIndex:'1'})
+        }
+        $(this).data("clicks3", !clicks3);
+   })
+    $('.nav_3').click(function(){
+        var clicks4 = $(this).data('clicks');
+        if (clicks4) {
+            // odd clicks
+            $('.n_pan_3').css({opacity:'1', height: '300px', zIndex:'999'})
+            $('.n_pan_1').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_2').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_0').css({opacity:'0', height: '0px', zIndex:'1'})
+        } else {
+            // even clicks
+            $('.n_pan_3').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_1').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_2').css({opacity:'0', height: '0px', zIndex:'1'})
+            $('.n_pan_0').css({opacity:'0', height: '0px', zIndex:'1'})
+        }
+        $(this).data("clicks4", !clicks4);
+    })
+
+    // $('.goog-te-combo option:eq(0)').replaceWith("<option value='ko'>KO</option>");
+    $('.goog-te-combo') .children("[value='ko']").replaceWith("<option value='ko'>KO</option>");
+
+
 })
