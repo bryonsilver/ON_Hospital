@@ -359,6 +359,8 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .indi span:nth-child(2) {
     position: absolute;
     left: 40px;
+    width: 150px;
+
 }
 
 
