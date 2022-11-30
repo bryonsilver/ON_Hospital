@@ -224,7 +224,7 @@ p,h1,h2,h3 {margin: 0;}
     padding-top: 30px;
     padding-bottom: 30px;
     word-break: break-all;
-    background-color: #f8f8f8;
+    background-color: #fff;
 }
 .n_flex_box {
     display: flex;
@@ -252,15 +252,21 @@ p,h1,h2,h3 {margin: 0;}
     flex-wrap: wrap;
     flex-direction: column;
     border: 1px solid #eee;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px #7a7a7a;
 }
-
+.swiper_b2 {
+    border-radius: 10px;
+    overflow: hidden;
+}
 .none {
     display: inline-block !important;
 }
 .news_title_box {
     height: 56px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 10px;
     box-sizing: border-box;
 }
@@ -273,6 +279,7 @@ p,h1,h2,h3 {margin: 0;}
     width: 30px;
     height: 100%;
     position: relative;
+    left: 70px;
 }
 .plus {
     width: 30px;
@@ -322,7 +329,7 @@ p,h1,h2,h3 {margin: 0;}
     text-align: center;
     margin-bottom: 20px;
 }
-.swiper_box2 {padding-top: 20px; box-sizing: border-box;}
+.swiper_box2 {padding-top: 20px; box-sizing: border-box; background-color: #FFAA00;}
 
 /* on_tv */
 .swiper_box3 .swiper-slide img {
@@ -331,6 +338,7 @@ p,h1,h2,h3 {margin: 0;}
 .swiper_box3 {
     padding-bottom: 30px;
     box-sizing: border-box;
+    background-color: #CBF3F0;
 }
 .tv_title {
     font-size: 30px;
@@ -376,6 +384,7 @@ p,h1,h2,h3 {margin: 0;}
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
+    background-color: #F8BD83;
 }
 .semi_box {
     width: 100%;
@@ -652,7 +661,7 @@ p,h1,h2,h3 {margin: 0;}
     .today_menu_box, .employment_box, .press_report_box, .notice_box {width: 100%;}
     .news_title_box {justify-content: flex-start;}
     .more_plus {padding-top: 5px;}
-    .today_menu, .employment, .press_report, .notice {flex-direction: row; border: none;}
+    .today_menu, .employment, .press_report, .notice {flex-direction: row; border: none; }
     .news_thumb {width: 30%; height: 97%; display: inline-block;}
     .news_title {width: 69%; height: 100px; display: inline-block; white-space: pre-wrap; padding: 4% 15px; line-height: 30px !important;}
     .first {border: none;}

@@ -22,34 +22,24 @@ $(document).ready(function(){
     });
     // 온병원 그룹
     var swiper = new Swiper(".mySwiper3", {
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        }, 
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        loop: true,
-        autoplay: {
-            delay: 3000, // 몇 밀리초마다 새로 들어올지
-        },
-        speed: 500, // duration
-        // direction: 'vertical',
- 
-    });
-    
-    // 병원장 TV
-    var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 2.5,
-        spaceBetween: 0,
-        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
         autoplay: {
             delay: 3000, // 몇 밀리초마다 새로 들어올지
         },
-        centeredSlides: true, 
-        speed: 500, // duration
-        // direction: 'vertical',
-
         breakpoints: {
             2000: {
                 slidesPerView: 2.2,
@@ -62,19 +52,66 @@ $(document).ready(function(){
             },
             // when window width is >= 1024px
             767: {
-            slidesPerView: 1.2,
+            slidesPerView: 1.5,
             spaceBetween: 0
             },
             400: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.5,
                 spaceBetween: 0
             },
             100: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.5,
                 spaceBetween: 0
             }
         }  ,
-        allowTouchMove: true, // 드래그로 움직임
+ 
+    });
+    
+    // 병원장 TV
+    var swiper = new Swiper(".mySwiper2", {
+       
+        slidesPerView: 2.5,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        autoplay: {
+            delay: 3000, // 몇 밀리초마다 새로 들어올지
+        },
+        breakpoints: {
+            2000: {
+                slidesPerView: 2.2,
+                spaceBetween: 0
+            },
+            // when window width is >= 768px
+            1025: {
+            slidesPerView: 2.2,
+            spaceBetween: 0
+            },
+            // when window width is >= 1024px
+            767: {
+            slidesPerView: 1.5,
+            spaceBetween: 0
+            },
+            400: {
+                slidesPerView: 1.5,
+                spaceBetween: 0
+            },
+            100: {
+                slidesPerView: 1.5,
+                spaceBetween: 0
+            }
+        }  ,
     
     });
 
@@ -194,5 +231,71 @@ $(document).ready(function(){
     // $('.goog-te-combo option:eq(0)').replaceWith("<option value='ko'>KO</option>");
     $('.goog-te-combo') .children("[value='ko']").replaceWith("<option value='ko'>KO</option>");
 
+
+
+
+
+    $('.ham_box').click(function(){
+        $('.bur_pan_box').css({display:'block'})
+        $('body').css({overflow:'hidden'})
+
+        // $('.first_l').css({transform:'rotate(-50deg) translateX(-5px)', transformOrigin :'right'})
+        // $('.second_l').css({opacity:'0'})
+        // $('.third_l').css({transform:'rotate(50deg) translateX(-4px)', transformOrigin :'right'})
+    })
+    $('.x_text').click(function(){
+        $('.bur_pan_box').css({display:'none'})
+        $('body').css({overflow:'auto'})
+
+        // $('.first_l').css({transform:'rotate(0deg) translateX(0px)', transformOrigin :'right'})
+        // $('.second_l').css({opacity:'1'})
+        // $('.third_l').css({transform:'rotate(0deg) translateX(0px)', transformOrigin :'right'})
+    })
+
+    $('.indi').click(function(){
+        $(this).index(function(){
+            $('.comma').css({backgroundColor:'rgb(37, 37, 37)'})
+            $('.indi').css({color:'rgb(37, 37, 37)'})
+        }) 
+    })
+
+
+    // var mHtml = $("html");
+    // var page = 1;
+
+
+    // mHtml.animate({scrollTop : 0},10);
+
+    // $(window).on("wheel", function(e) {
+    //     if(mHtml.is(":animated")) return;
+    //     if(e.originalEvent.deltaY > 0) {
+    //         if(page == 6) return;
+    //         page++;
+    //     } else if(e.originalEvent.deltaY < 0) {
+    //         if(page == 1) return;
+    //         page--;
+    //     }
+    //     var posTop =(page-1) * $(window).height();
+    //     mHtml.animate({scrollTop : posTop});
+    // })
+
+
+    $('#s1').mouseover(function(){
+        $('.s1').css({zIndex:'999999',opacity:'1'})
+    })
+    $('#s1').mouseout(function(){
+        $('.s1').css({zIndex:'8',opacity:'0'})
+    })
+
+
+
+    $(".indi_1").click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:0}, 500);
+    });
+
+
+    
+ 
 
 })
