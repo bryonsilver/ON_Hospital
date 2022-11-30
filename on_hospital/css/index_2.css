@@ -13,8 +13,12 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
     align-items: center;
     gap: 20px;
 }
+.head_flex {
+    box-shadow: 0 5px 20px rgb(167, 167, 167);
+
+}
 .header {
-    height: 96px !important;
+    height: 71.59px !important;
 }
 .head_flex {
     width: 100%;
@@ -313,7 +317,7 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .side_indi {
     position: fixed;
     top: 50%;
-    z-index: 99999;
+    z-index: 998;
     left: 50px;
     display: flex;
     flex-direction: column;
