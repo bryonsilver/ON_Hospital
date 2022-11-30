@@ -313,7 +313,9 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .box_max_witdh:nth-of-type(6) {
     padding-top: 0 !important;
 }
-
+.semi_2 {
+    display: block !important;
+}
 .side_indi {
     position: fixed;
     top: 50%;
