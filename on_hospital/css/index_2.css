@@ -1,4 +1,12 @@
 body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;}
+
+.head_contain {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .window_black {
     width: 100%;
     height: 100%;
@@ -23,8 +31,7 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .head_flex {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     padding: 0 10px;
     box-sizing: border-box;
     background-color: #fff;
@@ -494,15 +501,7 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
 .notice a {
     background-color: #fff;
 } 
-.swiper_box2 {
-    height: 30vh !important;
-    padding-top: 0 !important;
-}
-.swiper_box3 {
-    flex-direction: column;
-    height: 40vh !important;
-    padding-top: 0 !important;
-}
+
 
 .mySwiper2 .swiper-slide {
     background-color: transparent;
@@ -514,6 +513,10 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
     width: 100%;
     margin: auto;
     max-width: 100% !important;
+}
+.swiper_box3 {
+    flex-direction: column;
+    padding-top: 0 !important;
 }
 
 
@@ -576,6 +579,13 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
     .side_indi {
         display: none;
     }
+    .swiper_box2 {
+        height: 40vh !important;
+        padding-top: 0 !important;
+    }
+    .swiper_box3 {
+        height: 50vh !important;
+    }
 
 }
 @media (max-width:767px)  {
@@ -614,6 +624,13 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
         display: block;
     }
     .bur_u_li {color: #fff !important;}
+    .swiper_box2 {
+        height: 30vh !important;
+        padding-top: 0 !important;
+    }
+    .swiper_box3 {
+        height: 40vh !important;
+    }
 }
 
 @media (max-width: 500px) {
@@ -640,4 +657,5 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
         justify-content: flex-end;
         padding-right: 10px;
     }
+ 
 }

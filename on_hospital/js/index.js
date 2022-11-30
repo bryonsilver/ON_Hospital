@@ -115,6 +115,54 @@ $(document).ready(function(){
     
     });
 
+
+    // var swiper = new Swiper(".mySwiper4", {
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     }, 
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         type: 'bullets',
+    //         clickable: true
+    //     },
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 3000, // 몇 밀리초마다 새로 들어올지
+    //     },
+    //     speed: 500, // duration
+    //     // direction: 'vertical',
+    //     effect : 'fade',
+    //     slidesPerView: 5,
+    //     breakpoints: {
+    //         2000: {
+    //             slidesPerView: 5,
+    //             spaceBetween: 0
+    //         },
+    //         // when window width is >= 768px
+    //         1025: {
+    //         slidesPerView: 4,
+    //         spaceBetween: 0
+    //         },
+    //         // when window width is >= 1024px
+    //         767: {
+    //         slidesPerView: 4,
+    //         spaceBetween: 0
+    //         },
+    //         400: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 0
+    //         },
+    //         100: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 0
+    //         }
+    //     }  ,
+ 
+    // });
+
+    
+
     
     
     $('.swiper').hover(function(){
