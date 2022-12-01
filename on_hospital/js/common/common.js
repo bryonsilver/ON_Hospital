@@ -87,8 +87,9 @@ $(document).ready(function(){
 			$('.top_btn').css({opacity: '1'})
 		}
 	})
+
 	$('.top_btn').click(function(){
-		$( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+		$( 'html, body' ).animate( { scrollTop : 0 },0 );
 		return false;
 	})
 
@@ -167,5 +168,25 @@ $(document).ready(function(){
     })
 
 	// 병원소식이든 진료안내 등등 옆 m_left의 active 된 li에 hover 했을때  글자 색상 하양그대로로
+
+	$('.ham_box').click(function(){
+        $('.bur_pan_box').css({display:'block'})
+        $('body').css({overflow:'hidden'})
+
+        // $('.first_l').css({transform:'rotate(-50deg) translateX(-5px)', transformOrigin :'right'})
+        // $('.second_l').css({opacity:'0'})
+        // $('.third_l').css({transform:'rotate(50deg) translateX(-4px)', transformOrigin :'right'})
+    })
+    $('.x_text').click(function(){
+        $('.bur_pan_box').css({display:'none'})
+        $('body').css({overflow:'auto'})
+
+        // $('.first_l').css({transform:'rotate(0deg) translateX(0px)', transformOrigin :'right'})
+        // $('.second_l').css({opacity:'1'})
+        // $('.third_l').css({transform:'rotate(0deg) translateX(0px)', transformOrigin :'right'})
+    })
+
+	
+
 	
 })

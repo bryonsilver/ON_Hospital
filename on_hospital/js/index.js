@@ -281,67 +281,206 @@ $(document).ready(function(){
 
 
 
+let chk = true;
+        $('.box').on('wheel DOMMouseScroll', function(){ 
+            event.stopPropagation(); 
+
+            if(chk) {
+                chk = false;
+                setTimeout(function(){
+                    chk = true;
+                }, 0)
+                /*
+                    확산방지 - 클릭이나 자식에서 이벤트를 동작시켰을때 우리는 해당 요소의 이벤트만 동작했다고 생각하겠지만 웹페이지 내부에서는 요소를 감싸고 있는 부모들도 동작했다 라고 생각한다(버블업) 
+                    그래서 이벤트를 실행했을때 해당 요소꺼만 실행시키려고 할때 사용한다.
+                */
+            
+                let w_dir = event.wheelDelta;
+
+                // 휠 내림 => -120 // 다음에 갈거 있냐?
+                if(w_dir < 0 && $(this).next().length > 0) {
+                    console.log($(this).index(),w_dir,"휠 내림")
+                    $('html, body').stop().animate({
+                        // scrollTop: $('.box').eq($(this).index()+1).offset().top
+                        scrollTop: $(this).next().offset().top
+                    }, 300) 
+                }
+                // 휠 올림 => 120
+                else if(w_dir > 0 && $(this).prev().length > 0) {  
+                    console.log($(this).index(),w_dir,"휠 올림")
+
+                    $('html, body').stop().animate({
+                        // scrollTop: $('.box').eq($(this).index()-1).offset().top
+                        scrollTop: $(this).prev().offset().top
+                    }, 300) 
+                }
+            }
+        })
 
 
-    $('.ham_box').click(function(){
-        $('.bur_pan_box').css({display:'block'})
-        $('body').css({overflow:'hidden'})
 
-        // $('.first_l').css({transform:'rotate(-50deg) translateX(-5px)', transformOrigin :'right'})
-        // $('.second_l').css({opacity:'0'})
-        // $('.third_l').css({transform:'rotate(50deg) translateX(-4px)', transformOrigin :'right'})
+    // #s1
+	$('#s1').mouseenter(function(){
+        $('.s1').css({zIndex:'9999',opacity: '1'})
+        $('.shorts_box').css({zIndex:'9'})
     })
-    $('.x_text').click(function(){
-        $('.bur_pan_box').css({display:'none'})
-        $('body').css({overflow:'auto'})
-
-        // $('.first_l').css({transform:'rotate(0deg) translateX(0px)', transformOrigin :'right'})
-        // $('.second_l').css({opacity:'1'})
-        // $('.third_l').css({transform:'rotate(0deg) translateX(0px)', transformOrigin :'right'})
-    })
-
-    $('.indi').click(function(){
-        $(this).index(function(){
-            $('.comma').css({backgroundColor:'rgb(37, 37, 37)'})
-            $('.indi').css({color:'rgb(37, 37, 37)'})
-        }) 
-    })
-
-
-    // var mHtml = $("html");
-    // var page = 1;
-
-
-    // mHtml.animate({scrollTop : 0},10);
-
-    // $(window).on("wheel", function(e) {
-    //     if(mHtml.is(":animated")) return;
-    //     if(e.originalEvent.deltaY > 0) {
-    //         if(page == 6) return;
-    //         page++;
-    //     } else if(e.originalEvent.deltaY < 0) {
-    //         if(page == 1) return;
-    //         page--;
-    //     }
-    //     var posTop =(page-1) * $(window).height();
-    //     mHtml.animate({scrollTop : posTop});
-    // })
-
-
-    $('#s1').mouseover(function(){
-        $('.s1').css({zIndex:'999999',opacity:'1'})
-    })
-    $('#s1').mouseout(function(){
-        $('.s1').css({zIndex:'8',opacity:'0'})
+    $('#s1').mouseleave(function(){
+        $('.s1').css({zIndex:'-8',opacity:'0'})
+        $('.shorts_box').css({zIndex:'999'})
     })
 
+    // #s2
+    $('#s2').mouseenter(function(){
+        $('.s2').css({zIndex:'9999',opacity: '1'})
+        $('.shorts_box').css({zIndex:'9'})
+    })
+    $('#s2').mouseleave(function(){
+        $('.s2').css({zIndex:'-8',opacity:'0'})
+        $('.shorts_box').css({zIndex:'999'})
+    })
+
+    // #s3
+    $('#s3').mouseenter(function(){
+        $('.s3').css({zIndex:'9999',opacity: '1'})
+        $('.shorts_box').css({zIndex:'9'})
+    })
+    $('#s3').mouseleave(function(){
+        $('.s3').css({zIndex:'-8',opacity:'0'})
+        $('.shorts_box').css({zIndex:'999'})
+    })
+
+    // #s4
+    $('#s5').mouseenter(function(){
+        $('.s5').css({zIndex:'9999',opacity: '1'})
+        $('.shorts_box').css({zIndex:'9'})
+    })
+    $('#s5').mouseleave(function(){
+        $('.s5').css({zIndex:'-8',opacity:'0'})
+        $('.shorts_box').css({zIndex:'999'})
+    })
+
+    // #s5
+    $('#s6').mouseenter(function(){
+        $('.s6').css({zIndex:'9999',opacity: '1'})
+        $('.shorts_box').css({zIndex:'9'})
+    })
+    $('#s6').mouseleave(function(){
+        $('.s6').css({zIndex:'-8',opacity:'0'})
+        $('.shorts_box').css({zIndex:'999'})
+    })
 
 
-    $(".indi_1").click(function(event){
-        event.preventDefault();
-        $('html,body').animate({scrollTop:0}, 500);
+    var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 3000, // 몇 밀리초마다 새로 들어올지
+        },
+        speed: 500, // duration
+        // direction: 'vertical',
+        pagination : { // 페이징 설정
+            el : '.swiper-pagination',
+            clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+        },
+        navigation : { // 네비게이션 설정
+            nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+            prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+        },
+
     });
 
+
+    $('.indi_1').click(function(){
+        $('.c_1').css({backgroundColor:'rgb(37, 37, 37)'})
+        $('.indi_1').css({color:'rgb(37, 37, 37)'})
+
+        $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_2').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_3').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_4').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_5').css({color:'rgb(163, 163, 163)'})
+    })
+    
+    $('.indi_2').click(function(){
+        $('.c_2').css({backgroundColor:'rgb(37, 37, 37)'})
+        $('.indi_2').css({color:'rgb(37, 37, 37)'})
+
+        $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_1').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_3').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_4').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_5').css({color:'rgb(163, 163, 163)'})
+    })
+    
+    $('.indi_3').click(function(){
+        $('.c_3').css({backgroundColor:'rgb(37, 37, 37)'})
+        $('.indi_3').css({color:'rgb(37, 37, 37)'})
+
+        $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_2').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_1').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_4').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_5').css({color:'rgb(163, 163, 163)'})
+    })
+    
+    $('.indi_4').click(function(){
+        $('.c_4').css({backgroundColor:'rgb(37, 37, 37)'})
+        $('.indi_4').css({color:'rgb(37, 37, 37)'})
+
+        $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_2').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_3').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_1').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_5').css({color:'rgb(163, 163, 163)'})
+    })
+    
+    $('.indi_5').click(function(){
+        $('.c_5').css({backgroundColor:'rgb(37, 37, 37)'})
+        $('.indi_5').css({color:'rgb(37, 37, 37)'})
+
+        $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_2').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_3').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_4').css({color:'rgb(163, 163, 163)'})
+
+        $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+        $('.indi_1').css({color:'rgb(163, 163, 163)'})
+    })
+ 
+
+    $(window).scroll(function () { 
+        var scrollValue = $(document).scrollTop(); 
+        console.log(scrollValue); 
+    });
 
     
  
