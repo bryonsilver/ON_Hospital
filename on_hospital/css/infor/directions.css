@@ -11,7 +11,43 @@
 .m_flex_box {
     margin-bottom: 0 !important;
 }
-
+.way_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+}
+.n_way_box {
+    width: 150px;
+    box-sizing: border-box;
+    background-color: #ff9f1c;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.k_way_box > a ,
+.n_way_box > a  {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+}
+.k_way_box:hover,
+.n_way_box:hover {
+    background-color: #FF7B00;
+}
+.k_way_box {
+    width: 150px;
+    box-sizing: border-box;
+    background-color: #ff9f1c;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 @media (max-width: 950px) {
     .main .container {
@@ -82,7 +118,7 @@ svg:not(:root).svg-inline--fa {
 .circle {
     width: 30px;
     height: 30px;
-    line-height: 30px;
+    line-height: 28px;
     text-align: center;
     color: #fff;
     margin-bottom: 5px;
