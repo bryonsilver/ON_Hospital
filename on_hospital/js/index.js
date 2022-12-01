@@ -326,7 +326,7 @@ let chk = true;
     })
     $('#s1').mouseleave(function(){
         $('.s1').css({zIndex:'-8',opacity:'0'})
-        $('.shorts_box').css({zIndex:'999'})
+        $('.shorts_box').css({zIndex:'99'})
     })
 
     // #s2
@@ -336,7 +336,7 @@ let chk = true;
     })
     $('#s2').mouseleave(function(){
         $('.s2').css({zIndex:'-8',opacity:'0'})
-        $('.shorts_box').css({zIndex:'999'})
+        $('.shorts_box').css({zIndex:'99'})
     })
 
     // #s3
@@ -346,7 +346,7 @@ let chk = true;
     })
     $('#s3').mouseleave(function(){
         $('.s3').css({zIndex:'-8',opacity:'0'})
-        $('.shorts_box').css({zIndex:'999'})
+        $('.shorts_box').css({zIndex:'99'})
     })
 
     // #s4
@@ -356,7 +356,7 @@ let chk = true;
     })
     $('#s5').mouseleave(function(){
         $('.s5').css({zIndex:'-8',opacity:'0'})
-        $('.shorts_box').css({zIndex:'999'})
+        $('.shorts_box').css({zIndex:'99'})
     })
 
     // #s5
@@ -366,7 +366,7 @@ let chk = true;
     })
     $('#s6').mouseleave(function(){
         $('.s6').css({zIndex:'-8',opacity:'0'})
-        $('.shorts_box').css({zIndex:'999'})
+        $('.shorts_box').css({zIndex:'99'})
     })
 
 
@@ -477,10 +477,10 @@ let chk = true;
     })
  
 
-    $(window).scroll(function () { 
-        var scrollValue = $(document).scrollTop(); 
-        console.log(scrollValue); 
-    });
+$(window).scroll(function () { 
+	var scrollValue = $(document).scrollTop(); 
+    console.log(scrollValue); 
+});
 
     
  
