@@ -183,10 +183,7 @@ $(document).ready(function(){
         }  
     ); 
 
-    $('.btn_semi').click(function(){
-        $( 'html, body' ).animate( { scrollTop : 0 }, 1000 );
-		return false;
-    })
+
 
     $('.h_nav_li').click(function(){
 
@@ -281,48 +278,147 @@ $(document).ready(function(){
 
 
 
-let chk = true;
-        $('.box').on('wheel DOMMouseScroll', function(){ 
-            event.stopPropagation(); 
+// let chk = true;
+//         $('.box').on('wheel DOMMouseScroll', function(){ 
+//             event.stopPropagation(); 
 
-            if(chk) {
-                chk = false;
-                setTimeout(function(){
-                    chk = true;
-                }, 0)
-                /*
-                    확산방지 - 클릭이나 자식에서 이벤트를 동작시켰을때 우리는 해당 요소의 이벤트만 동작했다고 생각하겠지만 웹페이지 내부에서는 요소를 감싸고 있는 부모들도 동작했다 라고 생각한다(버블업) 
-                    그래서 이벤트를 실행했을때 해당 요소꺼만 실행시키려고 할때 사용한다.
-                */
+//             if(chk) {
+//                 chk = false;
+//                 setTimeout(function(){
+//                     chk = true;
+//                 }, 0)
+//                 /*
+//                     확산방지 - 클릭이나 자식에서 이벤트를 동작시켰을때 우리는 해당 요소의 이벤트만 동작했다고 생각하겠지만 웹페이지 내부에서는 요소를 감싸고 있는 부모들도 동작했다 라고 생각한다(버블업) 
+//                     그래서 이벤트를 실행했을때 해당 요소꺼만 실행시키려고 할때 사용한다.
+//                 */
             
-                let w_dir = event.wheelDelta;
+//                 let w_dir = event.wheelDelta;
 
-                // 휠 내림 => -120 // 다음에 갈거 있냐?
-                if(w_dir < 0 && $(this).next().length > 0) {
-                    console.log($(this).index(),w_dir,"휠 내림")
-                    $('html, body').stop().animate({
-                        // scrollTop: $('.box').eq($(this).index()+1).offset().top
-                        scrollTop: $(this).next().offset().top
-                    }, 300) 
-                }
-                // 휠 올림 => 120
-                else if(w_dir > 0 && $(this).prev().length > 0) {  
-                    console.log($(this).index(),w_dir,"휠 올림")
+//                 // 휠 내림 => -120 // 다음에 갈거 있냐?
+//                 if(w_dir < 0 && $(this).next().length > 0) {
+//                     console.log($(this).index(),w_dir,"휠 내림")
+//                     $('html, body').stop().animate({
+//                         // scrollTop: $('.box').eq($(this).index()+1).offset().top
+//                         scrollTop: $(this).next().offset().top
+//                     }, 300) 
+//                 }
+//                 // 휠 올림 => 120
+//                 else if(w_dir > 0 && $(this).prev().length > 0) {  
+//                     console.log($(this).index(),w_dir,"휠 올림")
 
-                    $('html, body').stop().animate({
-                        // scrollTop: $('.box').eq($(this).index()-1).offset().top
-                        scrollTop: $(this).prev().offset().top
-                    }, 300) 
+//                     $('html, body').stop().animate({
+//                         // scrollTop: $('.box').eq($(this).index()-1).offset().top
+//                         scrollTop: $(this).prev().offset().top
+//                     }, 300) 
+//                 }
+//             }
+//         })
+
+
+$(function(){
+    var elm = ".box";
+    var cnt = $(elm).length;
+
+    $(elm).on("mousewheel DOMMouseScroll",
+        function(e){
+            e.preventDefault(); // 브라우저 기본 이벤트 날림 (부드럽게)
+            var E = e.originalEvent;
+            var delta = 0;
+            if(E.detail){
+                delta = E.detail * -40;
+            } else {
+                delta = E.wheelDelta;
+                if(window.opera){
+                    delta= -delta;
                 }
             }
-        })
+            if(delta<0){
+                if($(this).index() != (cnt-1)){
+                    var next = $(this).next().offset().top;
+                    $("html, body").stop().animate({
+                        scrollTop: next
+                    }, 500);
+                }
+
+                if($(this).index()==0){
+                    $(".le").stop().animate({
+                        left: '500px'
+                    });
+                    $(".ri").stop().animate({
+                        right: '500px'
+                    });;
+                } else {
+                    $(".le").stop().animate({
+                        left: '-500px'
+                    });
+                    $(".ri").stop().animate({
+                        right: '-500px'
+                    });
+                }
+
+        } else {
+            if($(this).index() != 0){
+                var prev = $(this).prev().offset().top;
+                $("html, body").stop().animate({
+                    scrollTop: prev
+                },500); 
+            }
+        }
+
+          if($(this).index()==1){
+              $(".le").stop().animate({
+                   left:"-500px"
+               },1000);
+               $(".ri").stop().animate({
+                   right:"-500px"
+               },1000);
+          }else if($(this).index()==2){
+              $(".le").stop().animate({
+                   left:"500px"
+               },1000);
+               $(".ri").stop().animate({
+                   right:"500px"
+               },1000);
+          }
+    });
+});
+
+
+
+
+    
+    
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+
+        if (scroll == 0) {
+            $(".indi_1").trigger('click');
+        }
+        else if (scroll == 518){
+            $(".indi_2").trigger('click');
+        }
+        else if (scroll == 1505){
+            $(".indi_3").trigger('click');
+        }
+        else if (scroll == 2442){
+            $(".indi_4").trigger('click');
+        }
+        else if (scroll == 3379){
+            $(".indi_5").trigger('click');
+        }
+        else if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            $(".indi_5").trigger('click');
+        }
+    })
+  })
 
 
 
     // #s1
 	$('#s1').mouseenter(function(){
-        $('.s1').css({zIndex:'9999',opacity: '1'})
-        $('.shorts_box').css({zIndex:'9'})
+        $('.s1').css({zIndex:'99999',opacity: '1', top:'5px'})
+        $('.shorts_box').css({zIndex:'9999'})
     })
     $('#s1').mouseleave(function(){
         $('.s1').css({zIndex:'-8',opacity:'0'})
@@ -331,8 +427,8 @@ let chk = true;
 
     // #s2
     $('#s2').mouseenter(function(){
-        $('.s2').css({zIndex:'9999',opacity: '1'})
-        $('.shorts_box').css({zIndex:'9'})
+        $('.s2').css({zIndex:'99999',opacity: '1', top:'5px'})
+        $('.shorts_box').css({zIndex:'9999'})
     })
     $('#s2').mouseleave(function(){
         $('.s2').css({zIndex:'-8',opacity:'0'})
@@ -341,8 +437,8 @@ let chk = true;
 
     // #s3
     $('#s3').mouseenter(function(){
-        $('.s3').css({zIndex:'9999',opacity: '1'})
-        $('.shorts_box').css({zIndex:'9'})
+        $('.s3').css({zIndex:'99999',opacity: '1', top:'5px'})
+        $('.shorts_box').css({zIndex:'9999'})
     })
     $('#s3').mouseleave(function(){
         $('.s3').css({zIndex:'-8',opacity:'0'})
@@ -351,8 +447,8 @@ let chk = true;
 
     // #s4
     $('#s5').mouseenter(function(){
-        $('.s5').css({zIndex:'9999',opacity: '1'})
-        $('.shorts_box').css({zIndex:'9'})
+        $('.s5').css({zIndex:'99999',opacity: '1', top:'5px'})
+        $('.shorts_box').css({zIndex:'9999'})
     })
     $('#s5').mouseleave(function(){
         $('.s5').css({zIndex:'-8',opacity:'0'})
@@ -361,8 +457,8 @@ let chk = true;
 
     // #s5
     $('#s6').mouseenter(function(){
-        $('.s6').css({zIndex:'9999',opacity: '1'})
-        $('.shorts_box').css({zIndex:'9'})
+        $('.s6').css({zIndex:'99999',opacity: '1', top:'5px'})
+        $('.shorts_box').css({zIndex:'9999'})
     })
     $('#s6').mouseleave(function(){
         $('.s6').css({zIndex:'-8',opacity:'0'})
@@ -391,98 +487,122 @@ let chk = true;
     });
 
 
+    $('.comma_line').css({borderColor:'transparent'})
+    $('.c_line_1').css({borderColor:'#ff7c00'})
     $('.indi_1').click(function(){
-        $('.c_1').css({backgroundColor:'rgb(37, 37, 37)'})
-        $('.indi_1').css({color:'rgb(37, 37, 37)'})
+        $('.c_1').css({backgroundColor:'#ff7c00'})
+        $('.indi_1').css({color:'#ff7c00'})
+        $('.c_line_1').css({borderColor:'#ff7c00'})
 
         $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_2').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_2').css({borderColor:'transparent'})
 
         $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_3').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_3').css({borderColor:'transparent'})
 
         $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_4').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_4').css({borderColor:'transparent'})
 
         $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_5').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_5').css({borderColor:'transparent'})
     })
     
     $('.indi_2').click(function(){
-        $('.c_2').css({backgroundColor:'rgb(37, 37, 37)'})
-        $('.indi_2').css({color:'rgb(37, 37, 37)'})
+        $('.c_2').css({backgroundColor:'#ff7c00'})
+        $('.indi_2').css({color:'#ff7c00'})
+        $('.c_line_2').css({borderColor:'#ff7c00'})
 
         $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_1').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_1').css({borderColor:'transparent'})
 
         $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_3').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_3').css({borderColor:'transparent'})
 
         $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_4').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_4').css({borderColor:'transparent'})
 
         $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_5').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_5').css({borderColor:'transparent'})
     })
     
     $('.indi_3').click(function(){
-        $('.c_3').css({backgroundColor:'rgb(37, 37, 37)'})
-        $('.indi_3').css({color:'rgb(37, 37, 37)'})
+        $('.c_3').css({backgroundColor:'#ff7c00'})
+        $('.indi_3').css({color:'#ff7c00'})
+        $('.c_line_3').css({borderColor:'#ff7c00'})
 
         $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_2').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_2').css({borderColor:'transparent'})
 
         $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_1').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_1').css({borderColor:'transparent'})
 
         $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_4').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_4').css({borderColor:'transparent'})
 
         $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_5').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_5').css({borderColor:'transparent'})
     })
     
     $('.indi_4').click(function(){
-        $('.c_4').css({backgroundColor:'rgb(37, 37, 37)'})
-        $('.indi_4').css({color:'rgb(37, 37, 37)'})
+        $('.c_4').css({backgroundColor:'#ff7c00'})
+        $('.indi_4').css({color:'#ff7c00'})
+        $('.c_line_4').css({borderColor:'#ff7c00'})
 
         $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_2').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_2').css({borderColor:'transparent'})
 
         $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_3').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_3').css({borderColor:'transparent'})
 
         $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_1').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_1').css({borderColor:'transparent'})
 
         $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_5').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_5').css({borderColor:'transparent'})
     })
     
     $('.indi_5').click(function(){
-        $('.c_5').css({backgroundColor:'rgb(37, 37, 37)'})
-        $('.indi_5').css({color:'rgb(37, 37, 37)'})
+        $('.c_5').css({backgroundColor:'#ff7c00'})
+        $('.indi_5').css({color:'#ff7c00'})
+        $('.c_line_5').css({borderColor:'#ff7c00'})
 
         $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_2').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_2').css({borderColor:'transparent'})
 
         $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_3').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_3').css({borderColor:'transparent'})
 
         $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_4').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_4').css({borderColor:'transparent'})
 
         $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
         $('.indi_1').css({color:'rgb(163, 163, 163)'})
+        $('.c_line_1').css({borderColor:'transparent'})
     })
  
 
-$(window).scroll(function () { 
-	var scrollValue = $(document).scrollTop(); 
-    console.log(scrollValue); 
-});
 
-    
- 
+    $('.indi_1').click(function(){
+        $('html').animate({scrollTop : 0}, 100);
+    })
 
 })

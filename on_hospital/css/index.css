@@ -256,10 +256,7 @@ p,h1,h2,h3 {margin: 0;}
     overflow: hidden;
     box-shadow: 5px 5px 15px #7a7a7a;
 }
-.swiper_b2 {
-    border-radius: 10px;
-    overflow: hidden;
-}
+
 .none {
     display: inline-block !important;
 }
@@ -333,19 +330,23 @@ p,h1,h2,h3 {margin: 0;}
     transition: all 1s linear;
 }
 
+
+.mySwiper3 .swiper-pagination {
+    display: block !important;
+}
 /* on_news_s */
 .on_news_s h3 {
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
-    color: #fff;
+    margin-bottom: 60px;
+    color: #333;
 }
 .swiper_box2 {
     padding-top: 20px; 
     box-sizing: border-box;
-    background: url(../img/index/back.png) no-repeat;
-    background-color: #20A595;
+    background: url(../img/index/back_img_6.png) no-repeat;
+    background-color: #ffb70005;
     background-size: cover;
     background-position: center;
 }
@@ -357,15 +358,15 @@ p,h1,h2,h3 {margin: 0;}
 .swiper_box3 {
     padding-bottom: 30px;
     box-sizing: border-box;
-    background: url(../img/index/back_img_2.png) no-repeat;
-    background-color: #f3f3f3;
+    background: url(../img/index/back_img_7.png) no-repeat;
+    background-color: #ff7b0005;
     background-size: cover;
     background-position: center;
 }
 .tv_title {
     font-size: 40px;
     font-weight: 700;
-    padding: 30px 0 50px 0;
+    padding: 30px 0 60px 0;
     box-sizing: border-box;
     text-align: center;
     color: #333;
@@ -403,6 +404,7 @@ p,h1,h2,h3 {margin: 0;}
 
 /* semi 맨 마지막 배너 */
 .semi_black_box {
+    font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;
     min-height: 90vh;
     overflow: hidden;
     box-sizing: border-box;
@@ -439,7 +441,6 @@ p,h1,h2,h3 {margin: 0;}
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    font-family: 'Nanum Myeongjo', serif;
 
     color: #fff;
 }
@@ -461,10 +462,10 @@ p,h1,h2,h3 {margin: 0;}
     font-size: 1.75rem;
 }
 .btn_semi {
-    font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;
     padding: 15px 30px;
-    border: 1px solid;
+    border: 2px solid;
     margin-top: 10px;
+    font-weight: 500;
 }
 .btn_semi:hover {color: #ED5929; border-color: #fff;}
 
@@ -528,6 +529,11 @@ p,h1,h2,h3 {margin: 0;}
 @media (max-width: 1000px) {
     .semi_black_title {font-size: 35px;}
     .semi_black_content {font-size: 24px;}
+    .news_box {        
+        background: url(../img/index/back_m_1.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 @media (max-width: 991px) {
     .desk_img {display: none !important;}
@@ -651,6 +657,13 @@ p,h1,h2,h3 {margin: 0;}
 
     .mb_tv_img {display: inline-block; width: 12%;}
     .shorts_img {display: none;}
+}
+
+@media (max-width:530px) {
+    .on_news_s h3 {
+        margin-bottom: 30px;
+    }
+
 }
 @media (max-width: 500px) {
     .main .container {
