@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .short_mb {
+            width: 80%;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sm_hex {
+            width: 25%;
+            margin-bottom: 1.8%;
+            position: relative;
+            visibility: hidden;
+        }
+        .sm_hex:nth-of-type(7n+5) {
+            margin-left: 12.5%;
+        }
+        .sm_hex::after {
+            content: "";
+            display: block;
+            padding-bottom: 80%;
+        }
+        .sm_inner {
+            position: absolute;
+            width: 99%;
+            padding-bottom: 114.6%;
+            overflow: hidden;
+            transform: rotate3d(9,9,1,-60deg) skewY(30deg);
+        }
+        .sm_inner * {
+            position: absolute;
+            visibility: visible;
+        }
+        .s_mb_box {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            background: #02b4cd80;
+            justify-content: center;
+            align-items: center;
+        }
+        .s_mb_box p {
+            font-size: 3vw;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+        <div class="short_mb">
+            <div class="sm_hex">
+                <div class="sm_inner">
+                    <div class="s_mb_box">
+                        <p>con1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sm_hex">
+                <div class="sm_inner">
+                    <div class="s_mb_box">
+                        <p>con2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sm_hex">
+                <div class="sm_inner">
+                    <div class="s_mb_box">
+                        <p>con3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sm_hex">
+                <div class="sm_inner">
+                    <div class="s_mb_box">
+                        <p>con4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sm_hex">
+                <div class="sm_inner">
+                    <div class="s_mb_box">
+                        <p>con5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

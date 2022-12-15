@@ -630,7 +630,7 @@ p,h1,h2,h3 {margin: 0;}
     .semi_row {
         flex-direction: column;
     }
-    .on_news_s h3, .tv_title {font-size: 25px;}
+    .on_news_s h3, .tv_title {font-size: 30px;}
         
 }
 @media (max-width:575px ) {
@@ -737,7 +737,7 @@ p,h1,h2,h3 {margin: 0;}
     }
     .tv_title {
         padding: 0;
-        padding-bottom: 20px !important;
+        padding-bottom: 30px !important;
     }
     .news_title{width: calc((60% - 10px) / 1);}
     .news_thumb {width: calc((40% ) / 1);}

@@ -278,111 +278,6 @@ $(document).ready(function(){
 
 
 
-// let chk = true;
-//         $('.box').on('wheel DOMMouseScroll', function(){ 
-//             event.stopPropagation(); 
-
-//             if(chk) {
-//                 chk = false;
-//                 setTimeout(function(){
-//                     chk = true;
-//                 }, 0)
-//                 /*
-//                     확산방지 - 클릭이나 자식에서 이벤트를 동작시켰을때 우리는 해당 요소의 이벤트만 동작했다고 생각하겠지만 웹페이지 내부에서는 요소를 감싸고 있는 부모들도 동작했다 라고 생각한다(버블업) 
-//                     그래서 이벤트를 실행했을때 해당 요소꺼만 실행시키려고 할때 사용한다.
-//                 */
-            
-//                 let w_dir = event.wheelDelta;
-
-//                 // 휠 내림 => -120 // 다음에 갈거 있냐?
-//                 if(w_dir < 0 && $(this).next().length > 0) {
-//                     console.log($(this).index(),w_dir,"휠 내림")
-//                     $('html, body').stop().animate({
-//                         // scrollTop: $('.box').eq($(this).index()+1).offset().top
-//                         scrollTop: $(this).next().offset().top
-//                     }, 300) 
-//                 }
-//                 // 휠 올림 => 120
-//                 else if(w_dir > 0 && $(this).prev().length > 0) {  
-//                     console.log($(this).index(),w_dir,"휠 올림")
-
-//                     $('html, body').stop().animate({
-//                         // scrollTop: $('.box').eq($(this).index()-1).offset().top
-//                         scrollTop: $(this).prev().offset().top
-//                     }, 300) 
-//                 }
-//             }
-//         })
-
-
-$(function(){
-    var elm = ".box";
-    var cnt = $(elm).length;
-
-    $(elm).on("mousewheel DOMMouseScroll",
-        function(e){
-            e.preventDefault(); // 브라우저 기본 이벤트 날림 (부드럽게)
-            var E = e.originalEvent;
-            var delta = 0;
-            if(E.detail){
-                delta = E.detail * -40;
-            } else {
-                delta = E.wheelDelta;
-                if(window.opera){
-                    delta= -delta;
-                }
-            }
-            if(delta<0){
-                if($(this).index() != (cnt-1)){
-                    var next = $(this).next().offset().top;
-                    $("html, body").stop().animate({
-                        scrollTop: next
-                    }, 500);
-                }
-
-                if($(this).index()==0){
-                    $(".le").stop().animate({
-                        left: '500px'
-                    });
-                    $(".ri").stop().animate({
-                        right: '500px'
-                    });;
-                } else {
-                    $(".le").stop().animate({
-                        left: '-500px'
-                    });
-                    $(".ri").stop().animate({
-                        right: '-500px'
-                    });
-                }
-
-        } else {
-            if($(this).index() != 0){
-                var prev = $(this).prev().offset().top;
-                $("html, body").stop().animate({
-                    scrollTop: prev
-                },500); 
-            }
-        }
-
-          if($(this).index()==1){
-              $(".le").stop().animate({
-                   left:"-500px"
-               },1000);
-               $(".ri").stop().animate({
-                   right:"-500px"
-               },1000);
-          }else if($(this).index()==2){
-              $(".le").stop().animate({
-                   left:"500px"
-               },1000);
-               $(".ri").stop().animate({
-                   right:"500px"
-               },1000);
-          }
-    });
-});
-
 
 
 
@@ -604,5 +499,143 @@ $(document).ready(function(){
     $('.indi_1').click(function(){
         $('html').animate({scrollTop : 0}, 100);
     })
+
+
+
+
+    var header_top = $('.header').offset().top - 100;
+    var news_box_top = $('.news_box').offset().top - 100;
+    var on_news_s_top = $('.on_news_s').offset().top - 100;
+    var swiper_box3_top = $('.swiper_box3').offset().top - 100;
+    var semi_black_box_top = $('.semi_black_box').offset().top - 100;
+
+
+    let h_o_bot = header_top + $('.header').outerHeight();
+    let n_o_bot = news_box_top + $('.news_box').outerHeight();
+    let on_n_o_bot = on_news_s_top + $('.on_news_s').outerHeight();
+    let sw3_o_bot = swiper_box3_top + $('.swiper_box3').outerHeight();
+    let semi_o_bot = semi_black_box_top + $('.semi_black_box').outerHeight();
+
+    $(window).scroll(function(){
+        let s_top = $(this).scrollTop();
+
+        if(header_top <= s_top && s_top < h_o_bot) {
+            console.log("header이다")
+
+            $('.c_1').css({backgroundColor:'#ff7c00'})
+            $('.indi_1').css({color:'#ff7c00'})
+            $('.c_line_1').css({borderColor:'#ff7c00'})
+    
+            $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_2').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_2').css({borderColor:'transparent'})
+    
+            $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_3').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_3').css({borderColor:'transparent'})
+    
+            $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_4').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_4').css({borderColor:'transparent'})
+    
+            $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_5').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_5').css({borderColor:'transparent'})
+        }
+        else if(news_box_top <= s_top && s_top < n_o_bot) {
+            console.log("news_box 이다")
+
+            $('.c_2').css({backgroundColor:'#ff7c00'})
+            $('.indi_2').css({color:'#ff7c00'})
+            $('.c_line_2').css({borderColor:'#ff7c00'})
+    
+            $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_1').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_1').css({borderColor:'transparent'})
+    
+            $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_3').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_3').css({borderColor:'transparent'})
+    
+            $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_4').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_4').css({borderColor:'transparent'})
+    
+            $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_5').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_5').css({borderColor:'transparent'})
+        }
+        else if(on_news_s_top <= s_top && s_top < on_n_o_bot) {
+            console.log("on_news 이다")
+            
+            $('.c_3').css({backgroundColor:'#ff7c00'})
+            $('.indi_3').css({color:'#ff7c00'})
+            $('.c_line_3').css({borderColor:'#ff7c00'})
+
+            $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_2').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_2').css({borderColor:'transparent'})
+
+            $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_1').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_1').css({borderColor:'transparent'})
+
+            $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_4').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_4').css({borderColor:'transparent'})
+
+            $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_5').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_5').css({borderColor:'transparent'})
+        } 
+        else if(swiper_box3_top <= s_top && s_top < sw3_o_bot) {
+            console.log("swiper_3 이다")
+
+            $('.c_4').css({backgroundColor:'#ff7c00'})
+            $('.indi_4').css({color:'#ff7c00'})
+            $('.c_line_4').css({borderColor:'#ff7c00'})
+    
+            $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_2').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_2').css({borderColor:'transparent'})
+    
+            $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_3').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_3').css({borderColor:'transparent'})
+    
+            $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_1').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_1').css({borderColor:'transparent'})
+    
+            $('.c_5').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_5').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_5').css({borderColor:'transparent'})
+        }
+        else if(semi_black_box_top <= s_top && s_top < semi_o_bot) {
+            console.log("semi_black 이다")
+
+            $('.c_5').css({backgroundColor:'#ff7c00'})
+            $('.indi_5').css({color:'#ff7c00'})
+            $('.c_line_5').css({borderColor:'#ff7c00'})
+    
+            $('.c_2').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_2').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_2').css({borderColor:'transparent'})
+    
+            $('.c_3').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_3').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_3').css({borderColor:'transparent'})
+    
+            $('.c_4').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_4').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_4').css({borderColor:'transparent'})
+    
+            $('.c_1').css({backgroundColor:'rgb(163, 163, 163)'})
+            $('.indi_1').css({color:'rgb(163, 163, 163)'})
+            $('.c_line_1').css({borderColor:'transparent'})
+        }
+    });
+
+
 
 })
