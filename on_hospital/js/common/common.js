@@ -2,21 +2,29 @@ $(document).ready(function(){
    
 	// nav
 
-	$('.n_nav_ul').addClass('visi_h')
-    $('.nav_li').mouseover(function(){
-        var submenu = $(this).children('.n_nav_ul')
+	$('.h_nav_li').mouseenter(function(){
+		$('.nav_pan_box').addClass('p_active');
 
-		$('.n_nav_ul').addClass('visi_h')
-		$(submenu).addClass('visi')
-    });
-    $('.nav_li').mouseleave(function(){
-		$('.n_nav_ul').removeClass('visi')
-    })
+		// li에서 몇번째꺼에 마우스 올라갔는지 감지
+		console.log($(this).index());
 
-	let n_li_h = $('.nav_li').height();
-	console.log(n_li_h)
+		// n_pan_box 안에 있는 pan들중에서 그 번째꺼만 display: block으로 변경
+		$('.n_pan').removeClass('n_pan_active') 
+		$('.n_pan').eq($(this).index()).addClass('n_pan_active')
+	});
+	$('.h_nav_li, .nav_pan_box').mouseleave(function(){
+		$('.nav_pan_box').removeClass('p_active') 
+	});
+
+	$('.nav_pan_box').mouseenter(function(){
+		$('.nav_pan_box').addClass('p_active') 
+	});
+
+
 
 	
+	$('.goog-te-combo option:eq(0)').replaceWith("<option value='ko'>KO</option>");
+    $('.goog-te-combo') .children("[value='ko']").replaceWith("<option value='ko'>KO</option>");
 	
 
 	// nav 전체보기
@@ -32,6 +40,8 @@ $(document).ready(function(){
 		$('.all_s_tab_box').css({display: 'none'})
 		$('.black_pan').css({display: 'none'})
 	})
+
+
 
 	$(window).resize(function(){
 		var width = window.innerWidth;
