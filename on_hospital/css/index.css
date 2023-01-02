@@ -229,7 +229,7 @@ p,h1,h2,h3 {margin: 0;}
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 0px; /* 20px */
 }
 .today_menu_box,
 .employment_box,
