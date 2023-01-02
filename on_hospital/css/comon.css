@@ -342,11 +342,11 @@ span {display: inline-block;}
     top: 0;
     left: 0;
 }
-.left {
+.x_text .left {
     transform: rotate(45deg);
     transform-origin: center;
 }
-.right {
+.x_text .right {
     transform: rotate(-45deg);
     transform-origin: center;
 }
