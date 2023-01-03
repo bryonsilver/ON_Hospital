@@ -946,7 +946,6 @@ html { scroll-behavior: smooth;}
         border-bottom: 40px solid #f0f0f0 !important;
     }
     .notice_li span {width: 150px;}
-    .notice_li:last-child {display: none;}
     .nc_4 {background-color: #f0f0f0 !important;}
     .nc_5:before,
     .nc_4:before,

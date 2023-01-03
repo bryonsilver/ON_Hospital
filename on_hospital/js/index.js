@@ -190,7 +190,7 @@ $(document).ready(function(){
 
     // side_indi의 X 버튼 클릭시 왼쪽 바깥으로 이동 , > 버튼 클릭시 원래대로 이동
     $('.x_btn').click(function(){
-        $('.side_indi').css('left', '-14%')
+        $('.side_indi').css('left', '-10%')
         $('.arrow_btn').css('opacity', '1')
     })
     $('.arrow_btn').click(function(){
