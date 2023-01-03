@@ -3,21 +3,23 @@ $(document).ready(function(){
 	// nav
 
 	$('.h_nav_li').mouseenter(function(){
+		var n_height = $('.n_set_pan').height();
 		$('.nav_pan_box').addClass('p_active');
 
 		// li에서 몇번째꺼에 마우스 올라갔는지 감지
 		console.log($(this).index());
+		console.log("n_set_pan___height", n_height)
 
 		// n_pan_box 안에 있는 pan들중에서 그 번째꺼만 display: block으로 변경
 		$('.n_pan').removeClass('n_pan_active') 
 		$('.n_pan').eq($(this).index()).addClass('n_pan_active')
 	});
 	$('.h_nav_li, .nav_pan_box').mouseleave(function(){
-		$('.nav_pan_box').removeClass('p_active') 
+		$('.nav_pan_box').css('height', 'auto')
 	});
 
 	$('.nav_pan_box').mouseenter(function(){
-		$('.nav_pan_box').addClass('p_active') 
+		$('.nav_pan_box').css('height', `n_height`+"px")
 	});
 
 
@@ -160,6 +162,43 @@ $(document).ready(function(){
             100: {
                 slidesPerView: 2,
                 spaceBetween: 20
+            }
+        }  
+    });
+
+	var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 3000, // 몇 밀리초마다 새로 들어올지
+        },
+        speed: 500, // duration
+        // direction: 'vertical',
+
+        // 분기점
+        breakpoints: {
+            2000: {
+                slidesPerView: 3,
+                spaceBetween: 0
+            },
+            // when window width is >= 768px
+            1025: {
+            slidesPerView: 3,
+            spaceBetween: 0
+            },
+            // when window width is >= 1024px
+            767: {
+            slidesPerView: 3,
+            spaceBetween: 0
+            },
+            400: {
+                slidesPerView: 3,
+                spaceBetween: 0
+            },
+            100: {
+                slidesPerView: 2,
+                spaceBetween: 0
             }
         }  
     });

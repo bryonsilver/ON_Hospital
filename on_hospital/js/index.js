@@ -66,6 +66,8 @@ $(document).ready(function(){
         }  ,
  
     });
+
+
     
     // 병원장 TV
     var swiper = new Swiper(".mySwiper2", {
@@ -186,6 +188,84 @@ $(document).ready(function(){
 
 
 
+    // side_indi의 X 버튼 클릭시 왼쪽 바깥으로 이동 , > 버튼 클릭시 원래대로 이동
+    $('.x_btn').click(function(){
+        $('.side_indi').css('left', '-14%')
+        $('.arrow_btn').css('opacity', '1')
+    })
+    $('.arrow_btn').click(function(){
+        $('.side_indi').css('left', '50px')
+        $('.arrow_btn').css('opacity', '0')
+    })
+
+
+
+
+
+    // notice 병원소식에서 공지사항이든 기타소식 이든 클릭시 가운데에 내용 보이게
+
+
+    $('.n_1').click(function(){
+        console.log("1번 공지사항 클릭했수")
+        $('#no_1').css('opacity', '1')
+
+        $('#no_2').css('opacity', '0')
+        $('#no_3').css('opacity', '0')
+        $('#no_4').css('opacity', '0')
+        $('#no_5').css('opacity', '0')
+        $('#no_6').css('opacity', '0')
+    })
+    $('.n_2').click(function(){
+        console.log("2번 기타소식 클릭했수")
+        $('#no_2').css('opacity', '1')
+
+        $('#no_1').css('opacity', '0')
+        $('#no_3').css('opacity', '0')
+        $('#no_4').css('opacity', '0')
+        $('#no_5').css('opacity', '0')
+        $('#no_6').css('opacity', '0')
+    })
+    $('.n_3').click(function(){
+        console.log("3번 질문 클릭했수")
+        $('#no_6').css('opacity', '1')
+
+        $('#no_1').css('opacity', '0')
+        $('#no_3').css('opacity', '0')
+        $('#no_4').css('opacity', '0')
+        $('#no_5').css('opacity', '0')
+        $('#no_2').css('opacity', '0')
+    })
+    $('.n_7').click(function(){
+        console.log("4번 채용 클릭했수")
+        $('#no_4').css('opacity', '1')
+
+        $('#no_1').css('opacity', '0')
+        $('#no_3').css('opacity', '0')
+        $('#no_2').css('opacity', '0')
+        $('#no_5').css('opacity', '0')
+        $('#no_6').css('opacity', '0')
+    })
+    $('.n_5').click(function(){
+        console.log("5번 식단 클릭했수")
+        $('#no_5').css('opacity', '1')
+
+        $('#no_1').css('opacity', '0')
+        $('#no_3').css('opacity', '0')
+        $('#no_2').css('opacity', '0')
+        $('#no_4').css('opacity', '0')
+        $('#no_6').css('opacity', '0')
+    })
+    $('.n_6').click(function(){
+        console.log("6번 언론보도 클릭했수")
+        $('#no_3').css('opacity', '1')
+
+        $('#no_1').css('opacity', '0')
+        $('#no_2').css('opacity', '0')
+        $('#no_4').css('opacity', '0')
+        $('#no_5').css('opacity', '0')
+        $('#no_6').css('opacity', '0')
+    })
+    $('.n_1').trigger('click'); 
 
 
 
