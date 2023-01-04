@@ -205,8 +205,17 @@ $(document).ready(function(){
     // notice 병원소식에서 공지사항이든 기타소식 이든 클릭시 가운데에 내용 보이게
 
 
+    $('#nc_t_1').css('display', 'block')
+
+    $('#nc_t_2').css('display', 'none')
+    $('#nc_t_3').css('display', 'none')
+    $('#nc_t_4').css('display', 'none')
+    $('#nc_t_5').css('display', 'none')
+    $('#nc_t_6').css('display', 'none')
+    
     $('.n_1').click(function(){
         console.log("1번 공지사항 클릭했수")
+        // 클릭시 가운데 내용 나옴
         $('#no_1').css('opacity', '1')
 
         $('#no_2').css('opacity', '0')
@@ -214,9 +223,74 @@ $(document).ready(function(){
         $('#no_4').css('opacity', '0')
         $('#no_5').css('opacity', '0')
         $('#no_6').css('opacity', '0')
+
+
+        // 클릭시 가운데 타이틀 나옴
+
+        $('#nc_t_1').css('display', 'block')
+
+        $('#nc_t_2').css('display', 'none')
+        $('#nc_t_3').css('display', 'none')
+        $('#nc_t_4').css('display', 'none')
+        $('#nc_t_5').css('display', 'none')
+        $('#nc_t_6').css('display', 'none')
+
+
+        // 클릭시 색상 변경
+
+        $('.color_n_1').css('background', '#ff7b00')
+
+        $('.color_n_2').css('background', '#dddddd')
+        $('.color_n_3').css('background', '#dddddd')
+        $('.color_n_4').css('background', '#dddddd')
+        $('.color_n_5').css('background', '#dddddd')
+        $('.color_n_6').css('background', '#dddddd')
+
+        $('.color_n_1 .nc_t').css('border-bottom-color', '#ff7b00')
+
+        $('.color_n_2 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_3 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_4 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_5 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_6 .nc_t').css('border-bottom-color', '#dddddd')
+
+        $('.color_n_1 .nc_b').css('border-top-color', '#ff7b00')
+
+        $('.color_n_2 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_3 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_4 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_5 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_6 .nc_b').css('border-top-color', '#dddddd')
+
+        $('.color_n_1 .n_img_hover').css('display', 'block')
+        $('.color_n_1 .notice_img').css('display', 'none')
+        $('.color_n_1 .n_name_box').css('color', '#fff')
+
+        $('.color_n_2 .n_img_hover').css('display', 'none')
+        $('.color_n_3 .n_img_hover').css('display', 'none')
+        $('.color_n_4 .n_img_hover').css('display', 'none')
+        $('.color_n_5 .n_img_hover').css('display', 'none')
+        $('.color_n_6 .n_img_hover').css('display', 'none')
+
+        $('.color_n_2 .notice_img').css('display', 'block')
+        $('.color_n_3 .notice_img').css('display', 'block')
+        $('.color_n_4 .notice_img').css('display', 'block')
+        $('.color_n_5 .notice_img').css('display', 'block')
+        $('.color_n_6 .notice_img').css('display', 'block')
+
+        $('.color_n_2 .n_name_box').css('color', '#333')
+        $('.color_n_3 .n_name_box').css('color', '#333')
+        $('.color_n_4 .n_name_box').css('color', '#333')
+        $('.color_n_5 .n_name_box').css('color', '#333')
+        $('.color_n_6 .n_name_box').css('color', '#333')
+        
+        
+
+
     })
     $('.n_2').click(function(){
         console.log("2번 기타소식 클릭했수")
+                // 클릭시 가운데 내용 나옴
         $('#no_2').css('opacity', '1')
 
         $('#no_1').css('opacity', '0')
@@ -224,6 +298,65 @@ $(document).ready(function(){
         $('#no_4').css('opacity', '0')
         $('#no_5').css('opacity', '0')
         $('#no_6').css('opacity', '0')
+
+        // 클릭시 가운데 타이틀 나옴
+        $('#nc_t_2').css('display', 'block')
+
+        $('#nc_t_1').css('display', 'none')
+        $('#nc_t_3').css('display', 'none')
+        $('#nc_t_4').css('display', 'none')
+        $('#nc_t_5').css('display', 'none')
+        $('#nc_t_6').css('display', 'none')
+
+// 클릭시 색상 변경
+        $('.color_n_2').css('background', '#ff7b00')
+
+        $('.color_n_1').css('background', '#dddddd')
+        $('.color_n_3').css('background', '#dddddd')
+        $('.color_n_4').css('background', '#dddddd')
+        $('.color_n_5').css('background', '#dddddd')
+        $('.color_n_6').css('background', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_2 .nc_t').css('border-bottom-color', '#ff7b00')
+
+        $('.color_n_1 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_3 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_4 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_5 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_6 .nc_t').css('border-bottom-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_2 .nc_b').css('border-top-color', '#ff7b00')
+
+        $('.color_n_1 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_3 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_4 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_5 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_6 .nc_b').css('border-top-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_2 .n_img_hover').css('display', 'block')
+        $('.color_n_2 .notice_img').css('display', 'none')
+        $('.color_n_2 .n_name_box').css('color', '#fff')
+
+        $('.color_n_1 .n_img_hover').css('display', 'none')
+        $('.color_n_3 .n_img_hover').css('display', 'none')
+        $('.color_n_4 .n_img_hover').css('display', 'none')
+        $('.color_n_5 .n_img_hover').css('display', 'none')
+        $('.color_n_6 .n_img_hover').css('display', 'none')
+
+        $('.color_n_1 .notice_img').css('display', 'block')
+        $('.color_n_3 .notice_img').css('display', 'block')
+        $('.color_n_4 .notice_img').css('display', 'block')
+        $('.color_n_5 .notice_img').css('display', 'block')
+        $('.color_n_6 .notice_img').css('display', 'block')
+
+        $('.color_n_1 .n_name_box').css('color', '#333')
+        $('.color_n_3 .n_name_box').css('color', '#333')
+        $('.color_n_4 .n_name_box').css('color', '#333')
+        $('.color_n_5 .n_name_box').css('color', '#333')
+        $('.color_n_6 .n_name_box').css('color', '#333')
     })
     $('.n_3').click(function(){
         console.log("3번 질문 클릭했수")
@@ -234,6 +367,64 @@ $(document).ready(function(){
         $('#no_4').css('opacity', '0')
         $('#no_5').css('opacity', '0')
         $('#no_2').css('opacity', '0')
+
+        $('#nc_t_6').css('display', 'block')
+
+        $('#nc_t_2').css('display', 'none')
+        $('#nc_t_1').css('display', 'none')
+        $('#nc_t_4').css('display', 'none')
+        $('#nc_t_5').css('display', 'none')
+        $('#nc_t_3').css('display', 'none')
+
+        // 클릭시 색상 변경
+        $('.color_n_6').css('background', '#ff7b00')
+
+        $('.color_n_1').css('background', '#dddddd')
+        $('.color_n_3').css('background', '#dddddd')
+        $('.color_n_4').css('background', '#dddddd')
+        $('.color_n_5').css('background', '#dddddd')
+        $('.color_n_2').css('background', '#dddddd')
+        
+// //////////////////////////////////
+        $('.color_n_6 .nc_t').css('border-bottom-color', '#ff7b00')
+
+        $('.color_n_1 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_3 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_4 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_5 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_2 .nc_t').css('border-bottom-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_6 .nc_b').css('border-top-color', '#ff7b00')
+
+        $('.color_n_1 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_3 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_4 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_5 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_2 .nc_b').css('border-top-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_6 .n_img_hover').css('display', 'block')
+        $('.color_n_6 .notice_img').css('display', 'none')
+        $('.color_n_6 .n_name_box').css('color', '#fff')
+
+        $('.color_n_1 .n_img_hover').css('display', 'none')
+        $('.color_n_3 .n_img_hover').css('display', 'none')
+        $('.color_n_4 .n_img_hover').css('display', 'none')
+        $('.color_n_5 .n_img_hover').css('display', 'none')
+        $('.color_n_2 .n_img_hover').css('display', 'none')
+
+        $('.color_n_1 .notice_img').css('display', 'block')
+        $('.color_n_3 .notice_img').css('display', 'block')
+        $('.color_n_4 .notice_img').css('display', 'block')
+        $('.color_n_5 .notice_img').css('display', 'block')
+        $('.color_n_2 .notice_img').css('display', 'block')
+
+        $('.color_n_1 .n_name_box').css('color', '#333')
+        $('.color_n_3 .n_name_box').css('color', '#333')
+        $('.color_n_4 .n_name_box').css('color', '#333')
+        $('.color_n_5 .n_name_box').css('color', '#333')
+        $('.color_n_2 .n_name_box').css('color', '#333')
     })
     $('.n_7').click(function(){
         console.log("4번 채용 클릭했수")
@@ -244,6 +435,64 @@ $(document).ready(function(){
         $('#no_2').css('opacity', '0')
         $('#no_5').css('opacity', '0')
         $('#no_6').css('opacity', '0')
+
+        $('#nc_t_4').css('display', 'block')
+
+        $('#nc_t_2').css('display', 'none')
+        $('#nc_t_3').css('display', 'none')
+        $('#nc_t_1').css('display', 'none')
+        $('#nc_t_5').css('display', 'none')
+        $('#nc_t_6').css('display', 'none')
+
+        // 클릭시 색상 변경
+        $('.color_n_4').css('background', '#ff7b00')
+
+        $('.color_n_1').css('background', '#dddddd')
+        $('.color_n_3').css('background', '#dddddd')
+        $('.color_n_6').css('background', '#dddddd')
+        $('.color_n_5').css('background', '#dddddd')
+        $('.color_n_2').css('background', '#dddddd')
+
+        // //////////////////////////////////
+        $('.color_n_4 .nc_t').css('border-bottom-color', '#ff7b00')
+
+        $('.color_n_1 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_3 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_2 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_5 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_6 .nc_t').css('border-bottom-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_4 .nc_b').css('border-top-color', '#ff7b00')
+
+        $('.color_n_1 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_3 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_2 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_5 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_6 .nc_b').css('border-top-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_4 .n_img_hover').css('display', 'block')
+        $('.color_n_4 .notice_img').css('display', 'none')
+        $('.color_n_4 .n_name_box').css('color', '#fff')
+
+        $('.color_n_1 .n_img_hover').css('display', 'none')
+        $('.color_n_3 .n_img_hover').css('display', 'none')
+        $('.color_n_2 .n_img_hover').css('display', 'none')
+        $('.color_n_5 .n_img_hover').css('display', 'none')
+        $('.color_n_6 .n_img_hover').css('display', 'none')
+
+        $('.color_n_1 .notice_img').css('display', 'block')
+        $('.color_n_3 .notice_img').css('display', 'block')
+        $('.color_n_2 .notice_img').css('display', 'block')
+        $('.color_n_5 .notice_img').css('display', 'block')
+        $('.color_n_6 .notice_img').css('display', 'block')
+
+        $('.color_n_1 .n_name_box').css('color', '#333')
+        $('.color_n_3 .n_name_box').css('color', '#333')
+        $('.color_n_2 .n_name_box').css('color', '#333')
+        $('.color_n_5 .n_name_box').css('color', '#333')
+        $('.color_n_6 .n_name_box').css('color', '#333')
     })
     $('.n_5').click(function(){
         console.log("5번 식단 클릭했수")
@@ -254,6 +503,64 @@ $(document).ready(function(){
         $('#no_2').css('opacity', '0')
         $('#no_4').css('opacity', '0')
         $('#no_6').css('opacity', '0')
+
+        $('#nc_t_5').css('display', 'block')
+
+        $('#nc_t_2').css('display', 'none')
+        $('#nc_t_3').css('display', 'none')
+        $('#nc_t_4').css('display', 'none')
+        $('#nc_t_1').css('display', 'none')
+        $('#nc_t_6').css('display', 'none')
+
+        // 클릭시 색상 변경
+        $('.color_n_5').css('background', '#ff7b00')
+
+        $('.color_n_1').css('background', '#dddddd')
+        $('.color_n_3').css('background', '#dddddd')
+        $('.color_n_6').css('background', '#dddddd')
+        $('.color_n_4').css('background', '#dddddd')
+        $('.color_n_2').css('background', '#dddddd')
+
+        // //////////////////////////////////
+        $('.color_n_5 .nc_t').css('border-bottom-color', '#ff7b00')
+
+        $('.color_n_1 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_3 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_4 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_2 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_6 .nc_t').css('border-bottom-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_5 .nc_b').css('border-top-color', '#ff7b00')
+
+        $('.color_n_1 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_3 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_4 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_2 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_6 .nc_b').css('border-top-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_5 .n_img_hover').css('display', 'block')
+        $('.color_n_5 .notice_img').css('display', 'none')
+        $('.color_n_5 .n_name_box').css('color', '#fff')
+
+        $('.color_n_1 .n_img_hover').css('display', 'none')
+        $('.color_n_3 .n_img_hover').css('display', 'none')
+        $('.color_n_4 .n_img_hover').css('display', 'none')
+        $('.color_n_2 .n_img_hover').css('display', 'none')
+        $('.color_n_6 .n_img_hover').css('display', 'none')
+
+        $('.color_n_1 .notice_img').css('display', 'block')
+        $('.color_n_3 .notice_img').css('display', 'block')
+        $('.color_n_4 .notice_img').css('display', 'block')
+        $('.color_n_2 .notice_img').css('display', 'block')
+        $('.color_n_6 .notice_img').css('display', 'block')
+
+        $('.color_n_1 .n_name_box').css('color', '#333')
+        $('.color_n_3 .n_name_box').css('color', '#333')
+        $('.color_n_4 .n_name_box').css('color', '#333')
+        $('.color_n_2 .n_name_box').css('color', '#333')
+        $('.color_n_6 .n_name_box').css('color', '#333')
     })
     $('.n_6').click(function(){
         console.log("6번 언론보도 클릭했수")
@@ -264,6 +571,64 @@ $(document).ready(function(){
         $('#no_4').css('opacity', '0')
         $('#no_5').css('opacity', '0')
         $('#no_6').css('opacity', '0')
+
+        $('#nc_t_3').css('display', 'block')
+
+        $('#nc_t_2').css('display', 'none')
+        $('#nc_t_6').css('display', 'none')
+        $('#nc_t_4').css('display', 'none')
+        $('#nc_t_5').css('display', 'none')
+        $('#nc_t_1').css('display', 'none')
+
+        // 클릭시 색상 변경
+        $('.color_n_3').css('background', '#ff7b00')
+
+        $('.color_n_1').css('background', '#dddddd')
+        $('.color_n_4').css('background', '#dddddd')
+        $('.color_n_6').css('background', '#dddddd')
+        $('.color_n_5').css('background', '#dddddd')
+        $('.color_n_2').css('background', '#dddddd')
+
+        // //////////////////////////////////
+        $('.color_n_3 .nc_t').css('border-bottom-color', '#ff7b00')
+
+        $('.color_n_1 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_2 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_4 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_5 .nc_t').css('border-bottom-color', '#dddddd')
+        $('.color_n_6 .nc_t').css('border-bottom-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_3 .nc_b').css('border-top-color', '#ff7b00')
+
+        $('.color_n_1 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_2 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_4 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_5 .nc_b').css('border-top-color', '#dddddd')
+        $('.color_n_6 .nc_b').css('border-top-color', '#dddddd')
+
+// //////////////////////////////////
+        $('.color_n_3 .n_img_hover').css('display', 'block')
+        $('.color_n_3 .notice_img').css('display', 'none')
+        $('.color_n_3 .n_name_box').css('color', '#fff')
+
+        $('.color_n_1 .n_img_hover').css('display', 'none')
+        $('.color_n_2 .n_img_hover').css('display', 'none')
+        $('.color_n_4 .n_img_hover').css('display', 'none')
+        $('.color_n_5 .n_img_hover').css('display', 'none')
+        $('.color_n_6 .n_img_hover').css('display', 'none')
+
+        $('.color_n_1 .notice_img').css('display', 'block')
+        $('.color_n_2 .notice_img').css('display', 'block')
+        $('.color_n_4 .notice_img').css('display', 'block')
+        $('.color_n_5 .notice_img').css('display', 'block')
+        $('.color_n_6 .notice_img').css('display', 'block')
+
+        $('.color_n_1 .n_name_box').css('color', '#333')
+        $('.color_n_2 .n_name_box').css('color', '#333')
+        $('.color_n_4 .n_name_box').css('color', '#333')
+        $('.color_n_5 .n_name_box').css('color', '#333')
+        $('.color_n_6 .n_name_box').css('color', '#333')
     })
     $('.n_1').trigger('click'); 
 
@@ -625,6 +990,9 @@ $(document).ready(function(){
             $('.c_line_1').css({borderColor:'transparent'})
         }
     });
+
+
+
 
 
 

@@ -3,12 +3,29 @@ $(document).ready(function(){
 	// nav
 
 	$('.h_nav_li').mouseenter(function(){
-		var n_height = $('.n_set_pan').height();
+
 		$('.nav_pan_box').addClass('p_active');
+
+		$('.nav_0').hover(function(){
+			$('.nav_pan_box').css({height: "120px"})
+			console.log('되고 잇음 1번')
+		})
+		$('.nav_1').hover(function(){
+			$('.nav_pan_box').css({height: "120px"})
+			console.log('되고 잇음 2번')
+		})
+		$('.nav_2').hover(function(){
+			$('.nav_pan_box').css({height: "438px"})
+			console.log('되고 잇음 3번')
+		})
+		$('.nav_3').hover(function(){
+			$('.nav_pan_box').css({height: "120px"})
+			console.log('되고 잇음 4번')
+		})
+
 
 		// li에서 몇번째꺼에 마우스 올라갔는지 감지
 		console.log($(this).index());
-		console.log("n_set_pan___height", n_height)
 
 		// n_pan_box 안에 있는 pan들중에서 그 번째꺼만 display: block으로 변경
 		$('.n_pan').removeClass('n_pan_active') 
@@ -18,9 +35,8 @@ $(document).ready(function(){
 		$('.nav_pan_box').css('height', 'auto')
 	});
 
-	$('.nav_pan_box').mouseenter(function(){
-		$('.nav_pan_box').css('height', `n_height`+"px")
-	});
+
+	
 
 
 

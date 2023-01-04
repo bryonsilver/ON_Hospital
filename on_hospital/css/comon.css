@@ -136,7 +136,6 @@ span {display: inline-block;}
     position: fixed;
     top: 96px;
     z-index: 999999;
-    transition: all 0.2s linear;
     overflow: hidden;
     border-top:  1px solid #ddd;
     border-bottom:  1px solid #ddd;
@@ -150,7 +149,6 @@ span {display: inline-block;}
     font-weight: 500;
     opacity: 0;
     
-    transition: all 0.2s linear;
     position: absolute;
     overflow: hidden;
 }
@@ -160,9 +158,7 @@ span {display: inline-block;}
     opacity: 1;
 }
 
-.npan_li:hover {
-    color: #ff9f1c;
-}
+
 
 .n_pan_2 .n_inner_pan_box {
     height: 240px;
@@ -281,7 +277,7 @@ span {display: inline-block;}
     font-family: 'Lato','Noto Sans KR','malgun gothic','돋움',Dotum,AppleGothic,sans-serif;
     font-weight: 500;
     color: #222;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 26px;
     
     position: absolute;
@@ -318,6 +314,19 @@ span {display: inline-block;}
     vertical-align: top;
     display: inline-block;
     position: relative;
+}
+
+.dep2 .dep3 .dep3_a:hover,
+.dep2_li:hover .dep2_a {
+    color: #ff9f1c;
+}
+.dep3 a {
+    font-size: 16px;
+    color: #222;
+    line-height: 16px;
+    display: block;
+    margin: 0 0 14px 0;
+    font-weight: 500;
 }
 .dep2_li > a {
     font-size: 16px;
@@ -413,10 +422,12 @@ span {display: inline-block;}
     display: flex;
     justify-content: flex-end;
 }
-.x_box {
+.bx_box {
     width: 40px;
     height: 40px;
     position: relative;
+    top: -15px;
+    left: 30px;
 }
 .x_font {
     width: 30px;
@@ -821,7 +832,7 @@ iframe.goog-te-banner-frame { display: none !important; }
       }
 
       .swiper-slide {
-        font-size: 18px;
+        font-size: 0px;
         background: #fff;
         position: absolute;
         top: 0;
@@ -1337,6 +1348,22 @@ iframe.goog-te-banner-frame { display: none !important; }
     .special {width: 350px !important;}
     .as_tab_ul_div > a, .as_tab_li > a {width: 90%;}
 }
+@media (max-width:1340px) {
+
+    .bx_box {
+        top: -15px;
+        left: 25px;
+    }
+    
+}
+@media (max-width:1300px) {
+
+    .bx_box {
+        top: -15px;
+        left: 10px;
+    }
+    
+}
 @media (max-width: 1260px) {
     .nav_ul > li > a {
         padding: 20px 20px;
@@ -1354,6 +1381,10 @@ iframe.goog-te-banner-frame { display: none !important; }
     .as_tab_li {width: calc((100% - (30px * 4)) / 2); margin-top: 20px;}
     .main .container {
         max-width: 1130px;
+    }
+    .bx_box {
+        top: -15px;
+        left: -10px;
     }
 }
 @media (max-width: 1200px) {
@@ -1456,6 +1487,10 @@ iframe.goog-te-banner-frame { display: none !important; }
     .m_select_nav_box {
         display: inline-block;
     }
+    .bx_box {
+        top: -20px;
+        left: -30px;
+    }
 }
 @media (max-width:1100px) {
     .f_margin {width: 100% !important; padding: 0 20px; box-sizing: border-box;}
@@ -1487,6 +1522,10 @@ iframe.goog-te-banner-frame { display: none !important; }
     .li_1 {width: 48%;}
     .b_pan_box {padding: 0 10px; box-sizing: border-box;  background-attachment: fixed;    height: 150vh;}
     .bur_box {padding: 30px 0; box-sizing: border-box;}
+    .bx_box {
+        top: 10px;
+        left: -20px;
+    }
 
 }
 @media (max-width: 550px) {
@@ -1519,7 +1558,7 @@ iframe.goog-te-banner-frame { display: none !important; }
     }
     .bur_u_li {color: #fff !important;}
     .swiper_box2 {
-        height: 60vh !important;
+        height: 50vh !important;
         padding-top: 0 !important;
     }
     .swiper_box3 {
@@ -1542,6 +1581,12 @@ iframe.goog-te-banner-frame { display: none !important; }
     }
     .news_title_box {justify-content: space-between;}
     .box_max_witdh {height: 110vh;}
+    .b_pan_box {
+        height: 100vh;
+        background: url(../img/common/ham_m.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
 @media (max-width: 450px) {
     .h_flex {padding: 0 10px;}
@@ -1550,9 +1595,12 @@ iframe.goog-te-banner-frame { display: none !important; }
     .logo_box img {width: 80%; min-width: 100px;}
     .first_box {gap: 0;}
     #google_translate_element > div > div > select {
-        padding: 0 8px;
+        padding: 0 15px 0 8px;
         font-size: 12px;
-        width: 90%;
+        width: 61%;
+    }
+    .h_min_box {
+        gap: 13px;
     }
     #google_translate_element > div > div:after {
         right: 6px;
@@ -1583,6 +1631,12 @@ iframe.goog-te-banner-frame { display: none !important; }
     .line {
         height: 3px !important;
     }
+    .bx_box {
+        top: 0px;
+        left: 0
+        px;
+    }
+
 }
 @media (max-width: 310px) {
     .first_box {
