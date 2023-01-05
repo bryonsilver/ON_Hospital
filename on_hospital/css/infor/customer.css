@@ -1,6 +1,4 @@
-.icon img {
-    width: 25px;
-}
+
 .page-title {
     font-weight: 500;
 }
@@ -17,9 +15,7 @@
     color: #333;
 }
 
-.page_section {
-    margin-top: 40px;
-}
+
 .col-lg-12 h4 {
     font-size: 22px;
     color: #007dd6;

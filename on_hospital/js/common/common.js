@@ -42,45 +42,6 @@ $(document).ready(function(){
 
 	
 	$('.goog-te-combo option:eq(0)').replaceWith("<option value='ko'>ko</option>");
-    $('.goog-te-combo') .children("[value='ko']").replaceWith("<option value='ko'>ko</option>");
-
-	$('.goog-te-combo') .children("[value='el']").replaceWith("<option value='el'>el</option>");
-	$('.goog-te-combo') .children("[value='nl']").replaceWith("<option value='nl'>nl</option>");
-	$('.goog-te-combo') .children("[value='no']").replaceWith("<option value='no'>no</option>");
-	$('.goog-te-combo') .children("[value='da']").replaceWith("<option value='da'>da</option>");
-	$('.goog-te-combo') .children("[value='de']").replaceWith("<option value='de'>de</option>");
-	$('.goog-te-combo') .children("[value='ru']").replaceWith("<option value='ru'>ru</option>");
-	$('.goog-te-combo') .children("[value='ro']").replaceWith("<option value='ro'>ro</option>");
-	$('.goog-te-combo') .children("[value='mk']").replaceWith("<option value='mk'>mk</option>");
-	$('.goog-te-combo') .children("[value='ms']").replaceWith("<option value='ms'>ms</option>");
-	$('.goog-te-combo') .children("[value='mn']").replaceWith("<option value='mn'>mn</option>");
-	$('.goog-te-combo') .children("[value='vi']").replaceWith("<option value='vi'>vi</option>");
-	$('.goog-te-combo') .children("[value='bg']").replaceWith("<option value='bg'>bg</option>");
-	$('.goog-te-combo') .children("[value='sv']").replaceWith("<option value='sv'>sv</option>");
-	$('.goog-te-combo') .children("[value='es']").replaceWith("<option value='es'>es</option>");
-	$('.goog-te-combo') .children("[value='ar']").replaceWith("<option value='ar'>ar</option>");
-	$('.goog-te-combo') .children("[value='af']").replaceWith("<option value='af'>af</option>");
-	$('.goog-te-combo') .children("[value='sq']").replaceWith("<option value='sq'>sq</option>");
-	$('.goog-te-combo') .children("[value='et']").replaceWith("<option value='et'>et</option>");
-	$('.goog-te-combo') .children("[value='en']").replaceWith("<option value='en'>en</option>");
-	$('.goog-te-combo') .children("[value='uz']").replaceWith("<option value='uz'>uz</option>");
-	$('.goog-te-combo') .children("[value='uk']").replaceWith("<option value='uk'>uk</option>");
-	$('.goog-te-combo') .children("[value='it']").replaceWith("<option value='it'>it</option>");
-	$('.goog-te-combo') .children("[value='id']").replaceWith("<option value='id'>id</option>");
-	$('.goog-te-combo') .children("[value='ja']").replaceWith("<option value='ja'>ja</option>");
-	$('.goog-te-combo') .children("[value='zn-CN']").replaceWith("<option value='zn-CN'>zn-CN</option>");
-	$('.goog-te-combo') .children("[value='zn-TW']").replaceWith("<option value='zn-TW'>zn-TW</option>");
-	$('.goog-te-combo') .children("[value='cs']").replaceWith("<option value='cs'>cs</option>");
-	$('.goog-te-combo') .children("[value='hr']").replaceWith("<option value='hr'>hr</option>");
-	$('.goog-te-combo') .children("[value='th']").replaceWith("<option value='th'>th</option>");
-	$('.goog-te-combo') .children("[value='fa']").replaceWith("<option value='fa'>fa</option>");
-	$('.goog-te-combo') .children("[value='pt']").replaceWith("<option value='pt'>pt</option>");
-	$('.goog-te-combo') .children("[value='fr']").replaceWith("<option value='fr'>fr</option>");
-	$('.goog-te-combo') .children("[value='fi']").replaceWith("<option value='fi'>fi</option>");
-	$('.goog-te-combo') .children("[value='hu']").replaceWith("<option value='hu'>hu</option>");
-	$('.goog-te-combo') .children("[value='hi']").replaceWith("<option value='hi'>hi</option>");
-
-
 
 	$('.goog-te-combo option:eq(1)').replaceWith("<option value='el'>el</option>");
 	$('.goog-te-combo option:eq(2)').replaceWith("<option value='nl'>nl</option>");

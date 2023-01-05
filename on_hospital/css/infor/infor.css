@@ -8,21 +8,7 @@
     font-size: 25px;
 }
 
-.top_title {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    font-weight: 500;
-    vertical-align: middle;
-}
-.icon {
-    padding-top: 5px;
-    box-sizing: border-box;
-}
-.icon img {
-    width: 100%;
-    max-width: 30px;
-}
+
 .no-gutters {
     margin-top: 40px;
     display: flex;
