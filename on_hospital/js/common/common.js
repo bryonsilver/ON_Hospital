@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 
 	
-	$('.goog-te-combo option:eq(0)').replaceWith("<option value='ko'>KO</option>");
+	$('.goog-te-combo option:eq(0)').replaceWith("<option value='ko'>ko</option>");
     $('.goog-te-combo') .children("[value='ko']").replaceWith("<option value='ko'>ko</option>");
 
 	$('.goog-te-combo') .children("[value='el']").replaceWith("<option value='el'>el</option>");
@@ -79,6 +79,43 @@ $(document).ready(function(){
 	$('.goog-te-combo') .children("[value='fi']").replaceWith("<option value='fi'>fi</option>");
 	$('.goog-te-combo') .children("[value='hu']").replaceWith("<option value='hu'>hu</option>");
 	$('.goog-te-combo') .children("[value='hi']").replaceWith("<option value='hi'>hi</option>");
+
+
+
+	$('.goog-te-combo option:eq(1)').replaceWith("<option value='el'>el</option>");
+	$('.goog-te-combo option:eq(2)').replaceWith("<option value='nl'>nl</option>");
+	$('.goog-te-combo option:eq(3)').replaceWith("<option value='da'>da</option>");
+	$('.goog-te-combo option:eq(4)').replaceWith("<option value='de'>de</option>");
+	$('.goog-te-combo option:eq(5)').replaceWith("<option value='ru'>ru</option>");
+	$('.goog-te-combo option:eq(6)').replaceWith("<option value='ro'>ro</option>");
+	$('.goog-te-combo option:eq(7)').replaceWith("<option value='mk'>mk</option>");
+	$('.goog-te-combo option:eq(8)').replaceWith("<option value='ms'>ms</option>");
+	$('.goog-te-combo option:eq(9)').replaceWith("<option value='mn'>mn</option>");
+	$('.goog-te-combo option:eq(10)').replaceWith("<option value='vi'>vi</option>");
+	$('.goog-te-combo option:eq(11)').replaceWith("<option value='bg'>bg</option>");
+	$('.goog-te-combo option:eq(12)').replaceWith("<option value='sv'>sv</option>");
+	$('.goog-te-combo option:eq(13)').replaceWith("<option value='es'>es</option>");
+	$('.goog-te-combo option:eq(14)').replaceWith("<option value='ar'>ar</option>");
+	$('.goog-te-combo option:eq(15)').replaceWith("<option value='af'>af</option>");
+	$('.goog-te-combo option:eq(16)').replaceWith("<option value='sq'>sq</option>");
+	$('.goog-te-combo option:eq(17)').replaceWith("<option value='et'>et</option>");
+	$('.goog-te-combo option:eq(18)').replaceWith("<option value='en'>en</option>");
+	$('.goog-te-combo option:eq(19)').replaceWith("<option value='uz'>uz</option>");
+	$('.goog-te-combo option:eq(20)').replaceWith("<option value='uk'>uk</option>");
+	$('.goog-te-combo option:eq(21)').replaceWith("<option value='it'>it</option>");
+	$('.goog-te-combo option:eq(22)').replaceWith("<option value='id'>id</option>");
+	$('.goog-te-combo option:eq(23)').replaceWith("<option value='ja'>ja</option>");
+	$('.goog-te-combo option:eq(24)').replaceWith("<option value='zn-CN'>zn-CN</option>");
+	$('.goog-te-combo option:eq(25)').replaceWith("<option value='zn-TW'>zn-TW</option>");
+	$('.goog-te-combo option:eq(26)').replaceWith("<option value='cs'>cs</option>");
+	$('.goog-te-combo option:eq(27)').replaceWith("<option value='hr'>hr</option>");
+	$('.goog-te-combo option:eq(28)').replaceWith("<option value='th'>th</option>");
+	$('.goog-te-combo option:eq(29)').replaceWith("<option value='fa'>fa</option>");
+	$('.goog-te-combo option:eq(30)').replaceWith("<option value='pt'>pt</option>");
+	$('.goog-te-combo option:eq(31)').replaceWith("<option value='fr'>fr</option>");
+	$('.goog-te-combo option:eq(32)').replaceWith("<option value='fi'>fi</option>");
+	$('.goog-te-combo option:eq(33)').replaceWith("<option value='hu'>hu</option>");
+	$('.goog-te-combo option:eq(34)').replaceWith("<option value='hi'>hi</option>");
 
 
 	

@@ -386,9 +386,7 @@ span {display: inline-block;}
 #google_translate_element > div > div {
     min-width: auto !important;
 }
-#google_translate_element > div > div select option:nth-child(1) {
-    display: none;
-}
+
 
 
 
