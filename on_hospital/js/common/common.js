@@ -15,7 +15,7 @@ $(document).ready(function(){
 			console.log('되고 잇음 2번')
 		})
 		$('.nav_2').hover(function(){
-			$('.nav_pan_box').css({height: "438px"})
+			$('.nav_pan_box').css({height: "370px"})
 			console.log('되고 잇음 3번')
 		})
 		$('.nav_3').hover(function(){

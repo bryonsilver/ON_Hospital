@@ -149,26 +149,39 @@ html { scroll-behavior: smooth;}
 .nc_3:hover .n_name_box,
 .nc_2:hover .n_name_box,
 .nc_1:hover .n_name_box {
-    color: #fff;
+    color: #fff !important;
 }
 .nc_5:hover,
 .nc_3:hover,
 .nc_2:hover,
 .nc_1:hover {
-    background-color: #ff7b00;
+    background-color: #ff7b00 !important;
 }
+.nc_5:hover .nc_t,
+.nc_3:hover .nc_t,
+.nc_2:hover .nc_t,
+.nc_1:hover .nc_t {
+    border-bottom-color: #ff7b00 !important;
+}
+.nc_5:hover .nc_b,
+.nc_3:hover .nc_b,
+.nc_2:hover .nc_b,
+.nc_1:hover .nc_b {
+    border-top-color: #ff7b00 !important;
+}
+
 
 .nc_5:hover .notice_img,
 .nc_3:hover .notice_img,
 .nc_2:hover .notice_img,
 .nc_1:hover .notice_img {
-    display: none;
+    display: none !important;
 }
 .nc_5:hover .n_img_hover,
 .nc_3:hover .n_img_hover,
 .nc_2:hover .n_img_hover,
 .nc_1:hover .n_img_hover {
-    display: block;
+    display: block !important;
 }
 
 .n_circle_img_box {
