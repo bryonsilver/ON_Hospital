@@ -133,7 +133,7 @@ p,h1,h2,h3 {margin: 0;}
 /* short_cut mb */
 .short_cut_mb {
     display: none;
-    margin: 20px 0 30px 0 !important;
+    margin-bottom: 30px !important;
 }
 .short_mb {
     width: 100%;

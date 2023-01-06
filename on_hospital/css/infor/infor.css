@@ -1,11 +1,34 @@
 .col-lg-12 {
-    font-size: 15px;
+    font-size: 16px;
     color: #777;
 }
 .col-lg-12 h4 {
     font-weight: 500;
     color: #333;
     font-size: 25px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.col-lg-12 h4 span {
+    font-size: 17px;
+    color: #777;
+}
+.frist_line {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.doc_img {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px 0 #ddd;
+    border-radius: 10px;
 }
 
 
@@ -52,6 +75,13 @@
 .img_box_text div {
     font-size: 16px;
 }
+
+
+.big_quo_m {
+    width: 45px;
+}
+.big_quo_m img {width: 100%;}
+
 
 @media (max-width: 1400px) {
     .nav_height  {

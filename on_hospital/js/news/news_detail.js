@@ -9,23 +9,23 @@ $(document).ready(function(){
 
     if (num == 0) {
          $('#selec0').prop("selected", true);
-        $('.nav_1').addClass('active')
+        $('.ml_ul > .nav_1').addClass('active')
     } else if (num == 1) {
          $('#selec1').prop("selected", true);
-        $('.nav_2').addClass('active')
+        $('.ml_ul > .nav_2').addClass('active')
     } else if (num == 2) {
          $('#selec2').prop("selected", true);
-        $('.nav_3').addClass('active')
+        $('.ml_ul > .nav_3').addClass('active')
         // $('.mr_main_comment').css({margin:'0 !important', padding: '0 !important'})
     } else if (num == 3) {
          $('#selec3').prop("selected", true);
-        $('.nav_4').addClass('active')
+        $('.ml_ul > .nav_4').addClass('active')
     } else if (num == 4) {
          $('#selec4').prop("selected", true);
-        $('.nav_5').addClass('active')
+        $('.ml_ul > .nav_5').addClass('active')
     } else if (num == 5) {
          $('#selec5').prop("selected", true);
-        $('.nav_6').addClass('active')
+        $('.ml_ul > .nav_6').addClass('active')
     }
 
     

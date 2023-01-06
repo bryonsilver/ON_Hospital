@@ -441,7 +441,7 @@ html { scroll-behavior: smooth;}
 
 .short_mb {
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -451,10 +451,27 @@ html { scroll-behavior: smooth;}
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .s_m_div {
-    width: calc(100% / 3);
-    margin-bottom: 60px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    height: 120px;
+    width: 170px;
+    text-align: center;
+    color: #fff;
+}
+#sh_4 {background-color: #ff8800;}
+#sh_3 {background-color: #ffa200;}
+#sh_1 {
+    background-color: #ffb701;
+}
+
+#sh_5 {background-color: #ff7c00;}
+#sh_2 {
+    background-color: #ffaa01;
+    padding: 25px 0;
 }
 .s_m_a {
     display: flex;
@@ -464,7 +481,6 @@ html { scroll-behavior: smooth;}
     gap: 10px;
     font-size: 26px;
     font-weight: 500;
-    color: #333;
 }
 .s_m_img {
     width: 60% !important;
@@ -843,6 +859,29 @@ html { scroll-behavior: smooth;}
     #nc_t_6 {left: 15px;}
     .nc_title {top: 25px;}
 
+    .short_mb {
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .s_m {width: 100%;}
+    .s_m_div {
+        padding: 0;
+        box-sizing: border-box;
+        height: 100px;
+        width: calc(100% /5);
+        text-align: center;
+        color: #fff;
+    }
+    #sh_5,
+    #sh_2 {
+        padding: 17px 0;
+    }
+    .s_m_a {
+        gap: 10px;
+        font-size: 22px;
+    }
+
 }
 @media (max-width: 1000px) {
     .nc_5,
@@ -882,6 +921,9 @@ html { scroll-behavior: smooth;}
     #nc_t_5 {left: -15px;}
     #nc_t_6 {left: 12px;}
     .nc_title {top: 25px; font-size: 20px;}
+
+
+    
 }
 @media (max-width: 991px) {
     .mb_img_text {
@@ -951,6 +993,27 @@ html { scroll-behavior: smooth;}
         top: 125px;
     }
     .notice_li span {width: 150px;}
+
+
+    .short_mb .s_m {
+        flex-wrap: inherit;
+        width: 100%;
+    }
+    .short_mb .s_m_div {
+        padding: 0;
+        box-sizing: border-box;
+        height: 85px;
+        width: calc(100% / 5);
+        color: #fff;
+    }
+    #sh_5,
+    #sh_2 {
+        padding: 12px 0;
+    }
+    .short_mb .s_m_a {
+        gap: 10px;
+        font-size: 18px;
+    }
 }
 @media (max-width: 800px) {
     .mb_img_text {padding: 0 50px;}
@@ -977,10 +1040,6 @@ html { scroll-behavior: smooth;}
     .notice_title, .notice_title_m, .tv_title, .on_news_s h3 {font-size: 45px;}
 
     .news_box .container {margin: 250px auto !important;}
-    .s_m_a {
-        font-size: 23px;
-    }
-    .s_m_div {margin-bottom: 30px;}
 
     
 
@@ -988,6 +1047,7 @@ html { scroll-behavior: smooth;}
         display: block;
     }
     .news_box {display: none;}
+    .short_mb {width: 100%; padding: 0 20px; box-sizing: border-box;}
 }
 @media (max-width: 610px) {
     .mb_img_text {top: 25%;}
@@ -1000,6 +1060,15 @@ html { scroll-behavior: smooth;}
     .sh_li {
         padding: 0.5rem 10px;
     }
+
+    .short_mb .s_m {
+        flex-wrap: wrap;
+    }
+    .short_mb .s_m_div {
+        width: calc(100% / 3);
+    }
+    #sh_4, #sh_1 {border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+    #sh_3, #sh_5 {border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 }
 
 @media (max-width: 540px) {
@@ -1030,10 +1099,6 @@ html { scroll-behavior: smooth;}
     }
 
 
-    .s_m_a {
-        font-size: 18px;
-    }
-    .s_m_div {margin-bottom: 40px;}
 }
 @media (max-width:530px)  {
     .li_2 {width: 100%;}
@@ -1104,15 +1169,14 @@ html { scroll-behavior: smooth;}
         margin-left: -45px;
         margin-right: -45px;
     }
-    .n_sw_m {
-        width: calc(100% / 2);
-        margin-bottom: 40px;
-    }
-    .s_m_div {
-        width: calc(100% /2);
-    }
     #ns_4 .news_m_text {margin-top: 13px;}
     #ns_5 .news_m_text {margin-top: 4px;}
+
+    .s_m_a {font-size: 16px !important;}
+    .short_mb .s_m_div {height: 80px;}
+    .short_mb {padding: 0;}
+
+    #sh_4, #sh_5 {width: 50%; margin-top: 10px;}
 }
 @media (max-width: 340px) {
     .one_line {
