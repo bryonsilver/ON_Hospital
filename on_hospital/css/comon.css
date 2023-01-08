@@ -1560,7 +1560,7 @@ iframe.goog-te-banner-frame { display: none !important; }
     .b_pan_box {padding: 0 10px; box-sizing: border-box;  background-attachment: fixed;    height: 380vh;}
     .ham_box {gap: 0px !important;}
     .moblie_logo {
-        width: 45%;
+        width: 70%;
         margin-top: 5px;
     }
     .bur_u_li {color: #fff !important;}
@@ -1604,10 +1604,10 @@ iframe.goog-te-banner-frame { display: none !important; }
     #google_translate_element > div > div > select {
         padding: 0 15px 0 8px;
         font-size: 12px;
-        width: 61%;
+        width: 83%;
     }
     .h_min_box {
-        gap: 13px;
+        gap: 5px;
     }
     #google_translate_element > div > div:after {
         right: 6px;

@@ -101,7 +101,7 @@ html { scroll-behavior: smooth;}
     bottom: 56px;
     left: 0; */
 }
-.news_box {padding: 50px 0; box-sizing: border-box; height: 120vh;}
+.news_box {padding: 50px 0; box-sizing: border-box; height: 130vh;}
 
 .dis_n {
     width: 100%;
@@ -226,7 +226,7 @@ html { scroll-behavior: smooth;}
 }
 .s_box {
     
-    width: 250px;
+    width: 240px;
     height: 80px;
     justify-content: center;
     align-items: center;
@@ -313,12 +313,13 @@ html { scroll-behavior: smooth;}
 .si_icon img {
     width: 100%;
 }
-.color1 {background-color: #ffb701; border-bottom-left-radius: 30px;}
-.color2 {background-color: #ffaa01;}
-.color3 {background-color: #ffa200;}
-.color4 {background-color: #ff9501;}
-.color5 {background-color: #ff8800;}
-.color6 {background-color: #ff7c00; border-bottom-right-radius: 30px;}
+.color1 {background-color: #ffc300; border-bottom-left-radius: 30px;}
+.color2 {background-color: #ffb701;}
+.color3 {background-color: #ffaa01;}
+.color4 {background-color: #ffa200;}
+.color5 {background-color: #ff9501;}
+.color6 {background-color: #ff8800; }
+.color7 {background-color: #ff7c00; border-bottom-right-radius: 30px;}
 
 
 .so_inner_box {
@@ -329,7 +330,7 @@ html { scroll-behavior: smooth;}
 .so_inner_box a {
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 240px;
     height: 350px;
     padding: 35px 0;
     box-sizing: border-box;
@@ -374,6 +375,7 @@ html { scroll-behavior: smooth;}
 .short_cut_box  {
     display: flex;
     justify-content: center;
+    max-width: 1440px;
 }
 .soi_1 {
     background: url(../img/common/shorts_ba_1.jpg) no-repeat;
@@ -397,6 +399,11 @@ html { scroll-behavior: smooth;}
 }
 .soi_6 {
     background: url(../img/common/shorts_ba_6.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.soi_7 {
+    background: url(../img/index/shorts_7.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -440,10 +447,14 @@ html { scroll-behavior: smooth;}
 }
 
 .short_mb {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+}
+.si_icon_m {
+    width: 6%;
+    margin-top: 5px;
 }
 
 .s_m {
@@ -462,15 +473,17 @@ html { scroll-behavior: smooth;}
     text-align: center;
     color: #fff;
 }
-#sh_4 {background-color: #ff8800;}
-#sh_3 {background-color: #ffa200;}
+#sh_4 {background-color: #ffa200;padding: 25px 0;}
+#sh_3 {background-color: #ffaa01;padding: 25px 0;}
 #sh_1 {
-    background-color: #ffb701;
+    background-color: #ffc300;  /* ffb701 */
+    padding: 25px 0;
 }
 
-#sh_5 {background-color: #ff7c00;}
+#sh_5 {background-color: #ff8800;padding: 25px 0;}
+#sh_6 {background-color: #ff7c00;padding: 25px 0;}
 #sh_2 {
-    background-color: #ffaa01;
+    background-color: #ffb701;
     padding: 25px 0;
 }
 .s_m_a {
@@ -488,9 +501,12 @@ html { scroll-behavior: smooth;}
 }
 .s_m_text {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    justify-content: center;
+    width: 100%;
+    height: 25px;
+    padding-bottom: 5px;
+    gap: 10px;
 }
 
 
@@ -634,7 +650,9 @@ html { scroll-behavior: smooth;}
 #ns_4 .news_m_text {
     margin-top: 20px;
 }
-#ns_1 .news_m_text, #ns_3 .news_m_text {margin-top: 7px;}
+#ns_1 .news_m_text {margin-top: 12px;}
+#ns_2 .news_m_text {margin-top: 9px;}
+#ns_3 .news_m_text {margin-top: 7px;}
 
 
 .news_c_title_box {
@@ -720,6 +738,9 @@ html { scroll-behavior: smooth;}
 @media (max-width:1500px) {
     .shorts_box {top: -5px;}
     .shorts_open_box {top: -275px;}
+
+    .short_cut_box {max-width: 1200px;}
+    .s_inner_box, .s_box {width: 200px;}
 }
 @media (max-width:1400px) {
     .nc_5, .nc_4, .nc_3, .nc_2, .nc_1 {width: 300px;}
@@ -868,18 +889,20 @@ html { scroll-behavior: smooth;}
     .s_m_div {
         padding: 0;
         box-sizing: border-box;
-        height: 100px;
-        width: calc(100% /5);
+        height: 55px !important;
         text-align: center;
         color: #fff;
     }
+    /* #sh_6,
     #sh_5,
     #sh_2 {
         padding: 17px 0;
-    }
+    } */
     .s_m_a {
         gap: 10px;
         font-size: 22px;
+        height: 100%;
+        width: 100%;
     }
 
 }
@@ -1002,8 +1025,7 @@ html { scroll-behavior: smooth;}
     .short_mb .s_m_div {
         padding: 0;
         box-sizing: border-box;
-        height: 85px;
-        width: calc(100% / 5);
+        height: 55px !important;
         color: #fff;
     }
     #sh_5,
@@ -1047,7 +1069,7 @@ html { scroll-behavior: smooth;}
         display: block;
     }
     .news_box {display: none;}
-    .short_mb {width: 100%; padding: 0 20px; box-sizing: border-box;}
+    .short_mb {width: 100%; box-sizing: border-box;}
 }
 @media (max-width: 610px) {
     .mb_img_text {top: 25%;}
@@ -1064,11 +1086,11 @@ html { scroll-behavior: smooth;}
     .short_mb .s_m {
         flex-wrap: wrap;
     }
-    .short_mb .s_m_div {
-        width: calc(100% / 3);
+
+    .si_icon_m {
+        width: 8%;
+        margin-top: 3px;
     }
-    #sh_4, #sh_1 {border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
-    #sh_3, #sh_5 {border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
 }
 
 @media (max-width: 540px) {
@@ -1145,6 +1167,11 @@ html { scroll-behavior: smooth;}
         margin-right: -25px;
     }
     .notice_title, .notice_title_m, .tv_title, .on_news_s h3 {font-size: 30px;}
+
+    .si_icon_m {
+        width: 10%;
+        margin-top: 3px;
+    }
 }
 @media (max-width:400px) {
     #google_translate_element > div > div:after {
@@ -1170,13 +1197,19 @@ html { scroll-behavior: smooth;}
         margin-right: -45px;
     }
     #ns_4 .news_m_text {margin-top: 13px;}
-    #ns_5 .news_m_text {margin-top: 4px;}
+    #ns_5 .news_m_text {margin-top: 6px;}
+    #ns_6 .news_m_text {margin-top: 6px;}
 
-    .s_m_a {font-size: 16px !important;}
-    .short_mb .s_m_div {height: 80px;}
+    .s_m_a {font-size: 15px !important;}
+    .short_mb .s_m_div {height: 55px !important;}
     .short_mb {padding: 0;}
 
-    #sh_4, #sh_5 {width: 50%; margin-top: 10px;}
+    .si_icon_m {
+        width: 12%;
+        margin-top: 3px;
+    }
+    .s_m_text {gap: 5px;}
+
 }
 @media (max-width: 340px) {
     .one_line {
@@ -1220,5 +1253,9 @@ html { scroll-behavior: smooth;}
     }
     .short_mb h3 {
         font-size: 30px;
+    }
+    .si_icon_m {
+        width: 16%;
+        margin-top: 3px;
     }
 }

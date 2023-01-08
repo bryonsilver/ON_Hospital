@@ -717,10 +717,24 @@ $(document).ready(function(){
     })
 
 
-    var swiper = new Swiper(".mySwiper5", {
+    // #s5
+    $('#s7').mouseenter(function(){
+        $('.s7').css({zIndex:'99999',opacity: '1', top:'5px'})
+        $('.shorts_box').css({zIndex:'9999'})
+    })
+    $('#s7').mouseleave(function(){
+        $('.s7').css({zIndex:'-8',opacity:'0'})
+        $('.shorts_box').css({zIndex:'99'})
+    })
+
+
+    var swiper = new Swiper(".mySwiper6", {
         slidesPerView: 3,
-        spaceBetween: 10,
+        // slidesPerGroup : 3,
+        spaceBetween: 0,
+        
         loop: true,
+        loopFillGroupWithBlank : true,
         autoplay: {
             delay: 3000, // 몇 밀리초마다 새로 들어올지
         },

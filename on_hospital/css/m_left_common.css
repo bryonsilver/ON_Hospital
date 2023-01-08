@@ -200,6 +200,13 @@
     }
 }
 
+
+@media (max-width: 1200px) {
+    .main .container {
+        padding: 0 60px !important;
+        box-sizing: border-box;
+    }
+}
 @media (max-width:1100px) {
     .main .container {
         max-width:900px;
