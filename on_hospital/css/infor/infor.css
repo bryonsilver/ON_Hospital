@@ -167,4 +167,6 @@
     .ext_n {font-size: 17px;}
     .name_d {font-size: 22px;}
     .doc_n_box {gap: 6px;} */
+    .no-gutters {flex-direction: column;}
+    .img_box_text {flex-direction: row; gap: 40px;}
 }
