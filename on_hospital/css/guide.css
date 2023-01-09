@@ -88,10 +88,6 @@ body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple
     .main .container {
         max-width: 700px;
     }
-    .main {
-        padding-top: 50px;
-        box-sizing: border-box;
-    }
     .m_select_nav_box {
         display: inline-block;
     }

@@ -307,7 +307,7 @@ span {display: inline-block;}
 }
 .dep2 {
     overflow: hidden;
-    padding-left: 190px;
+    padding-left: 230px;
     box-sizing: border-box;
     width: calc(100% - 100px);
 }
@@ -1604,7 +1604,7 @@ iframe.goog-te-banner-frame { display: none !important; }
     #google_translate_element > div > div > select {
         padding: 0 15px 0 8px;
         font-size: 12px;
-        width: 83%;
+        width: 73%;
     }
     .h_min_box {
         gap: 5px;

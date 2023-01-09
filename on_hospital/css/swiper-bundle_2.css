@@ -551,10 +551,10 @@
     pointer-events: auto;
   }
   .swiper_box2 .swiper-slide-active .on_s_item_box {
-    box-shadow: 0 0 40px #ffb70080;
+    box-shadow: 0 0 40px #93939380;
   }
   .swiper_box3 .swiper-slide-active .tv_swiper_slide {
-    box-shadow: 0 0 40px #ff7b0080;
+    box-shadow: 0 0 40px #93939380;
   }
   .swiper_box2 .swiper-pagination-bullet-active {
     background-color: #ffb700;

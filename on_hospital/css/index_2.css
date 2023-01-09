@@ -1,6 +1,60 @@
 body {font-family: 'Open Sans','Noto Sans KR','Apple SD 산돌고딕 Neo','Apple SD Gothic Neo','나눔고딕',NanumGothic,ng,sans-serif;}
 html { scroll-behavior: smooth;}
 
+
+
+.item_you {
+    display: none;
+}
+.ifam iframe {
+    display: none;
+}
+.youtube_box {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    z-index: 9999999999999;
+    display: none;
+}
+.you_center_box {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+.you_black_box {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    bottom: 528px;
+    right: 0px;
+    margin: auto 0;
+    width: 24px;
+    height: 24px;
+    background: url(../img/close.png) no-repeat;
+    background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+}
+.you_center_box iframe {
+    max-width: 100% !important;
+    width: 100% !important;
+    display: block !important;
+    height: 480px !important;
+    border: none !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+
+
 .shorts_open_box {
     position: absolute;
     top: -270px;
@@ -370,7 +424,41 @@ html { scroll-behavior: smooth;}
 }
 .mySwiper3 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: -50px !important;
-  }
+}
+.mySwiper3 .swiper-pagination-bullet-active {
+    transition: all 0.2s linear;
+    width: 30px;
+    border-radius: 20px;
+}
+.mySwiper3 .swiper-pagination-bullet {
+    transition: all 0.2s linear;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+    transition: all 0.2s linear;
+    width: 30px;
+    border-radius: 20px;
+}
+.mySwiper2 .swiper-pagination-bullet {
+    transition: all 0.2s linear;
+}
+
+.mySwiper .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 30px !important;
+}
+.mySwiper .swiper-pagination-bullet-active {
+    background-color: #ff7b00;
+    width: 30px;
+    border-radius: 20px;
+    transition: all 0.2s linear;
+}
+.mySwiper .swiper-pagination-bullet {
+    transition: all 0.2s linear;
+}
+.mySwiper .swiper-button-next, .swiper-rtl .swiper-button-prev {color: #fff;}
+.mySwiper .swiper-button-prev, .swiper-rtl .swiper-button-next {color: #fff;}
+
+
 
 .short_cut_box  {
     display: flex;
@@ -378,27 +466,27 @@ html { scroll-behavior: smooth;}
     max-width: 1440px;
 }
 .soi_1 {
-    background: url(../img/common/shorts_ba_1.jpg) no-repeat;
+    background: url(../img/index/shorts_ba_1.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .soi_2 {
-    background: url(../img/common/shorts_ba_2.jpg) no-repeat;
+    background: url(../img/index/shorts_ba_2.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .soi_3 {
-    background: url(../img/common/shorts_ba_3.jpg) no-repeat;
+    background: url(../img/index/shorts_ba_3.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .soi_5 {
-    background: url(../img/common/shorts_ba_5.jpg) no-repeat;
+    background: url(../img/index/shorts_5.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
 .soi_6 {
-    background: url(../img/common/shorts_ba_6.jpg) no-repeat;
+    background: url(../img/index/shorts_ba_6.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -1044,6 +1132,11 @@ html { scroll-behavior: smooth;}
     .m_text_small {font-size: 23px;}
 }
 
+@media (max-width: 768px) and (min-width: 10px) {
+    .you_center_box {
+        max-width: 90%;
+    }
+}
 @media (max-width:767px)  {
     .bur_ul {
         flex-wrap: wrap;
@@ -1090,6 +1183,13 @@ html { scroll-behavior: smooth;}
     .si_icon_m {
         width: 8%;
         margin-top: 3px;
+    }
+
+    .you_black_box {
+        bottom: 362px;
+    }
+    .you_center_box iframe {
+        height: 320px !important;
     }
 }
 
@@ -1171,6 +1271,11 @@ html { scroll-behavior: smooth;}
     .si_icon_m {
         width: 10%;
         margin-top: 3px;
+    }
+}
+@media (max-width: 480px) and (min-width:10px) {
+    .you_center_box iframe {
+        height: 220px !important;
     }
 }
 @media (max-width:400px) {
