@@ -15,7 +15,7 @@ $(document).ready(function(){
         autoplay: {
             delay: 3000, // 몇 밀리초마다 새로 들어올지
         },
-        speed: 500, // duration
+        speed: 100, // duration
         // direction: 'vertical',
         effect : 'fade',
  
@@ -26,16 +26,18 @@ $(document).ready(function(){
         pagination: {
             el: ".swiper-pagination",
         },
+        
+        slideToClickedSlide : true, // 해당 슬라이드 클릭시 슬라이드로 위치 이동
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+            rotate: 50,     // 슬라이드 회전 각도 (클수록 슬라이딩 시 회전이 커짐)
+            stretch: -100,  // 슬라이더 간 거리:px (클수록 슬라이더가 겹침)
+            depth: 400,     // 깊이 효과 값 (클수록 멀리)
+            modifier: 1,    // 효과 배수 (효과를 강하게 처리)
+            slideShadows: false,    // 슬라이더에 그림자(기본값) 없앰
         },
         autoplay: {
             delay: 3000, // 몇 밀리초마다 새로 들어올지
@@ -52,18 +54,27 @@ $(document).ready(function(){
             },
             // when window width is >= 1024px
             767: {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 0
             },
             400: {
-                slidesPerView: 1.5,
+                slidesPerView: 1,
                 spaceBetween: 0
             },
             100: {
-                slidesPerView: 1.5,
+                slidesPerView: 1,
                 spaceBetween: 0
             }
         }  ,
+
+        spaceBetween: 50,   // 슬라이드 사이 여백
+        loop: true,     // 슬라이드 반복 여부
+        centeredSlides: true,   // 센터 모드
+        // autoplay: {
+        //     delay: 4500,
+        //     disableOnInteraction: false,
+        // }, // 자동재생
+        speed: 1000,    // 넘길때 속도]
  
     });
 
@@ -76,16 +87,18 @@ $(document).ready(function(){
         pagination: {
             el: ".swiper-pagination",
         },
+        
+        slideToClickedSlide : true, // 해당 슬라이드 클릭시 슬라이드로 위치 이동
         effect: "coverflow",
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
+            rotate: 50,     // 슬라이드 회전 각도 (클수록 슬라이딩 시 회전이 커짐)
+            stretch: -100,  // 슬라이더 간 거리:px (클수록 슬라이더가 겹침)
+            depth: 400,     // 깊이 효과 값 (클수록 멀리)
+            modifier: 1,    // 효과 배수 (효과를 강하게 처리)
+            slideShadows: false,    // 슬라이더에 그림자(기본값) 없앰
         },
         autoplay: {
             delay: 3000, // 몇 밀리초마다 새로 들어올지
@@ -102,18 +115,27 @@ $(document).ready(function(){
             },
             // when window width is >= 1024px
             767: {
-            slidesPerView: 1.5,
+            slidesPerView: 1,
             spaceBetween: 0
             },
             400: {
-                slidesPerView: 1.5,
+                slidesPerView: 1,
                 spaceBetween: 0
             },
             100: {
-                slidesPerView: 1.5,
+                slidesPerView: 1,
                 spaceBetween: 0
             }
         }  ,
+
+        spaceBetween: 50,   // 슬라이드 사이 여백
+        loop: true,     // 슬라이드 반복 여부
+        centeredSlides: true,   // 센터 모드
+        // autoplay: {
+        //     delay: 4500,
+        //     disableOnInteraction: false,
+        // }, // 자동재생
+        speed: 1000,    // 넘길때 속도]
     
     });
 
@@ -742,11 +764,7 @@ $(document).ready(function(){
         // direction: 'vertical',
         pagination : { // 페이징 설정
             el : '.swiper-pagination',
-            clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
-        },
-        navigation : { // 네비게이션 설정
-            nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-            prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+            clickable : false, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
         },
 
     });
@@ -1007,6 +1025,83 @@ $(document).ready(function(){
     });
 
 
+    // 병원장 TV 클릭시 유튜브 팝업이 나오도록 
+
+    $('.youtube_box').click(function(){
+        $('.youtube_box').css('display', 'none')
+        $('.ifam').empty();
+    })
+    $('.ifam').empty();
+
+    var if_1 = '<iframe src="https://www.youtube.com/embed/qiAwJtP7j0Y?autoplay=1" allowfullscreen="" class="item_1 item_you"></iframe>';
+    var if_2 = '<iframe src="https://www.youtube.com/embed/eXnFNDyoqRk?autoplay=1" allowfullscreen="" class="item_2 item_you"></iframe>';
+    var if_3 = '<iframe src="https://www.youtube.com/embed/q08XqQYjQMs?autoplay=1" allowfullscreen="" class="item_3 item_you"></iframe>';
+    var if_4 = '<iframe src="https://www.youtube.com/embed/ANliqfAOiCI?autoplay=1" allowfullscreen="" class="item_4 item_you"></iframe>';
+    var if_5 = '<iframe src="https://www.youtube.com/embed/I7nADRrq1Bg?autoplay=1" allowfullscreen="" class="item_5 item_you"></iframe>';
+    var if_6 = '<iframe src="https://www.youtube.com/embed/_lTX6vvKv54?autoplay=1" allowfullscreen="" class="item_6 item_you"></iframe>';
+    var if_7 = '<iframe src="https://www.youtube.com/embed/yUtjCyD5cn4?autoplay=1" allowfullscreen="" class="item_7 item_you"></iframe>';
+    var if_8 = '<iframe src="https://www.youtube.com/embed/lzBLAItOibk?autoplay=1" allowfullscreen="" class="item_8 item_you"></iframe>';
+    var if_9 = '<iframe src="https://www.youtube.com/embed/47QodNgcVOE?autoplay=1" allowfullscreen="" class="item_9 item_you"></iframe>';
+    
+
+    $('.tv_s_1').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_1').css('display', 'inline-block')
+        $('.if_1').append(if_1);
+    })
+
+    $('.tv_s_2').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_2').css('display', 'inline-block')
+        $('.if_2').append(if_2);
+    })
+
+    $('.tv_s_3').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_3').css('display', 'inline-block')
+        $('.if_3').append(if_3);
+    })
+
+    $('.tv_s_4').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_4').css('display', 'inline-block')
+        $('.if_4').append(if_4);
+    })
+
+    $('.tv_s_5').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_5').css('display', 'inline-block')
+        $('.if_5').append(if_5);
+    })
+    $('.tv_s_6').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_6').css('display', 'inline-block')
+        $('.if_6').append(if_6);
+    })
+    $('.tv_s_7').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_7').css('display', 'inline-block')
+        $('.if_7').append(if_7);
+    })
+    $('.tv_s_8').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_8').css('display', 'inline-block')
+        $('.if_8').append(if_8);
+    })
+    $('.tv_s_9').click(function(){
+        $('.youtube_box').css('display', 'block')
+
+        $('.item_9').css('display', 'inline-block')
+        $('.if_9').append(if_9);
+    })
 
 
 

@@ -57,7 +57,7 @@ console.log(value)
                                         </div>
                                     </div>
                                     <div class="l_more_btn">
-                                        <a href="./medi_more.html" class="more_btn">자세히보기</a> 
+                                        <a href="./medi_more.html?cate=${DOCTOR[value][i].cate_no}&item=${DOCTOR[value][i].item_no}" class="more_btn">자세히보기</a> 
                                     </div>
                                 </div>
                                 <div class="c_right_box">
